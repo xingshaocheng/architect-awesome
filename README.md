@@ -1673,6 +1673,7 @@ TODO
 ## 行业资讯
 
 * [36kr](http://36kr.com/)
+* [Techweb](http://www.techweb.com.cn/)
 
 ## 公众号列表
 
@@ -1696,8 +1697,6 @@ TODO
 
 * [CSDN](http://csdn.net)
 	 老牌技术社区、不必解释。
-* [Techweb](http://www.techweb.com.cn/)
-	* 新闻类内容居多。	
 * [51cto.com](http://www.51cto.com/)
 * [ITeye](http://www.iteye.com/)
 	* 偏 Java 方向 
