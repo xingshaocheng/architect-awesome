@@ -3,7 +3,6 @@
 
 **最后更新于20180406**
 
-部分内容适用于偏Java方向，大部分内容适用于所有后端架构师。
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 	* [队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E9%98%9F%E5%88%97)
