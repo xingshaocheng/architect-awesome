@@ -569,7 +569,8 @@ TODO
 
 * [《腾讯业务系统监控的修炼之路》](https://blog.csdn.net/enweitech/article/details/77849205)
 	* 监控的方式：主动、被动、旁路(比如舆情监控)
-	* 监控类型： 基础监控、服务端监控、客户端监控、WEB监控、用户端监控
+	* 监控类型： 基础监控、服务端监控、客户端监控、
+	监控、用户端监控
 	* 监控的目标：全、块、准
 	* 核心指标：请求量、成功率、耗时
 
@@ -1278,7 +1279,15 @@ TODO
 
 ## Web 框架
 
-TODO
+### Spring 家族
+
+** Spring Boot **
+* [官方网站](http://projects.spring.io/spring-boot/)
+* [Spring Boot 参考指南(中文)](http://oopsguy.com/documents/springboot-docs/1.5.4/index.html)
+
+** Spring Cloud **
+* [Spring Cloud 中文文档](https://springcloud.cc/)
+
 
 ## 工具框架
 
@@ -1663,7 +1672,7 @@ TODO
 	* 第二层的架构师不仅看到自己的产品，还看到了整体的方案
 	* 第三层的架构师看到的是商业价值 
 
-#团队管理
+# 团队管理
 
 TODO
 
@@ -1767,14 +1776,28 @@ TODO
 
 ### 纸质书
 
-* 《软件架构师的12项修炼：技术技能篇》[京东](http://item.jd.com/11740744.html?cpdad=1DLSUE)
-* 《架构之美》
-* 《分布式服务架构》
+#### 架构方面
+* 《软件架构师的12项修炼：技术技能篇》[京东](https://union-click.jd.com/jdc?d=gXvRd8) [淘宝](https://s.taobao.com/search?q=软件架构师的12项修炼：技术技能篇)
+* 《架构之美》[京东](https://union-click.jd.com/jdc?d=xJit5I) [淘宝](https://s.taobao.com/search?q=架构之美)
+* 《分布式服务架构》[京东](https://union-click.jd.com/jdc?d=JS5Od9) [淘宝](https://s.taobao.com/search?q=分布式服务架构)
+* 《聊聊架构》 [京东](https://union-click.jd.com/jdc?d=FHooH4) [淘宝](https://s.taobao.com/search?q=聊聊架构)
+* 《云原生应用架构实践》[京东](https://union-click.jd.com/jdc?d=orkJSj) [淘宝](https://s.taobao.com/search?q=云原生应用架构实践)
+* 《亿级流量网站架构核心技术》[京东](https://union-click.jd.com/jdc?d=RnOSP5) [淘宝](https://s.taobao.com/search?q=亿级流量网站架构核心技术)
+* 《淘宝技术这十年》[京东](https://union-click.jd.com/jdc?d=LwrDfD) [淘宝](https://s.taobao.com/search?q=淘宝技术这十年)
+
+#### 技术管理方面
+* 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
+* 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
+
+
+#### 工具方面
+TODO
+
+#### 大数据方面
 
 # 技术资源
 
 ## 开源资源
-
 * [github](https://github.com)
 
 ## 手册
