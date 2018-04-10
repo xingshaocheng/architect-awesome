@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180406**
+**最后更新于20180410**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
@@ -569,7 +569,8 @@ TODO
 
 * [《腾讯业务系统监控的修炼之路》](https://blog.csdn.net/enweitech/article/details/77849205)
 	* 监控的方式：主动、被动、旁路(比如舆情监控)
-	* 监控类型： 基础监控、服务端监控、客户端监控、WEB监控、用户端监控
+	* 监控类型： 基础监控、服务端监控、客户端监控、
+	监控、用户端监控
 	* 监控的目标：全、块、准
 	* 核心指标：请求量、成功率、耗时
 
@@ -1278,7 +1279,15 @@ TODO
 
 ## Web 框架
 
-TODO
+### Spring 家族
+
+** Spring Boot **
+* [官方网站](http://projects.spring.io/spring-boot/)
+* [Spring Boot 参考指南(中文)](http://oopsguy.com/documents/springboot-docs/1.5.4/index.html)
+
+** Spring Cloud **
+* [Spring Cloud 中文文档](https://springcloud.cc/)
+
 
 ## 工具框架
 
@@ -1663,7 +1672,7 @@ TODO
 	* 第二层的架构师不仅看到自己的产品，还看到了整体的方案
 	* 第三层的架构师看到的是商业价值 
 
-#团队管理
+# 团队管理
 
 TODO
 
@@ -1726,6 +1735,10 @@ TODO
 * [知乎](https://www.zhihu.com/)
 * [stackoverflow](https://stackoverflow.com/)
 
+## 行业数据分析
+
+* [艾瑞网](http://report.iresearch.cn/)
+
 ## 专项网站
 
 * 测试:
@@ -1757,31 +1770,62 @@ TODO
 
 ## 推荐参考书
 
-* [gitbook.com](http://gitbook.com)
-* [gitbook.cn](http://gitbook.cn/)
-	* 付费电子书。 
 
 ### 在线电子书
 
 * [《深入理解Spring Cloud与微服务构建》](https://github.com/forezp/SpringCloudLearning)
 
+
 ### 纸质书
 
-* 《软件架构师的12项修炼：技术技能篇》[京东](http://item.jd.com/11740744.html?cpdad=1DLSUE)
-* 《架构之美》
-* 《分布式服务架构》
+#### 架构方面
+* 《软件架构师的12项修炼：技术技能篇》[京东](https://union-click.jd.com/jdc?d=gXvRd8) [淘宝](https://s.taobao.com/search?q=软件架构师的12项修炼：技术技能篇)
+* 《架构之美》[京东](https://union-click.jd.com/jdc?d=xJit5I) [淘宝](https://s.taobao.com/search?q=架构之美)
+* 《分布式服务架构》[京东](https://union-click.jd.com/jdc?d=JS5Od9) [淘宝](https://s.taobao.com/search?q=分布式服务架构)
+* 《聊聊架构》 [京东](https://union-click.jd.com/jdc?d=FHooH4) [淘宝](https://s.taobao.com/search?q=聊聊架构)
+* 《云原生应用架构实践》[京东](https://union-click.jd.com/jdc?d=orkJSj) [淘宝](https://s.taobao.com/search?q=云原生应用架构实践)
+* 《亿级流量网站架构核心技术》[京东](https://union-click.jd.com/jdc?d=RnOSP5) [淘宝](https://s.taobao.com/search?q=亿级流量网站架构核心技术)
+* 《淘宝技术这十年》[京东](https://union-click.jd.com/jdc?d=LwrDfD) [淘宝](https://s.taobao.com/search?q=淘宝技术这十年)
+* 《企业IT架构转型之道-中台战略思想与架构实战》 [京东](https://union-click.jd.com/jdc?d=89pAEm) [淘宝](https://s.taobao.com/search?q=企业IT架构转型之道)
+
+#### 技术管理方面
+* 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
+* 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
+
+
+#### 工具方面
+TODO
+
+#### 大数据方面
 
 # 技术资源
 
 ## 开源资源
-
 * [github](https://github.com)
 
-## 手册
+## 手册、文档、教程
 
+**国内：**
 * [W3Cschool](http://w3cschool.cn) 
 * [Runoob.com](http://www.runoob.com/)
 	* HTML 、 CSS、XML、Java、Python、PHP、设计模式等入门手册。
+
+* [Love2.io](https://love2.io/)
+	* 很多很多中文在线电子书，是一个全新的开源技术文档分享平台。
+* [gitbook.cn](http://gitbook.cn/)
+	* 付费电子书。 
+* [ApacheCN](http://www.apachecn.org/)
+	* AI、大数据方面系列中文文档。
+
+**国外：**
+
+* [Quick Code](http://www.quickcode.co/)
+	* 免费在线技术教程。
+* [gitbook.com](http://gitbook.com)
+	* 有部分中文电子书。
+* [Cheatography](https://www.cheatography.com/)
+	* Cheat Sheets 大全，单页文档网站。
+
 
 ## 在线课堂
 
@@ -1791,15 +1835,23 @@ TODO
 * [斯达克学院](https://new.stuq.org/course/explore)
 * [牛客网](http://nowcoder.com)
 
-## 会议
+## 会议、活动
 
 * [QCon](http://www.infoq.com/cn/qcon/)
 * [ArchSummit](https://archsummit.com)
+
+**活动发布平台:** 
+* [活动行](http://www.huodongxing.com/)
 
 ## 工具
 
 * [极客搜索](https://s.geekbang.org/)
 	* 技术文章搜索引擎。
+
+## 代码托管
+
+* [Coding](https://coding.net)
+* [码云](https://gitee.com/)
 
 ## 文件服务
 * 七牛
