@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180409**
+**最后更新于20180410**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
@@ -1770,13 +1770,27 @@ TODO
 
 ## 推荐参考书
 
-* [gitbook.com](http://gitbook.com)
-* [gitbook.cn](http://gitbook.cn/)
-	* 付费电子书。 
 
 ### 在线电子书
 
 * [《深入理解Spring Cloud与微服务构建》](https://github.com/forezp/SpringCloudLearning)
+
+#### 在线电子书、文档网站
+
+国内：
+
+* [Love2.io](https://love2.io/)
+	* 很多很多中文在线电子书，是一个全新的开源技术文档分享平台。
+* [gitbook.cn](http://gitbook.cn/)
+	* 付费电子书。 
+* [ApacheCN](http://www.apachecn.org/)
+	* AI、大数据方面系列中文文档。
+国外：
+
+* [Quick Code](http://www.quickcode.co/)
+	* 免费在线技术教程。
+* [gitbook.com](http://gitbook.com)
+	* 有部分中文电子书。
 
 ### 纸质书
 
