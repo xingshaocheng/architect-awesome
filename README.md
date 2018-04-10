@@ -1775,25 +1775,6 @@ TODO
 
 * [《深入理解Spring Cloud与微服务构建》](https://github.com/forezp/SpringCloudLearning)
 
-#### 在线电子书、文档网站
-
-国内：
-
-* [Love2.io](https://love2.io/)
-	* 很多很多中文在线电子书，是一个全新的开源技术文档分享平台。
-* [gitbook.cn](http://gitbook.cn/)
-	* 付费电子书。 
-* [ApacheCN](http://www.apachecn.org/)
-	* AI、大数据方面系列中文文档。
-国外：
-
-* [Quick Code](http://www.quickcode.co/)
-	* 免费在线技术教程。
-* [gitbook.com](http://gitbook.com)
-	* 有部分中文电子书。
-
-* [Cheatography](https://www.cheatography.com/)
-	* Cheat Sheets 大全，单页文档网站。
 
 ### 纸质书
 
@@ -1822,11 +1803,29 @@ TODO
 ## 开源资源
 * [github](https://github.com)
 
-## 手册
+## 手册、文档、教程
 
+**国内：**
 * [W3Cschool](http://w3cschool.cn) 
 * [Runoob.com](http://www.runoob.com/)
 	* HTML 、 CSS、XML、Java、Python、PHP、设计模式等入门手册。
+
+* [Love2.io](https://love2.io/)
+	* 很多很多中文在线电子书，是一个全新的开源技术文档分享平台。
+* [gitbook.cn](http://gitbook.cn/)
+	* 付费电子书。 
+* [ApacheCN](http://www.apachecn.org/)
+	* AI、大数据方面系列中文文档。
+
+**国外：**
+
+* [Quick Code](http://www.quickcode.co/)
+	* 免费在线技术教程。
+* [gitbook.com](http://gitbook.com)
+	* 有部分中文电子书。
+* [Cheatography](https://www.cheatography.com/)
+	* Cheat Sheets 大全，单页文档网站。
+
 
 ## 在线课堂
 
@@ -1836,10 +1835,13 @@ TODO
 * [斯达克学院](https://new.stuq.org/course/explore)
 * [牛客网](http://nowcoder.com)
 
-## 会议
+## 会议、活动
 
 * [QCon](http://www.infoq.com/cn/qcon/)
 * [ArchSummit](https://archsummit.com)
+
+**活动发布平台:** 
+* [活动行](http://www.huodongxing.com/)
 
 ## 工具
 
