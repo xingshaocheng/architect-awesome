@@ -1792,6 +1792,9 @@ TODO
 * [gitbook.com](http://gitbook.com)
 	* 有部分中文电子书。
 
+* [Cheatography](https://www.cheatography.com/)
+	* Cheat Sheets 大全，单页文档网站。
+
 ### 纸质书
 
 #### 架构方面
