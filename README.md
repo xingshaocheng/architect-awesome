@@ -393,6 +393,19 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 * [《Arrays.sort和Collections.sort实现原理解析》](https://blog.csdn.net/u011410529/article/details/56668545?locationnum=6&fps=1)
 	* 归并排序。
 
+## 布隆过滤器
+
+常用于大数据的排重，比如email，url 等。
+核心原理：将每条数据通过计算产生一个指纹（一个字节或多个字节，但一定比原始数据要少很多），其中每一位都是通过随机计算获得，在将指纹映射到一个大的按位存储的空间中。注意：会有一定的错误率。
+优点：空间和时间效率都很高。
+缺点：随着存入的元素数量增加，误算率随之增加。
+
+* [《布隆过滤器 -- 空间效率很高的数据结构》](https://segmentfault.com/a/1190000002729689)
+* [《大量数据去重：Bitmap和布隆过滤器(Bloom Filter)》](https://blog.csdn.net/zdxiq000/article/details/57626464)
+* [《基于Redis的布隆过滤器的实现》](https://blog.csdn.net/qq_30242609/article/details/71024458)
+	* 基于 Redis 的 Bitmap 数据结构。
+
+
 ## 贪心算法
 * [《算法：贪婪算法基础》](https://www.cnblogs.com/MrSaver/p/8641971.html)
 * [《常见算法及问题场景——贪心算法》](https://blog.csdn.net/a345017062/article/details/52443781)
@@ -1808,6 +1821,9 @@ TODO
 * 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
 * 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
 
+#### 基础理论
+* 《数学之美》[京东](https://union-click.jd.com/jdc?d=ghIES2) [淘宝](https://s.taobao.com/search?q=数学之美)
+* 《编程珠玑》[京东](https://union-click.jd.com/jdc?d=YmhdEu) [淘宝](https://s.taobao.com/search?q=编程珠玑)
 
 #### 工具方面
 TODO
