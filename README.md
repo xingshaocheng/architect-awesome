@@ -405,7 +405,8 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 	* while + 递归。
 ### Java 中的排序工具
 * [《Arrays.sort和Collections.sort实现原理解析》](https://blog.csdn.net/u011410529/article/details/56668545?locationnum=6&fps=1)
-	* 基本类型使用快排序、对象类型使用归并（因为要调用equal方案）。
+	* Collections.sort算法调用的是合并排序。
+	* Arrays.sort() 采用了2种排序算法 -- 基本类型数据使用快速排序法，对象数组使用归并排序。
 
 ## 布隆过滤器
 
