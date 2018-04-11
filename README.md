@@ -294,6 +294,13 @@
 ## 字典、关联数组
 * [《Java map 详解 - 用法、遍历、排序、常用API等》](https://baike.xsoftlab.net/view/250.html)
 
+## 栈
+* [《java数据结构与算法之栈（Stack）设计与实现》](https://blog.csdn.net/javazejian/article/details/53362993)
+* [《Java Stack 类》](http://www.runoob.com/java/java-stack-class.html)
+* [《java stack的详细实现分析》](https://blog.csdn.net/f2006116/article/details/51375225)
+	* Stack 是线程安全的。
+	* 内部使用数组保存数据，不够时翻倍。
+
 ## 树
 
 ### 二叉树
