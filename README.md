@@ -404,7 +404,8 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 * [《大量数据去重：Bitmap和布隆过滤器(Bloom Filter)》](https://blog.csdn.net/zdxiq000/article/details/57626464)
 * [《基于Redis的布隆过滤器的实现》](https://blog.csdn.net/qq_30242609/article/details/71024458)
 	* 基于 Redis 的 Bitmap 数据结构。
-
+* [《网络爬虫：URL去重策略之布隆过滤器(BloomFilter)的使用》](https://blog.csdn.net/lemon_tree12138/article/details/47973715)
+	* 使用Java中的 BitSet 类 和 加权和hash算法。
 
 ## 贪心算法
 * [《算法：贪婪算法基础》](https://www.cnblogs.com/MrSaver/p/8641971.html)
