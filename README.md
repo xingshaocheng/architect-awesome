@@ -414,6 +414,13 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 * [《网络爬虫：URL去重策略之布隆过滤器(BloomFilter)的使用》](https://blog.csdn.net/lemon_tree12138/article/details/47973715)
 	* 使用Java中的 BitSet 类 和 加权和hash算法。
 
+## 字符串比较
+
+### KPM 算法
+KPM：Knuth-Morris-Pratt算法（简称KMP）
+核心原理是利用一个“部分匹配表”，跳过已经匹配过的元素。
+* [《字符串匹配的KMP算法》](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
+
 ## 贪心算法
 * [《算法：贪婪算法基础》](https://www.cnblogs.com/MrSaver/p/8641971.html)
 * [《常见算法及问题场景——贪心算法》](https://blog.csdn.net/a345017062/article/details/52443781)
