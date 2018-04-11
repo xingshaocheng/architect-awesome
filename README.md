@@ -333,6 +333,13 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 	* 优化方式：Bloom filter 替代二分查找；compact 小数位大树，提高查询性能。
 	* Hbase 中，内存中达到一定阈值后，整体flush到磁盘上、形成一个文件（B+数），HDFS不支持update操作，所以Hbase做整体flush而不是merge update。flush到磁盘上的小树，定期会合并成一个大树。
 
+## BitSet
+
+经常用于大规模数据的排重检查。
+
+* [《Java Bitset类》](http://www.runoob.com/java/java-bitset-class.html)
+* [《Java BitSet（位集）》](https://blog.csdn.net/caiandyong/article/details/51581160)
+
 # 常用算法
 
 * [《常见排序算法及对应的时间复杂度和空间复杂度》](https://blog.csdn.net/gane_cheng/article/details/52652705)
