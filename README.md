@@ -546,7 +546,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 	* ReenTrantLock 使用灵活，锁的公平性可以定制。
 	* 相同加锁场景下，推荐使用 synchronized。
 
+### 互斥锁 & 共享锁
 
+* [《ReadWriteLock场景应用》](https://www.cnblogs.com/liang1101/p/6475555.html)
 
 
 
