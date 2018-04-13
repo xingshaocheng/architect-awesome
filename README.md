@@ -1898,6 +1898,7 @@ TODO
 * [segmentfault](https://segmentfault.com/lives)
 * [斯达克学院](https://new.stuq.org/course/explore)
 * [牛客网](http://nowcoder.com)
+* [极客学院](https://www.jikexueyuan.com/)
 
 ## 会议、活动
 
@@ -1906,6 +1907,12 @@ TODO
 
 **活动发布平台:** 
 * [活动行](http://www.huodongxing.com/)
+
+## 常用APP
+
+* [极客时间](https://time.geekbang.org)
+* [得到](https://www.igetget.com)
+
 
 ## 工具
 
