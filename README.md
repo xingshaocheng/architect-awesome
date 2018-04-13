@@ -315,6 +315,13 @@
 ### 平衡二叉树
 左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。
 * [《浅谈数据结构-平衡二叉树》](http://www.cnblogs.com/polly333/p/4798944.html)
+* [《浅谈算法和数据结构: 八 平衡查找树之2-3树》](http://www.cnblogs.com/yangecnu/p/Introduce-2-3-Search-Tree.html)
+
+### 二叉查找树（BST）
+二叉查找树（Binary Search Tree），也称有序二叉树（ordered binary tree）,排序二叉树（sorted binary tree）。
+
+* [《浅谈算法和数据结构: 七 二叉查找树》](http://www.cnblogs.com/yangecnu/p/Introduce-Binary-Search-Tree.html)
+
 
 ### 红黑树
 * [《最容易懂得红黑树》](https://blog.csdn.net/sun_tttt/article/details/65445754)
