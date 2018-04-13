@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180411**
+**最后更新于20180413**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
@@ -547,6 +547,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 	* 相同加锁场景下，推荐使用 synchronized。
 
 ### 互斥锁 & 共享锁
+
+互斥锁：同时只能有一个线程获得锁。比如，ReentrantLock 是互斥锁，ReadWriteLock 中的写锁是互斥锁。
+共享锁：可以有多个线程同时或的锁。比如，Semaphore、CountDownLatch 是共享锁，ReadWriteLock 中的读锁是共享锁。
 
 * [《ReadWriteLock场景应用》](https://www.cnblogs.com/liang1101/p/6475555.html)
 
@@ -1117,7 +1120,6 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 * [《简明 HBase 入门教程（开篇）》](http://www.thebigdata.cn/HBase/35831.html)
 * [《深入学习HBase架构原理》](https://www.cnblogs.com/qiaoyihang/p/6246424.html)
 * [《传统的行存储和（HBase）列存储的区别》](https://blog.csdn.net/youzhouliu/article/details/67632882)
-
 
 
 # 搜索引擎
