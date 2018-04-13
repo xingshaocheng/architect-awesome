@@ -1759,6 +1759,7 @@ TODO
 * [阮一峰的网络日志](http://www.ruanyifeng.com/)
 * [酷壳 - COOLSHELL-陈皓](https://coolshell.cn/)
 * [hellojava-阿里毕玄](http://hellojava.info/)
+* [Cm's Blog](http://cmsblogs.com/)
 
 ## 综合门户、社区
 
@@ -1812,7 +1813,8 @@ TODO
 
 * Java:
 	* [ImportNew](http://www.importnew.com/)
-		* 专注于 Java 技术分享 	
+		* 专注于 Java 技术分享
+	
 * 安全
 	* [红黑联盟](https://www.2cto.com/) 
 
