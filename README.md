@@ -1233,6 +1233,14 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 
 * [《SQL注入》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6413-sql-zhu-ru.html)
 
+### Hash Dos
+
+
+* [《邪恶的JAVA HASH DOS攻击》](http://www.freebuf.com/articles/web/14199.html)
+	* 利用JsonObjet 上传大Json，JsonObject 底层使用HashMap；不同的数据产生相同的hash值，使得构建Hash速度变慢，耗尽CPU。
+* [《一种高级的DoS攻击-Hash碰撞攻击》](https://yq.aliyun.com/articles/92194?t=t1)
+* [《关于Hash Collision DoS漏洞：解析与解决方案》](http://www.iteye.com/news/23939/)
+
 ### 脚本注入
 
 * [《上传文件漏洞原理及防范》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6414-shang-chuan-wen-jian-guo-lv.html)
