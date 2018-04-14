@@ -561,7 +561,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 
 * [《ReadWriteLock场景应用》](https://www.cnblogs.com/liang1101/p/6475555.html)
 
-
+### 死锁
+* [《“死锁”四个必要条件的合理解释》](https://blog.csdn.net/yunfenglw/article/details/45950305)
+	* 互斥、持有、不可剥夺、不可剥夺。
 
 # 操作系统
 
