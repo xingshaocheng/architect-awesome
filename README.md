@@ -575,7 +575,7 @@ TODO
 
 ## 线程
 
-TODO
+* [《线程的生命周期及状态转换详解》](https://blog.csdn.net/asdf_1024/article/details/78978437)
 
 ## 协程
 
