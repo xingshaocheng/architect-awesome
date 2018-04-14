@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180413**
+**最后更新于20180414**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
@@ -1822,6 +1822,8 @@ TODO
 * Java:
 	* [ImportNew](http://www.importnew.com/)
 		* 专注于 Java 技术分享
+	* [HowToDoInJava](https://howtodoinjava.com/)
+		* 英文博客
 	
 * 安全
 	* [红黑联盟](https://www.2cto.com/) 
