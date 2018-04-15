@@ -924,6 +924,7 @@ APM —  Application Performance Management
 * [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
 
 ### Redis
+
 * [《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
 * [《redis底层原理》](https://blog.csdn.net/wcf373722432/article/details/78678504)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
@@ -932,6 +933,12 @@ APM —  Application Performance Management
 	* RDB方式：定期备份快照，常用于灾难恢复。优点：通过fork出的进程进行备份，不影响主进程、RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。缺点：会丢数据。
 	* AOF方式：保存操作日志方式。优点：恢复时数据丢失少，缺点：文件大，回复慢。
 	* 也可以两者结合使用。
+
+#### 架构
+* [《Redis单线程架构》](https://blog.csdn.net/sunhuiliang85/article/details/73656830)
+
+#### 回收策略
+* [《redis的回收策略》](https://blog.csdn.net/qq_29108585/article/details/63251491)
 
 ### Tair
 
