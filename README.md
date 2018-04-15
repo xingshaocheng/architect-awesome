@@ -466,6 +466,8 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 * [《推荐算法综述》](http://www.infoq.com/cn/articles/recommendation-algorithm-overview-part01)
 * [《TOP 10 开源的推荐系统简介》](https://www.oschina.net/news/51297/top-10-open-source-recommendation-systems)
 
+## 最小生成树算法
+* [《算法导论--最小生成树（Kruskal和Prim算法）》](https://blog.csdn.net/luoshixian099/article/details/51908175)
 
 # 并发
 
