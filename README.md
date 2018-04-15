@@ -469,6 +469,10 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 ## 最小生成树算法
 * [《算法导论--最小生成树（Kruskal和Prim算法）》](https://blog.csdn.net/luoshixian099/article/details/51908175)
 
+## 最短路径算法
+
+* [《Dijkstra算法详解》](https://blog.csdn.net/qq_35644234/article/details/60870719)
+
 # 并发
 
 ## 多线程
