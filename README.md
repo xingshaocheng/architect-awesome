@@ -440,6 +440,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 核心原理是利用一个“部分匹配表”，跳过已经匹配过的元素。
 * [《字符串匹配的KMP算法》](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 
+## 深度优先、广度优先
+* [《广度优先搜索BFS和深度优先搜索DFS》](https://www.cnblogs.com/0kk470/p/7555033.html)
+
 ## 贪心算法
 * [《算法：贪婪算法基础》](https://www.cnblogs.com/MrSaver/p/8641971.html)
 * [《常见算法及问题场景——贪心算法》](https://blog.csdn.net/a345017062/article/details/52443781)
