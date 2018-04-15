@@ -2034,6 +2034,7 @@ TODO
 * [斯达克学院](https://new.stuq.org/course/explore)
 * [牛客网](http://nowcoder.com)
 * [极客学院](https://www.jikexueyuan.com/)
+* [51CTO学院](http://edu.51cto.com/)
 
 ## 会议、活动
 
