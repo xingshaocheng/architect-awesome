@@ -1107,6 +1107,11 @@ servlet 3.0 异步特性可用于配置中心的客户端
 
 
 ## 协议
+
+### OSI 七层协议
+
+* [《OSI七层协议模型、TCP/IP四层模型学习笔记》](https://www.cnblogs.com/Robin-YB/p/6668762.html)
+
 ### TCP/IP
 * [《深入浅出 TCP/IP 协议》](https://www.cnblogs.com/onepixel/p/7092302.html)
 * [《TCP协议中的三次握手和四次挥手》](https://blog.csdn.net/whuslei/article/details/6667471/)
