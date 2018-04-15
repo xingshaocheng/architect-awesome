@@ -1097,6 +1097,9 @@ servlet 3.0 异步特性可用于配置中心的客户端
 
 ### HTTP2.0
 * [《HTTP 2.0 原理详细分析》](https://blog.csdn.net/zhuyiquan/article/details/69257126)
+* [《HTTP2.0的基本单位为二进制帧》](https://blog.csdn.net/u012657197/article/details/77877840)
+	* 利用二进制帧负责传输。
+	* 多路复用。
 
 ### HTTPS
 * [《https原理通俗了解》](https://www.cnblogs.com/zhangshitong/p/6478721.html)
@@ -1133,6 +1136,10 @@ servlet 3.0 异步特性可用于配置中心的客户端
 
 ### kqueue
 * [《kqueue用法简介》](http://www.cnblogs.com/luminocean/p/5631336.html)
+
+## 连接和短连接
+
+* [《TCP/IP系列——长连接与短连接的区别》](https://www.cnblogs.com/pangguoping/p/5571422.html)
 
 ## 框架
 
