@@ -632,7 +632,8 @@ TODO
 		* 观察者模式：它使得一个对象可以灵活的将消息发送给感兴趣的对象，如 java.util.EventListener。
 		* 模板方法模式：让子类可以重写方法的一部分，而不是整个重写，如 java.util.Collections#sort()。
 
-
+* [《Spring-涉及到的设计模式汇总》](https://www.cnblogs.com/hwaggLee/p/4510687.html)
+* [《Mybatis使用的设计模式》](https://blog.csdn.net/u012387062/article/details/54719114)
 
 ## 单例模式
 * [《单例模式的三种实现 以及各自的优缺点》](https://blog.csdn.net/YECrazy/article/details/79481964)
