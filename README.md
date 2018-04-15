@@ -939,6 +939,8 @@ APM —  Application Performance Management
 	* AOF方式：保存操作日志方式。优点：恢复时数据丢失少，缺点：文件大，回复慢。
 	* 也可以两者结合使用。
 
+* [《分布式缓存--序列3--原子操作与CAS乐观锁》](https://blog.csdn.net/chunlongyu/article/details/53346436)
+
 #### 架构
 * [《Redis单线程架构》](https://blog.csdn.net/sunhuiliang85/article/details/73656830)
 
