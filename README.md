@@ -857,13 +857,18 @@ APM —  Application Performance Management
 
 ### Tomcat
 
+#### 架构原理
 * [《TOMCAT原理详解及请求过程》](https://www.cnblogs.com/hggen/p/6264475.html)
 * [《Tomcat服务器原理详解》](https://www.cnblogs.com/crazylqy/p/4706223.html)
 * [《Tomcat 系统架构与设计模式,第 1 部分: 工作原理》](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat1/)
 
+* [《四张图带你了解Tomcat系统架构》](https://blog.csdn.net/xlgen157387/article/details/79006434)
+
 * [《JBoss vs. Tomcat: Choosing A Java Application Server》](https://www.futurehosting.com/blog/jboss-vs-tomcat-choosing-a-java-application-server/)
 	* Tomcat 是轻量级的 Serverlet 容器，没有实现全部 JEE 特性（比如持久化和事务处理），但可以通过其他组件代替，比如Srping。
 	* Jboss 实现全部了JEE特性，软件开源免费、文档收费。
+
+#### 调优方案
 
 * [《Tomcat 调优方案》](https://www.cnblogs.com/sunfenqing/p/7339058.html)
 	* 启动NIO模式（或者APR）；调整线程池；禁用AJP连接器（Nginx+tomcat的架构，不需要AJP）； 
@@ -971,6 +976,8 @@ APM —  Application Performance Management
 
 * [《消息总线VS消息队列》](https://blog.csdn.net/yanghua_kobe/article/details/43877281)
 
+### 消息的顺序
+* [《如何保证消费者接收消息的顺序》](https://www.cnblogs.com/cjsblog/p/8267892.html)
 
 ### RabbitMQ
 
