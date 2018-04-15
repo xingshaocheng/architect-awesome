@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180414**
+**最后更新于20180415**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
@@ -593,11 +593,25 @@ TODO
 
 # 设计模式
 
+## 设计模式的六大原则
+* [《设计模式的六大原则》](https://blog.csdn.net/q291611265/article/details/48465113)
+	* 开闭原则：对扩展开放,对修改关闭，多使用抽象类和接口。
+	* 里氏代换原则：基类可以被子类替换，使用抽象类继承,不使用具体类继承。
+	* 依赖倒转原则：要依赖于抽象,不要依赖于具体，针对接口编程,不针对实现编程。
+	* 接口隔离原则：使用多个隔离的接口,比使用单个接口好，建立最小的接口。
+	* 迪米特法则：一个软件实体淫荡尽可能少地与其他实体发生相互作用，通过中间类建立联系。
+	* 合成复用原则：尽量使用合成/聚合,而不是使用继承，尽量使用合成/聚合,而不是使用继承。
+	
+
+
+
 ## 23种常见设计模式
 * [《设计模式》](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
 * [《23种设计模式全解析》](https://www.cnblogs.com/susanws/p/5510229.html)
 
+
 ## 责任链模式
+TODO
 
 ## MVC
 * [《MVC 模式》](http://www.runoob.com/design-pattern/mvc-pattern.html)
