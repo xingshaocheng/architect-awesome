@@ -937,7 +937,6 @@ APM —  Application Performance Management
 
 * [官方网站](https://github.com/alibaba/tair)
 * [《Tair和Redis的对比》](http://blog.csdn.net/farphone/article/details/53522383)
-* ​
 * 特点：可以配置备份节点数目，通过异步同步到备份节点
 * 一致性Hash算法。
 * 架构：和Hadoop 的设计思想类似，有Configserver，DataServer，Configserver 通过心跳来检测，Configserver也有主备关系。
@@ -1189,6 +1188,9 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 * [《MYSQL性能优化的最佳20+条经验》](https://www.cnblogs.com/zhouyusheng/p/8038224.html)
 * [《SQL优化之道》](https://blog.csdn.net/when_less_is_more/article/details/70187459)
 * [《mysql数据库死锁的产生原因及解决办法》](https://www.cnblogs.com/sivkun/p/7518540.html)
+* [《导致索引失效的可能情况》](https://blog.csdn.net/monkey_d_feilong/article/details/52291556)
+* [《 MYSQL分页limit速度太慢优化方法》](https://blog.csdn.net/zy_281870667/article/details/51604540)
+	* 原则上就是缩小扫描范围。
 
 ### 索引
 
