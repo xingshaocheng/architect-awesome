@@ -1178,6 +1178,8 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 
 * [《MYSQL性能优化的最佳20+条经验》](https://www.cnblogs.com/zhouyusheng/p/8038224.html)
 
+### explain
+* [《MySQL 性能优化神器 Explain 使用分析》](https://segmentfault.com/a/1190000008131735)
 
 ## NoSQL
 
