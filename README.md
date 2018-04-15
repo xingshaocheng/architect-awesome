@@ -601,14 +601,15 @@ TODO
 	* 接口隔离原则：使用多个隔离的接口,比使用单个接口好，建立最小的接口。
 	* 迪米特法则：一个软件实体淫荡尽可能少地与其他实体发生相互作用，通过中间类建立联系。
 	* 合成复用原则：尽量使用合成/聚合,而不是使用继承，尽量使用合成/聚合,而不是使用继承。
-	
-
-
 
 ## 23种常见设计模式
 * [《设计模式》](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
 * [《23种设计模式全解析》](https://www.cnblogs.com/susanws/p/5510229.html)
 
+## 单例模式
+* [《单例模式的三种实现 以及各自的优缺点》](https://blog.csdn.net/YECrazy/article/details/79481964)
+* [《单例模式－－反射－－防止序列化破坏单例模式》](https://www.cnblogs.com/ttylinux/p/6498822.html)
+	* 使用枚举类型。
 
 ## 责任链模式
 TODO
