@@ -1249,12 +1249,15 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 
 ### 优化
 
+* [《MySQL36条军规》](http://vdisk.weibo.com/s/muWOT)
+
 * [《MYSQL性能优化的最佳20+条经验》](https://www.cnblogs.com/zhouyusheng/p/8038224.html)
 * [《SQL优化之道》](https://blog.csdn.net/when_less_is_more/article/details/70187459)
 * [《mysql数据库死锁的产生原因及解决办法》](https://www.cnblogs.com/sivkun/p/7518540.html)
 * [《导致索引失效的可能情况》](https://blog.csdn.net/monkey_d_feilong/article/details/52291556)
 * [《 MYSQL分页limit速度太慢优化方法》](https://blog.csdn.net/zy_281870667/article/details/51604540)
 	* 原则上就是缩小扫描范围。
+
 
 ### 索引
 
@@ -1845,7 +1848,7 @@ TODO
 
 ## 重构
 
-TODO
+* [《架构之重构的12条军规》](http://www.infoq.com/cn/articles/architect-12-rules-complete/)
 
 
 ## 代码规范
@@ -1984,8 +1987,9 @@ TODO
 	* [TesterHome](https://testerhome.com)
 
 * 运维:
-  * [运维派](http://www.yunweipai.com/) 
-
+  	* [运维派](http://www.yunweipai.com/) 
+  	* [Abcdocker](https://www.abcdocker.com/)
+  
 * Java:
 	* [ImportNew](http://www.importnew.com/)
 		* 专注于 Java 技术分享
