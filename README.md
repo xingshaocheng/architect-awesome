@@ -2030,6 +2030,7 @@ TODO
 * [《阿里技术参考图册-研发篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523849261680/AliTech101_RD.pdf)
 * [《阿里技术参考图册-算法篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523848064814/AliTech101_Algorithms.pdf)
 
+* [《2018美团点评技术年货（合辑）》70M](http://dpurl.cn/n/1lqcX)
 
 ### 纸质书
 
