@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180415**
+**最后更新于20180418**
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 	* [队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E9%98%9F%E5%88%97)
@@ -774,7 +774,7 @@ APM —  Application Performance Management
 	* 所谓无痕、即通过可视化工具配置采集节点，在前端自动解析配置并上报埋点数据，而非硬编码。 
 
 
-## 持续集成
+## 持续集成(CI/CD)
 
 * [《持续集成是什么？》](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
 * [《8个流行的持续集成工具》](https://www.testwo.com/article/1170)
@@ -1715,7 +1715,7 @@ Java、Srping、Dubbo 优雅关闭方式。
 
 ### 分布式一致性算法
 
-####PAXOS
+#### PAXOS
 * [《分布式系列文章——Paxos算法原理与推导》](https://www.cnblogs.com/linbingdong/p/6253479.html)
 * [《Paxos-->Fast Paxos-->Zookeeper分析》](https://blog.csdn.net/u010039929/article/details/70171672)
 * [《【分布式】Zookeeper与Paxos》](https://www.cnblogs.com/leesf456/p/6012777.html)
@@ -1843,6 +1843,10 @@ TODO
 
 * [《DODAF2.0方法论》](http://www.360doc.com/content/16/0627/19/33945750_571201779.shtml)
 * [《DODAF2.0之能力视角如何落地》](http://blog.51cto.com/xiaoyong/1553164)
+
+## Serverless
+
+TODO
 
 # 项目管理
 
