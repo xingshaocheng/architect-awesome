@@ -2026,6 +2026,10 @@ TODO
 * [《深入理解Spring Cloud与微服务构建》](https://github.com/forezp/SpringCloudLearning)
 
 
+* [《阿里技术参考图册-研发篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523849261680/AliTech101_RD.pdf)
+* [《阿里技术参考图册-算法篇》](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523848064814/AliTech101_Algorithms.pdf)
+
+
 ### 纸质书
 
 #### 架构方面
