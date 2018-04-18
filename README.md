@@ -2100,6 +2100,7 @@ TODO
 
 * [QCon](http://www.infoq.com/cn/qcon/)
 * [ArchSummit](https://archsummit.com)
+* [GITC全球互联网技术大会](http://www.thegitc.com/)
 
 **活动发布平台:** 
 * [活动行](http://www.huodongxing.com/)
