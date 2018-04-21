@@ -498,6 +498,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 * [《动态规划算法的个人理解》](https://blog.csdn.net/yao_zi_jie/article/details/54580283)
 
 ## 朴素贝叶斯
+
+* [《带你搞懂朴素贝叶斯分类算法》](https://blog.csdn.net/amds123/article/details/70173402)
+
 * [《贝叶斯推断及其互联网应用》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html)
 * [《贝叶斯推断及其互联网应用》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_two.html)
 
