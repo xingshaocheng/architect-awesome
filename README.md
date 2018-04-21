@@ -536,13 +536,18 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 
 * 未提交读：一个事务可以读取另一个未提交的数据，容易出现脏读的情况。
 * 读提交：一个事务等另外一个事务提交之后才可以读取数据，但会出现不可重复读的情况（多次读取的数据不一致），读取过程中出现UPDATE操作，会多。（大多数数据库默认级别是RC，比如SQL Server，Oracle），读取的时候不可以修改。
-* 可重复读： 读取的时候就锁定，不可修改（会影响更新），Mysql InnoDB 就是这个级别。
+* 可重复读： 同一个事务里确保每次读取的时候，获得的是同样的数据，但不保障原始数据被其他事务更新（幻读），Mysql InnoDB 就是这个级别。
 * 序列化：所有事物串行处理（牺牲了效率）
+
+
 
 
 * [《理解事务的4种隔离级别》](https://blog.csdn.net/qq_33290787/article/details/51924963)
 * [数据库事务的四大特性及事务隔离级别](https://www.cnblogs.com/z-sm/p/7245981.html)
 
+* [《MySQL的InnoDB的幻读问题 》](http://blog.sina.com.cn/s/blog_499740cb0100ugs7.html)
+	* 幻读的例子非常清楚。
+	* 通过 SELECT ... FOR UPDATE 解决。
 
 ## 锁
 
@@ -589,6 +594,9 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 可以对CopyOnWrite容器进行并发的读，而不需要加锁。CopyOnWrite并发容器用于读多写少的并发场景。比如白名单，黑名单，商品类目的访问和更新场景，不适合需要数据强一致性的场景。
 
 * [《JAVA中写时复制(Copy-On-Write)Map实现》](https://www.cnblogs.com/hapjin/p/4840107.html)
+	* 实现读写分离，读取发生在原始数据上，写入发生在副本上。  
+	* 不用加锁，通过最终一致实现一致性。
+	
 * [《聊聊并发-Java中的Copy-On-Write容器》](https://blog.csdn.net/a494303877/article/details/53404623)
 
 ### RingBuffer 
@@ -600,7 +608,7 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 	* 通过简单代码举例说明可重入锁和不可重入锁。
 	* 可重入锁指同一个线程可以再次获得之前已经获得的锁。
 	* 可重入锁可以用户避免死锁。
-	* Java中的可重入锁：synchronized 和  java.util.concurrent.locks.ReentrantLock
+	* Java中的可重入锁：synchronized 和 java.util.concurrent.locks.ReentrantLock
 
 * [《ReenTrantLock可重入锁（和synchronized的区别）总结》](https://www.cnblogs.com/baizhanshi/p/7211802.html)
 	* synchronized 使用方便，编译器来加锁，是非公平锁。
