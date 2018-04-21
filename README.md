@@ -376,7 +376,7 @@ MySQL是基于B+树聚集索引组织表
 
 ### LSM 树
 
-LSM（Log-Structured Merge-Trees）和 B+ 树相比，是牺牲了部分度的性能来换取写的性能(通过批量写入)，实现读写之间的。
+LSM（Log-Structured Merge-Trees）和 B+ 树相比，是牺牲了部分读的性能来换取写的性能(通过批量写入)，实现读写之间的。
 Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以快速建立索引。
 
 * [《LSM树 VS B+树》](https://blog.csdn.net/dbanote/article/details/8897599)
