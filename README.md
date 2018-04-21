@@ -409,7 +409,7 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 
 ### 冒泡排序
 * [《冒泡排序的2种写法》](https://blog.csdn.net/shuaizai88/article/details/73250615)
-	* 相邻元素前后交换。
+	* 相邻元素前后交换、把最大的排到最后。
 	* 时间复杂度 O(n²) 
 
 ### 插入排序
