@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180418**
+**最后更新于20180421**
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 	* [队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#%E9%98%9F%E5%88%97)
@@ -1428,6 +1428,10 @@ MyISAM 是非聚集，InnoDB 是聚集
 ## DDoS 防范
 * [《学习手册：DDoS的攻击方式及防御手段》](http://netsecurity.51cto.com/art/201601/503799.htm)
 * [《免费DDoS攻击测试工具大合集》](http://netsecurity.51cto.com/art/201406/442756.htm)
+
+## 用户隐私信息保护
+
+TODO
 
 ## 加密解密
 
