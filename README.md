@@ -627,7 +627,10 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 	* 互斥、持有、不可剥夺、不可剥夺。
 * [Java如何查看死锁？](https://blog.csdn.net/u014039577/article/details/52351626)
 	* JConsole 可以识别死锁。
-
+	
+* [java多线程系列：死锁及检测](https://blog.csdn.net/bohu83/article/details/51135061)
+	* jstack 可以显示死锁。
+	
 # 操作系统
 
 ## 计算机原理
@@ -644,13 +647,14 @@ TODO
 
 ## 协程
 
-TODO
-
+* [《终结python协程----从yield到actor模型的实现》](https://www.thinksaas.cn/group/topic/839375/)
+	* 线程的调度是由操作系统负责，协程调度是程序自行负责
+	* 与线程相比，协程减少了无畏的操作系统切换.
+	* 实际上当遇到IO操作时做切换才更有意义，（因为IO操作不用占用CPU），如果没遇到IO操作，按照时间片切换.
+	
 ## Linux
 
 * [《Linux 命令大全》](http://www.runoob.com/linux/linux-command-manual.html)
-
-
 
 # 设计模式
 
