@@ -500,9 +500,10 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 ## 朴素贝叶斯
 
 * [《带你搞懂朴素贝叶斯分类算法》](https://blog.csdn.net/amds123/article/details/70173402)
+	* P(B|A)=P(A|B)P(B)/P(A)
 
-* [《贝叶斯推断及其互联网应用》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html)
-* [《贝叶斯推断及其互联网应用》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_two.html)
+* [《贝叶斯推断及其互联网应用1》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html)
+* [《贝叶斯推断及其互联网应用2》](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_two.html)
 
 
 ## 推荐算法
