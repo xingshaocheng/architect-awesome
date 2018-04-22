@@ -1217,8 +1217,9 @@ servlet 3.0 异步特性可用于配置中心的客户端
 
 * [《epoll使用详解（精髓）》](https://www.cnblogs.com/fnlingnzb-learner/p/5835573.html)
 
-### NIO
+### Java NIO
 * [《深入理解Java NIO》](https://www.cnblogs.com/geason/p/5774096.html)
+* [《Java NIO编写Socket服务器的一个例子》](https://blog.csdn.net/xidianliuy/article/details/51612676)
 
 ### kqueue
 * [《kqueue用法简介》](http://www.cnblogs.com/luminocean/p/5631336.html)
