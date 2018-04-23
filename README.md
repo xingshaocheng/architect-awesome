@@ -987,6 +987,8 @@ APM —  Application Performance Management
 * [《Memcached软件工作原理》](https://www.jianshu.com/p/36e5cd400580)
 * [《Memcache技术分享：介绍、使用、存储、算法、优化、命中率》](http://zhihuzeye.com/archives/2361)
 
+* [《memcache 中 add 、 set 、replace 的区别》](https://blog.csdn.net/liu251890347/article/details/37690045)
+	* 区别在于当key存在还是不存在时，返回值是true和false的。
 
 * [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
 
@@ -1750,6 +1752,8 @@ Java、Srping、Dubbo 优雅关闭方式。
 * [《jedisLock—redis分布式锁实现》](https://www.cnblogs.com/0201zcr/p/5942748.html)
 	* 基于 setnx(set if ont exists)，有则返回false，否则返回true。并支持过期时间。
 
+* [《Memcached 和 Redis 分布式锁方案》](https://blog.csdn.net/albertfly/article/details/77412333)
+	* 利用 memcached 的 add（有别于set）操作，当key存在时，返回false。
 
 ### 分布式一致性算法
 
