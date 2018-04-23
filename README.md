@@ -1747,6 +1747,10 @@ Java、Srping、Dubbo 优雅关闭方式。
 * [《基于Zookeeper的分布式锁》](https://www.tuicool.com/articles/VZJr6fY)
 	* 清楚的原理描述 + Java 代码示例。 
 
+* [《jedisLock—redis分布式锁实现》](https://www.cnblogs.com/0201zcr/p/5942748.html)
+	* 基于 setnx(set if ont exists)，有则返回false，否则返回true。并支持过期时间。
+
+
 ### 分布式一致性算法
 
 #### PAXOS
