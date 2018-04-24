@@ -1,7 +1,7 @@
 
 
 
-**最后更新于20180422**
+**最后更新于20180424**
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据结构)
 	* [队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#队列)
@@ -1926,6 +1926,10 @@ TODO
 TODO
 
 ## 结对编程
+
+TODO
+
+## FMEA管理模式
 
 TODO
 
