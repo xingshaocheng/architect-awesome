@@ -1,7 +1,7 @@
 
 <h1>《后端架构师技术图谱》</h1>
 
-**最后更新于20180424**
+**最后更新于20180427**
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据结构)
 	* [队列](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#队列)
@@ -747,6 +747,8 @@ TODO
 	* 定律二：时间再多一件事情也不可能做的完美，但总有时间做完一件事情。一口气吃不成胖子，先搞定能搞定的。
 	* 定律三：线型系统和线型组织架构间有潜在的异质同态特性。种瓜得瓜，做独立自治的字系统减少沟通成本。
 	* 定律四：大的系统组织总是比小系统更倾向于分解。合久必分，分而治之。
+
+* [《微服务架构核⼼20讲》](https://static.geekbang.org/PDF-%E4%BF%AE%E6%94%B9%E7%89%88-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-%E5%9B%BE%E7%89%87-%E6%9D%A8%E6%B3%A2-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.pdf)
 
 # 运维 & 统计 & 技术支持 
 
