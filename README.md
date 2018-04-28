@@ -1341,6 +1341,9 @@ MyISAM 是非聚集，InnoDB 是聚集
 * [《传统的行存储和（HBase）列存储的区别》](https://blog.csdn.net/youzhouliu/article/details/67632882)
 
 
+* [《Hbase与传统数据库的区别》](https://blog.csdn.net/lifuxiangcaohui/article/details/39891099)
+	* 空数据不存储，节省空间，且适用于并发。
+
 # 搜索引擎
 
 ## 搜索引擎原理
