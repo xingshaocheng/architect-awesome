@@ -545,15 +545,30 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 * 可重复读： 同一个事务里确保每次读取的时候，获得的是同样的数据，但不保障原始数据被其他事务更新（幻读），Mysql InnoDB 就是这个级别。
 * 序列化：所有事物串行处理（牺牲了效率）
 
-
-
-
 * [《理解事务的4种隔离级别》](https://blog.csdn.net/qq_33290787/article/details/51924963)
 * [数据库事务的四大特性及事务隔离级别](https://www.cnblogs.com/z-sm/p/7245981.html)
 
 * [《MySQL的InnoDB的幻读问题 》](http://blog.sina.com.cn/s/blog_499740cb0100ugs7.html)
 	* 幻读的例子非常清楚。
 	* 通过 SELECT ... FOR UPDATE 解决。
+	
+* [《一篇文章带你读懂MySQL和InnoDB》](http://database.51cto.com/art/201804/570101.htm)
+	* 图解脏读、不可重复读、幻读问题。
+
+
+### MVCC
+
+
+* [《【mysql】关于innodb中MVCC的一些理解》](https://www.cnblogs.com/chenpingzhao/p/5065316.html)
+	* innodb 中 MVCC 用在 Repeatable-Read 隔离级别。
+	* MVCC 会产生幻读问题（更新时异常。）
+
+* [《轻松理解MYSQL MVCC 实现机制》](https://blog.csdn.net/whoamiyang/article/details/51901888)
+
+	* 通过隐藏版本列来实现 MVCC 控制，一列记录创建时间、一列记录删除时间，这里的时间
+	* 每次只操作比当前版本小（或等于）的 行。
+	
+
 
 ## 锁
 
