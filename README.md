@@ -1344,6 +1344,10 @@ MyISAM 是非聚集，InnoDB 是聚集
 * [《Hbase与传统数据库的区别》](https://blog.csdn.net/lifuxiangcaohui/article/details/39891099)
 	* 空数据不存储，节省空间，且适用于并发。
 
+* [《HBase Rowkey设计》](https://blog.csdn.net/u014091123/article/details/73163088)
+	* rowkey 按照字典顺序排列，便于批量扫描。
+	* 通过散列可以避免热点。
+
 # 搜索引擎
 
 ## 搜索引擎原理
