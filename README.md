@@ -2132,7 +2132,7 @@ TODO
 
 * [《2018美团点评技术年货（合辑）》70M](http://dpurl.cn/n/1lqcX)
 
-* [InfoQ《架构师》月刊](http://www.infoq.com/cn/architect/))
+* [InfoQ《架构师》月刊](http://www.infoq.com/cn/architect/)
 
 ### 纸质书
 
