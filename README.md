@@ -1967,10 +1967,25 @@ TODO
 
 * [《架构之重构的12条军规》](http://www.infoq.com/cn/articles/architect-12-rules-complete/)
 
-
 ## 代码规范
 
 TODO
+
+## 代码 Review
+
+
+制度还是制度!
+另外，每个公司需要根据自己的需求和目标制定自己的 check list
+
+* [《为什么你做不好 Code Review？》](http://www.sohu.com/a/229745352_181657)
+	* 代码 review 做的好，在于制度建设。
+
+* [《从零开始Code Review》](https://blog.csdn.net/uxyheaven/article/details/49773619)
+
+* [《Code Review Checklist》](https://www.cnblogs.com/zuoping/p/5477047.html)
+* [《Java Code Review Checklist》](https://dzone.com/articles/java-code-review-checklist)
+
+* [《如何用 gitlab 做 code review》](https://blog.csdn.net/legend0011/article/details/45585575)
 
 ## RUP
 * [《运用RUP 4+1视图方法进行软件架构设计》](https://blog.csdn.net/apanious/article/details/51011946)
