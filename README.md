@@ -593,16 +593,21 @@ KPM：Knuth-Morris-Pratt算法（简称KMP）
 * [《公平锁与非公平锁》](https://blog.csdn.net/EthanWhite/article/details/55508357)
 	* 默认情况下 ReentrantLock 和 synchronized 都是非公平锁。ReentrantLock 可以设置成公平锁。
 
-### 悲观锁 & 乐观锁 & CAS
+### 悲观锁 
 
-悲观锁如果使用不当（锁的条数过多），会引起服务大面积等待。推荐优先使用乐观锁。
+悲观锁如果使用不当（锁的条数过多），会引起服务大面积等待。推荐优先使用乐观锁+重试。
 
 * [《【MySQL】悲观锁&乐观锁》](https://www.cnblogs.com/zhiqian-ali/p/6200874.html)
 	* 乐观锁的方式：版本号+重试方式
 	* 悲观锁：通过 select ... for update 进行行锁(不可读、不可写，share 锁可读不可写)。
 
 * [《Mysql查询语句使用select.. for update导致的数据库死锁分析》](https://www.cnblogs.com/Lawson/p/5008741.html)
-	* mysql的innodb存储引擎实务锁虽然是锁行，但它内部是锁索引的
+	* mysql的innodb存储引擎实务锁虽然是锁行，但它内部是锁索引的。
+	* 锁相同数据的不同索引条件可能会引起死锁。
+	
+* [《Mysql并发时经典常见的死锁原因及解决方法》](https://www.cnblogs.com/zejin2008/p/5262751.html)
+
+### 乐观锁 & CAS
 
 * [《乐观锁的一种实现方式——CAS》](http://www.importnew.com/20472.html)
 	* 和MySQL乐观锁方式相似，只不过是通过和原值进行比较。	 
@@ -1534,7 +1539,7 @@ TODO
 在内外环境中通过跳板机登录到线上主机。
 * [《搭建简易堡垒机》](http://blog.51cto.com/zero01/2062618)
 
-## 授权
+## 授权、认证
 ### RBAC 
 * [《基于组织角色的权限设计》](https://www.cnblogs.com/zq8024/p/5003050.html)
 * [《权限系统与RBAC模型概述》](https://www.cnblogs.com/shijiaqi1066/p/3793894.html)
@@ -1542,6 +1547,15 @@ TODO
 
 ### OAuth2.0
 * [《理解OAuth 2.0》](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
+
+### 双因素认证（2FA）
+
+2FA - Two-factor authentication，用于加强登录验证
+
+常用做法是 登录密码 + 手机验证码（或者令牌Key，类似于与网银的 USB key）
+
+* 【《双因素认证（2FA）教程》】(http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html)
+
 
 # 常用开源框架
 
