@@ -1556,6 +1556,11 @@ TODO
 
 * 【《双因素认证（2FA）教程》】(http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html)
 
+### 单点登录(SSO)
+
+* [《单点登录原理与简单实现》](https://www.cnblogs.com/ywlaker/p/6113927.html)
+
+* [CAS单点登录框架](https://github.com/apereo/cas)
 
 # 常用开源框架
 
