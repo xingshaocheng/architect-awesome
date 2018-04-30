@@ -1512,6 +1512,9 @@ MyISAM 是非聚集，InnoDB 是聚集
 
 * [《用户密码保存》](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6425-jia-mi-chang-jing-ff1a-yong-hu-mi-ma-bao-cun.html)
 
+## 序列化漏洞
+* [《Lib之过？Java反序列化漏洞通用利用分析》](https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/)
+
 ## 加密解密
 
 ### 对称加密
