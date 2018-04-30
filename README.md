@@ -1995,7 +1995,14 @@ TODO
 
 ## SCRUM
 
+* 3个角色:Product Owner(PO) 产品负责人;Scrum Master（SM），推动Scrum执行;Team 开发团队。
+* 3个工件：Product Backlog 产品TODOLIST，含优先级;Sprint Backlog 功能开发 TODO LIST；燃尽图；
+* 五个价值观：专注、勇气、公开、承诺、尊重。
+
+
 * [《敏捷项目管理流程-Scrum框架最全总结！》](https://blog.csdn.net/inny100_100/article/details/54633757)
+
+* [《敏捷其实很简单3---敏捷方法之scrum》](https://blog.csdn.net/superkunkun/article/details/52951142)
 
 ## 敏捷开发
 
@@ -2014,7 +2021,7 @@ XP - eXtreme Programming
 		* 勇气：提倡拥抱变化，敢于重构。
 		
 	* 5个原则：快速反馈、简单性假设、逐步修改、提倡更改（小步快跑）、优质工作（保证质量的前提下保证小步快跑）。
-
+	* 5个工作：阶段性冲刺；冲刺计划会议；每日站立会议；冲刺后review；回顾会议。
 
 ## 结对编程
 
