@@ -1,5 +1,5 @@
 
-<div> style="font-size:24px;font-weight:blod;">《后端架构师技术图谱》</div>
+<div style="font-size:24px;font-weight:blod;">《后端架构师技术图谱》</div>
 
 **最后更新于20180427**
 
