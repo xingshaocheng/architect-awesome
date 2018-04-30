@@ -1,5 +1,5 @@
 
-<h1>《后端架构师技术图谱》</h1>
+<font style="font-size:2em;font-weight:blod;">《后端架构师技术图谱》</font>
 
 **最后更新于20180427**
 
@@ -2007,7 +2007,9 @@ TODO
 
 ## 结对编程
 
-TODO
+边写码，边review。能够增强代码质量、减少bug。
+
+* [《结对编程》](http://www.baike.com/wiki/%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B)
 
 ## FMEA管理模式
 
