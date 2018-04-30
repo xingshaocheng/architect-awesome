@@ -1,6 +1,12 @@
 
 <h1>《后端架构师技术图谱》</h1>
 
+[![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg) ![Attribution-NonCommercial-ShareAlike CC BY-NC-SA](LICENSE.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+
+[![GitHub stars](https://img.shields.io/github/stars/xingshaocheng/architect-awesome.svg?style=flat&label=Star)](https://github.com/xingshaocheng/architect-awesome/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/xingshaocheng/architect-awesome.svg?style=flat&label=Fork)](https://github.com/xingshaocheng/architect-awesome/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/xingshaocheng/architect-awesome.svg?style=flat&label=Watch)](https://github.com/xingshaocheng/architect-awesome/watchers)
+
 **最后更新于20180427**
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据结构)
