@@ -778,6 +778,8 @@ TODO
 
 ## 微服务思想
 * [《微服务架构设计》](https://www.cnblogs.com/wintersun/p/6219259.html)
+* [《微服务架构技术栈选型手册》](http://www.infoq.com/cn/articles/micro-service-technology-stack)
+
 ### 康威定律
 * [《微服务架构的理论基础 - 康威定律》](https://yq.aliyun.com/articles/8611)
 	* 定律一：组织沟通方式会通过系统设计表达出来，就是说架构的布局和组织结构会有相似。
