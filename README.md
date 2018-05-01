@@ -894,11 +894,12 @@ APM —  Application Performance Management
 * [《全链路压测经验》](https://www.jianshu.com/p/27060fd61f72)
 
 
-### A/B Test
+### A/B 、灰度、蓝绿测试
 
 * [《技术干货 | AB 测试和灰度发布探索及实践》](https://testerhome.com/topics/11165)
 * [《nginx 根据IP 进行灰度发布》](http://blog.51cto.com/purplegrape/1403123)
 
+* [《蓝绿部署、A/B 测试以及灰度发布》](https://www.v2ex.com/t/344341)
 
 ## 虚拟化
 
