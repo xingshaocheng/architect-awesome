@@ -1661,6 +1661,8 @@ TODO
 * [《Spring Boot基础教程》](http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
 
 **Spring Cloud**
+
+* [Spring Boot 中文索引站](http://springboot.fun/)
 * [Spring Cloud 中文文档](https://springcloud.cc/)
 * [《Spring Cloud基础教程》](http://blog.didispace.com/Spring-Cloud%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
 
