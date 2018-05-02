@@ -424,7 +424,7 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 	* 时间复杂度 O(n²) 
 
 ### 插入排序
-* [《排序算法总结之插入排序》](https://blog.csdn.net/shuaizai88/article/details/73250615)
+* [《排序算法总结之插入排序》](https://www.cnblogs.com/hapjin/p/5517667.html)
 
 ### 快速排序
 * [《坐在马桶上看算法：快速排序》](http://developer.51cto.com/art/201403/430986.htm)
@@ -1016,8 +1016,6 @@ APM —  Application Performance Management
 * [《Guava Cache》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4213-guava-cache.html)
 	* 简单轻量、无堆外、磁盘缓存。
 
-* [《Guava Cache》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4213-guava-cache.html)
-	* 简单轻量、无堆外、磁盘缓存。
 
 * [《Nginx本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/nginx-ben-di-huan-cun.html)
 
@@ -1643,11 +1641,11 @@ TODO
 
 **Spring Boot**
 * [官方网站](http://projects.spring.io/spring-boot/)
-* [Spring Boot 参考指南(中文)](http://oopsguy.com/documents/springboot-docs/1.5.4/index.html)
+* [《Spring Boot基础教程》](http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
 
 **Spring Cloud**
 * [Spring Cloud 中文文档](https://springcloud.cc/)
-
+* [《Spring Cloud基础教程》](http://blog.didispace.com/Spring-Cloud%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
 
 ## 工具框架
 
@@ -2148,6 +2146,7 @@ TODO
 * [酷壳 - COOLSHELL-陈皓](https://coolshell.cn/)
 * [hellojava-阿里毕玄](http://hellojava.info/)
 * [Cm's Blog](http://cmsblogs.com/)
+* [程序猿DD-翟永超-《Spring Cloud微服务实战》作者](http://blog.didispace.com/)
 
 ## 综合门户、社区
 
