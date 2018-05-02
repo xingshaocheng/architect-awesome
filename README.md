@@ -472,7 +472,7 @@ TODO
 
 按照个位、十位、百位、...依次来排。
 
-* [《排序算法系列：基数排序》](https://blog.csdn.net/u011410529/article/details/56668545?locationnum=6&fps=1)
+* [《排序算法系列：基数排序》](https://blog.csdn.net/lemon_tree12138/article/details/51695211)
 * [《基数排序》](https://www.cnblogs.com/skywang12345/p/3603669.html)
 
 
