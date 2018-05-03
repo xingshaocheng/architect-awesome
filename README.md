@@ -38,7 +38,7 @@
 		* [Java 中的排序工具](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#java-中的排序工具)
 	* [布隆过滤器](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#布隆过滤器)
 	* [字符串比较](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#字符串比较)
-		* [KPM 算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kpm-算法)
+		* [KMP 算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kmp-算法)
 	* [深度优先、广度优先](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#深度优先广度优先)
 	* [贪心算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#贪心算法)
 	* [回溯算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#回溯算法)
@@ -504,8 +504,8 @@ TODO
 
 ## 字符串比较
 
-### KPM 算法
-KPM：Knuth-Morris-Pratt算法（简称KMP）
+### KMP 算法
+KMP：Knuth-Morris-Pratt算法（简称KMP）
 核心原理是利用一个“部分匹配表”，跳过已经匹配过的元素。
 * [《字符串匹配的KMP算法》](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 
