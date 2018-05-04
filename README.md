@@ -1130,7 +1130,7 @@ Java实现，推拉模式都是支持，吞吐量逊于Kafka。可以保证消�
 * [《ActiveMQ消息队列介绍》](https://www.cnblogs.com/wintersun/p/3962302.html)
 
 ### Kafka
-高吞吐量、采用拉模式。适合搞IO场景，比如日志同步。
+高吞吐量、采用拉模式。适合高IO场景，比如日志同步。
 
 * [官方网站](http://kafka.apache.org/)
 * [《各消息队列对比，Kafka深度解析，众人推荐，精彩好文！》](https://blog.csdn.net/allthesametome/article/details/47362451)
