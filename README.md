@@ -2372,3 +2372,6 @@ TODO
 * 百度云
 * 新浪云
 * 金山云
+* [亚马逊云(AWS)](https://amazonaws-china.com/cn/)
+* [谷歌云](https://cloud.google.com/?hl=zh-cn)
+* [微软云](https://azure.microsoft.com/zh-cn/)
