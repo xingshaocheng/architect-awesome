@@ -2261,6 +2261,8 @@ TODO
 
 * [InfoQ《架构师》月刊](http://www.infoq.com/cn/architect/)
 
+* [《架构师之路》](https://www.w3cschool.cn/architectroad/)
+
 ### 纸质书
 
 #### 开发方面
