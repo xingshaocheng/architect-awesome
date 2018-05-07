@@ -1628,6 +1628,8 @@ TODO
 
 * [《开源协议的选择》](https://coderxing.gitbooks.io/architecture-evolution/chapter1/di-yi-zhang-ff1a-zhun-bei-qi-cheng/12-guan-yu-kai-yuan/123-kai-yuan-xie-yi-de-xuan-ze.html)
 
+* [如何选择一个开源软件协议](http://choosealicense.online/)
+
 ## 日志框架
 
 ### Log4j、Log4j2
