@@ -1,349 +1,14 @@
-# [](#后端架构师技术图谱)Backend Architect Technical Atlas
+# [] Backend Architect Technical Atlas
 
 [![Knowledge Sharing Agreement (CC Agreement)](https://camo.githubusercontent.com/95c3d7ef0b5da8445087e462514063675f79321d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4372656174697665253230436f6d6d6f6e732d4443334432342e737667)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) [![GitHub stars](https://camo.githubusercontent.com/763dd2a5655865531ab8c1362fbae75a14ae7630/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f78696e677368616f6368656e672f6172636869746563742d617765736f6d652e7376673f7374796c653d666c6174266c6162656c3d53746172)](https://github.com/xingshaocheng/architect-awesome/stargazers) [![GitHub forks](https://camo.githubusercontent.com/026e492b9b2115029f2a1cc3dd6e70b60e19b1e3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f78696e677368616f6368656e672f6172636869746563742d617765736f6d652e7376673f7374796c653d666c6174266c6162656c3d466f726b)](https://github.com/xingshaocheng/architect-awesome/fork) [![GitHub watchers](https://camo.githubusercontent.com/6142770bd3ad9f0ab17d68a33bf1ed2454691181/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f77617463686572732f78696e677368616f6368656e672f6172636869746563742d617765736f6d652e7376673f7374796c653d666c6174266c6162656c3d5761746368)](https://github.com/xingshaocheng/architect-awesome/watchers)
 
 **Last updated on 20180502**
 
-*   [data structure](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
-    *   [queue](#%E9%98%9F%E5%88%97)
-    *   [set](#%E9%9B%86%E5%90%88)
-    *   [Lists, arrays](#%E9%93%BE%E8%A1%A8%E6%95%B0%E7%BB%84)
-    *   [Dictionary, associative array](#%E5%AD%97%E5%85%B8%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84)
-    *   [Stack](#%E6%A0%88)
-    *   [tree](#%E6%A0%91)
-        *   [Binary tree](#%E4%BA%8C%E5%8F%89%E6%A0%91)
-        *   [Complete Binary Tree](#%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91)
-        *   [Balanced binary tree](#%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91)
-        *   [Binary Search Tree (BST)](#%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91bst)
-        *   [Red black tree](#%E7%BA%A2%E9%BB%91%E6%A0%91)
-        *   [B-, B+, B* trees](#b-bb%E6%A0%91)
-        *   [LSM tree](#lsm-%E6%A0%91)
-    *   [BitSet](#bitset)
-*   [Common algorithms](#%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95)
-    *   [Sorting, finding algorithm](#%E6%8E%92%E5%BA%8F%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95)
-        *   [Select sort](#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
-        *   [Bubble Sort](#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)
-        *   [Insert sort](#%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
-        *   [Quick sort](#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
-        *   [Merge sort](#%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)
-        *   [Hill Sort](#%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F)
-        *   [Heap sort](#%E5%A0%86%E6%8E%92%E5%BA%8F)
-        *   [Counting sort](#%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F)
-        *   [Bucket sort](#%E6%A1%B6%E6%8E%92%E5%BA%8F)
-        *   [Cardinal sort](#%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F)
-        *   [Binary search](#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
-        *   [Sorting tools in Java](#java-%E4%B8%AD%E7%9A%84%E6%8E%92%E5%BA%8F%E5%B7%A5%E5%85%B7)
-    *   [Bloom filter](#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8)
-    *   [String comparison](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83)
-        *   [KMP algorithm](#kmp-%E7%AE%97%E6%B3%95)
-    *   [Depth first, breadth first](#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88)
-    *   [how are you](#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
-    *   [Backtracking algorithm](#%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95)
-    *   [Pruning algorithm](#%E5%89%AA%E6%9E%9D%E7%AE%97%E6%B3%95)
-    *   [Dynamic planning](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
-    *   [Naive Bayes](#%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF)
-    *   [Recommended algorithm](#%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95)
-    *   [Minimum spanning tree algorithm](#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%E7%AE%97%E6%B3%95)
-    *   [Shortest path algorithm](#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95)
-*   [Concurrent](#%E5%B9%B6%E5%8F%91)
-    *   [Multithreading](#%E5%A4%9A%E7%BA%BF%E7%A8%8B)
-    *   [Thread safety](#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8)
-    *   [Consistency, transaction](#%E4%B8%80%E8%87%B4%E6%80%A7%E4%BA%8B%E5%8A%A1)
-        *   [Transaction ACID features](#%E4%BA%8B%E5%8A%A1-acid-%E7%89%B9%E6%80%A7)
-        *   [Transaction isolation level](#%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
-        *   [MVCC](#mvcc)
-    *   [lock](#%E9%94%81)
-        *   [Locks and synchronization classes in Java](#java%E4%B8%AD%E7%9A%84%E9%94%81%E5%92%8C%E5%90%8C%E6%AD%A5%E7%B1%BB)
-        *   [Fair lock & non-fair lock](#%E5%85%AC%E5%B9%B3%E9%94%81--%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81)
-        *   [Pessimistic lock](#%E6%82%B2%E8%A7%82%E9%94%81)
-        *   [Optimistic Lock & CAS](#%E4%B9%90%E8%A7%82%E9%94%81--cas)
-        *   [ABA issues](#aba-%E9%97%AE%E9%A2%98)
-        *   [CopyOnWrite container](#copyonwrite%E5%AE%B9%E5%99%A8)
-        *   [RingBuffer](#ringbuffer)
-        *   [Reentrant Locks & Non-Reentrant Locks](#%E5%8F%AF%E9%87%8D%E5%85%A5%E9%94%81--%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%85%A5%E9%94%81)
-        *   [Mutexes & shared locks](#%E4%BA%92%E6%96%A5%E9%94%81--%E5%85%B1%E4%BA%AB%E9%94%81)
-        *   [Deadlock](#%E6%AD%BB%E9%94%81)
-*   [operating system](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
-    *   [Principle of computer](#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86)
-    *   [CPU](#cpu)
-        *   [Multi-level cache](#%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%AD%98)
-    *   [process](#%E8%BF%9B%E7%A8%8B)
-    *   [Threads](#%E7%BA%BF%E7%A8%8B)
-    *   [Correspondence](#%E5%8D%8F%E7%A8%8B)
-    *   [Linux](#linux)
-*   [Design Patterns](#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
-    *   [Six principles of design patterns](#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99)
-    *   [23 common design patterns](#23%E7%A7%8D%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
-    *   [Application scenario](#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
-    *   [Singleton mode](#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F)
-    *   [Chain of responsibility model](#%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F)
-    *   [MVC](#mvc)
-    *   [IOC](#ioc)
-    *   [AOP](#aop)
-    *   [UML](#uml)
-    *   [Microservice idea](#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%80%9D%E6%83%B3)
-        *   [Conway Law](#%E5%BA%B7%E5%A8%81%E5%AE%9A%E5%BE%8B)
-*   [Operation & Statistics & Technical Support](#%E8%BF%90%E7%BB%B4--%E7%BB%9F%E8%AE%A1--%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81)
-    *   [General monitoring](#%E5%B8%B8%E8%A7%84%E7%9B%91%E6%8E%A7)
-    *   [APM](#apm)
-    *   [Statistical Analysis](#%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90)
-    *   [Continuous Integration (CI/CD)](#%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90cicd)
-        *   [Jenkins](#jenkins)
-        *   [Environmental separation](#%E7%8E%AF%E5%A2%83%E5%88%86%E7%A6%BB)
-    *   [Automation operation and maintenance](#%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4)
-        *   [Ansible](#ansible)
-        *   [Puppet](#puppet)
-        *   [Chef](#chef)
-    *   [test](#%E6%B5%8B%E8%AF%95)
-        *   [TDD theory](#tdd-%E7%90%86%E8%AE%BA)
-        *   [unit test](#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
-        *   [pressure test](#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)
-        *   [Full-link pressure test](#%E5%85%A8%E9%93%BE%E8%B7%AF%E5%8E%8B%E6%B5%8B)
-        *   [A/B, grayscale, blue-green test](#ab-%E7%81%B0%E5%BA%A6%E8%93%9D%E7%BB%BF%E6%B5%8B%E8%AF%95)
-    *   [Virtualization](#%E8%99%9A%E6%8B%9F%E5%8C%96)
-        *   [KVM](#kvm)
-        *   [Xen](#xen)
-        *   [OpenVZ](#openvz)
-    *   [Container technology](#%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF)
-        *   [Docker](#docker)
-    *   [Cloud technology](#%E4%BA%91%E6%8A%80%E6%9C%AF)
-        *   [OpenStack](#openstack)
-    *   [DevOps](#devops)
-    *   [Document management](#%E6%96%87%E6%A1%A3%E7%AE%A1%E7%90%86)
-*   [Middleware](#%E4%B8%AD%E9%97%B4%E4%BB%B6)
-    *   [Web Server](#web-server)
-        *   [Nginx](#nginx)
-        *   [OpenResty](#openresty)
-        *   [Apache Httpd](#apache-httpd)
-        *   [Tomcat](#tomcat)
-            *   [Architecture principle](#%E6%9E%B6%E6%9E%84%E5%8E%9F%E7%90%86)
-            *   [Tuning plan](#%E8%B0%83%E4%BC%98%E6%96%B9%E6%A1%88)
-        *   [Jetty](#jetty)
-    *   [Caching](#%E7%BC%93%E5%AD%98)
-        *   [Local cache](#%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98)
-    *   [Client Cache](#%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%BC%93%E5%AD%98)
-    *   [Server cache](#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%BC%93%E5%AD%98)
-        *   [Memcached](#memcached)
-        *   [Redis](#redis)
-            *   [Structure](#%E6%9E%B6%E6%9E%84)
-            *   [Recovery strategy](#%E5%9B%9E%E6%94%B6%E7%AD%96%E7%95%A5)
-        *   [Tair](#tair)
-    *   [message queue](#%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97)
-        *   [Message bus](#%E6%B6%88%E6%81%AF%E6%80%BB%E7%BA%BF)
-        *   [Order of messages](#%E6%B6%88%E6%81%AF%E7%9A%84%E9%A1%BA%E5%BA%8F)
-        *   [RabbitMQ](#rabbitmq)
-        *   [RocketMQ](#rocketmq)
-        *   [ActiveMQ](#activemq)
-        *   [Kafka](#kafka)
-        *   [Redis message push](#redis-%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81)
-        *   [ZeroMQ](#zeromq)
-    *   [Scheduled scheduling](#%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6)
-        *   [Stand-alone scheduled scheduling](#%E5%8D%95%E6%9C%BA%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6)
-        *   [Distributed timing scheduling](#%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9A%E6%97%B6%E8%B0%83%E5%BA%A6)
-    *   [RPC](#rpc)
-        *   [Dubbo](#dubbo)
-        *   [Thrift](#thrift)
-        *   [gRPC](#grpc)
-    *   [Database middleware](#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6)
-        *   [Sharding Jdbc](#sharding-jdbc)
-    *   [Log system](#%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F)
-        *   [Log collection](#%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
-    *   [Configuration Center](#%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83)
-    *   [API Gateway](#api-%E7%BD%91%E5%85%B3)
-*   [The internet](#%E7%BD%91%E7%BB%9C)
-    *   [protocol](#%E5%8D%8F%E8%AE%AE)
-        *   [OSI Layer 7 Protocol](#osi-%E4%B8%83%E5%B1%82%E5%8D%8F%E8%AE%AE)
-        *   [TCP/IP](#tcpip)
-        *   [HTTP](#http)
-        *   [HTTP2.0](#http20)
-        *   [HTTPS](#https)
-    *   [Network model](#%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B)
-        *   [Epoll](#epoll)
-        *   [Java NIO](#java-nio)
-        *   [Kqueue](#kqueue)
-    *   [Connections and short connections](#%E8%BF%9E%E6%8E%A5%E5%92%8C%E7%9F%AD%E8%BF%9E%E6%8E%A5)
-    *   [frame](#%E6%A1%86%E6%9E%B6)
-    *   [Zero-copy](#%E9%9B%B6%E6%8B%B7%E8%B4%9Dzero-copy)
-    *   [Serialization (binary protocol)](#%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8D%8F%E8%AE%AE)
-        *   [Hessian](#hessian)
-        *   [Protobuf](#protobuf)
-*   [database](#%E6%95%B0%E6%8D%AE%E5%BA%93)
-    *   [Basic theory](#%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA)
-        *   [Three paradigms of database design](#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E8%8C%83%E5%BC%8F)
-    *   [MySQL](#mysql)
-        *   [principle](#%E5%8E%9F%E7%90%86)
-        *   [InnoDB](#innodb)
-        *   [optimization](#%E4%BC%98%E5%8C%96)
-        *   [index](#%E7%B4%A2%E5%BC%95)
-            *   [Clustered index, non-clustered index](#%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95-%E9%9D%9E%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95)
-            *   [Composite index](#%E5%A4%8D%E5%90%88%E7%B4%A2%E5%BC%95)
-            *   [Adaptive Hash Index (AHI)](#%E8%87%AA%E9%80%82%E5%BA%94%E5%93%88%E5%B8%8C%E7%B4%A2%E5%BC%95ahi)
-        *   [Explain](#explain)
-    *   [NoSQL](#nosql)
-        *   [MongoDB](#mongodb)
-        *   [Hbase](#hbase)
-*   [search engine](#%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E)
-    *   [Search Engine Principle](#%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%8E%9F%E7%90%86)
-    *   [Lucene](#lucene)
-    *   [Elasticsearch](#elasticsearch)
-    *   [Solr](#solr)
-    *   [Sphinx](#sphinx)
-*   [performance](#%E6%80%A7%E8%83%BD)
-    *   [Performance Optimization Methodology](#%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95%E8%AE%BA)
-    *   [Capacity assessment](#%E5%AE%B9%E9%87%8F%E8%AF%84%E4%BC%B0)
-    *   [CDN network](#cdn-%E7%BD%91%E7%BB%9C)
-    *   [connection pool](#%E8%BF%9E%E6%8E%A5%E6%B1%A0)
-    *   [Performance tuning](#%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98)
-*   [Big Data](#%E5%A4%A7%E6%95%B0%E6%8D%AE)
-    *   [Flow calculation](#%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97)
-        *   [Storm](#storm)
-        *   [Flink](#flink)
-        *   [Kafka Stream](#kafka-stream)
-        *   [Application scenario](#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF-1)
-    *   [Hadoop](#hadoop)
-        *   [HDFS](#hdfs)
-        *   [MapReduce](#mapreduce)
-        *   [Yarn](#yarn)
-    *   [Spark](#spark)
-*   [Safety](#%E5%AE%89%E5%85%A8)
-    *   [Web security](#web-%E5%AE%89%E5%85%A8)
-        *   [XSS](#xss)
-        *   [CSRF](#csrf)
-        *   [SQL injection](#sql-%E6%B3%A8%E5%85%A5)
-        *   [Hash Dos](#hash-dos)
-        *   [Script injection](#%E8%84%9A%E6%9C%AC%E6%B3%A8%E5%85%A5)
-        *   [Vulnerability Scan Tool](#%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7)
-        *   [Verification code](#%E9%AA%8C%E8%AF%81%E7%A0%81)
-    *   [DDoS protection](#ddos-%E9%98%B2%E8%8C%83)
-    *   [User privacy protection](#%E7%94%A8%E6%88%B7%E9%9A%90%E7%A7%81%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4)
-    *   [Serialization vulnerability](#%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E)
-    *   [encrypt and decode](#%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86)
-        *   [Symmetric encryption](#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86)
-        *   [Hash algorithm](#%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95)
-        *   [Asymmetric encryption](#%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86)
-    *   [Server security](#%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8)
-    *   [Data Security](#%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8)
-        *   [data backup](#%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD)
-    *   [Network isolation](#%E7%BD%91%E7%BB%9C%E9%9A%94%E7%A6%BB)
-        *   [Internal and external network separation](#%E5%86%85%E5%A4%96%E7%BD%91%E5%88%86%E7%A6%BB)
-        *   [Login board](#%E7%99%BB%E5%BD%95%E8%B7%B3%E6%9D%BF%E6%9C%BA)
-    *   [Authorization, certification](#%E6%8E%88%E6%9D%83%E8%AE%A4%E8%AF%81)
-        *   [RBAC](#rbac)
-        *   [OAuth2.0](#oauth20)
-        *   [Two-factor authentication (2FA)](#%E5%8F%8C%E5%9B%A0%E7%B4%A0%E8%AE%A4%E8%AF%812fa)
-        *   [Single sign-on (SSO)](#%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95sso)
-*   [Common open source framework](#%E5%B8%B8%E7%94%A8%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6)
-    *   [Open Source Agreement](#%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE)
-    *   [Logging framework](#%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6)
-        *   [Log4j, Log4j2](#log4jlog4j2)
-        *   [Logback](#logback)
-    *   [ORM](#orm)
-    *   [Network framework](#%E7%BD%91%E7%BB%9C%E6%A1%86%E6%9E%B6)
-    *   [Web framework](#web-%E6%A1%86%E6%9E%B6)
-        *   [Spring family](#spring-%E5%AE%B6%E6%97%8F)
-    *   [Tool frame](#%E5%B7%A5%E5%85%B7%E6%A1%86%E6%9E%B6)
-*   [Distributed design](#%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%BE%E8%AE%A1)
-    *   [Scalable design](#%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1)
-    *   [Stability & High Availability](#%E7%A8%B3%E5%AE%9A%E6%80%A7--%E9%AB%98%E5%8F%AF%E7%94%A8)
-        *   [Hardware load balancing](#%E7%A1%AC%E4%BB%B6%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
-        *   [Software load balancing](#%E8%BD%AF%E4%BB%B6%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
-        *   [Limiting](#%E9%99%90%E6%B5%81)
-        *   [Application layer disaster recovery](#%E5%BA%94%E7%94%A8%E5%B1%82%E5%AE%B9%E7%81%BE)
-        *   [Cross-room disaster recovery](#%E8%B7%A8%E6%9C%BA%E6%88%BF%E5%AE%B9%E7%81%BE)
-        *   [Disaster recovery drill process](#%E5%AE%B9%E7%81%BE%E6%BC%94%E7%BB%83%E6%B5%81%E7%A8%8B)
-        *   [Smooth start](#%E5%B9%B3%E6%BB%91%E5%90%AF%E5%8A%A8)
-    *   [Database expansion](#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%89%A9%E5%B1%95)
-        *   [Read-write separation mode](#%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB%E6%A8%A1%E5%BC%8F)
-        *   [Fragmentation mode](#%E5%88%86%E7%89%87%E6%A8%A1%E5%BC%8F)
-    *   [Service governance](#%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86)
-        *   [Service Registration and Discovery](#%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0)
-        *   [Service Routing Control](#%E6%9C%8D%E5%8A%A1%E8%B7%AF%E7%94%B1%E6%8E%A7%E5%88%B6)
-    *   [Distributed consensus](#%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4)
-        *   [CAP and BASE theory](#cap-%E4%B8%8E-base-%E7%90%86%E8%AE%BA)
-        *   [Distributed lock](#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
-        *   [Distributed consensus algorithm](#%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95)
-            *   [PAXOS](#paxos)
-            *   [Zab](#zab)
-            *   [Raft](#raft)
-            *   [Gossip](#gossip)
-            *   [Two-phase commit, multi-phase commit](#%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4%E5%A4%9A%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4)
-        *   [Idempotent](#%E5%B9%82%E7%AD%89)
-        *   [Distributed consensus solution](#%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%96%B9%E6%A1%88)
-        *   [Distributed Leader node election](#%E5%88%86%E5%B8%83%E5%BC%8F-leader-%E8%8A%82%E7%82%B9%E9%80%89%E4%B8%BE)
-        *   [TCC (Try/Confirm/Cancel) Flexible Transactions](#tcctryconfirmcancel-%E6%9F%94%E6%80%A7%E4%BA%8B%E5%8A%A1)
-    *   [Distributed File System](#%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
-    *   [Unique ID generation](#%E5%94%AF%E4%B8%80id-%E7%94%9F%E6%88%90)
-        *   [Globally unique ID](#%E5%85%A8%E5%B1%80%E5%94%AF%E4%B8%80id)
-    *   [Consistent hashing algorithm](#%E4%B8%80%E8%87%B4%E6%80%A7hash%E7%AE%97%E6%B3%95)
-*   [Design Ideas & Development Models](#%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3--%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F)
-    *   [DDD (Domain-driven Design - Domain Driven Design)](#ddddomain-driven-design---%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1)
-        *   [Command Query Separation of Duties (CQRS)](#%E5%91%BD%E4%BB%A4%E6%9F%A5%E8%AF%A2%E8%81%8C%E8%B4%A3%E5%88%86%E7%A6%BBcqrs)
-        *   [Anemia, congestive model](#%E8%B4%AB%E8%A1%80%E5%85%85%E8%A1%80%E6%A8%A1%E5%9E%8B)
-    *   [Actor mode](#actor-%E6%A8%A1%E5%BC%8F)
-    *   [Reactive programming](#%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B)
-        *   [Reactor](#reactor)
-        *   [RxJava](#rxjava)
-        *   [Vert.x](#vertx)
-    *   [DODAF2.0](#dodaf20)
-    *   [Serverless](#serverless)
-    *   [Service Mesh](#service-mesh)
-*   [Project management](#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86)
-    *   [Architecture review](#%E6%9E%B6%E6%9E%84%E8%AF%84%E5%AE%A1)
-    *   [Reconstruction](#%E9%87%8D%E6%9E%84)
-    *   [Code specification](#%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83)
-    *   [Code Review](#%E4%BB%A3%E7%A0%81-review)
-    *   [RUP](#rup)
-    *   [Kanban Management](#%E7%9C%8B%E6%9D%BF%E7%AE%A1%E7%90%86)
-    *   [SCRUM](#scrum)
-    *   [Agile development](#%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91)
-    *   [Extreme Programming (XP)](#%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8Bxp)
-    *   [Pair programming](#%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B)
-    *   [FMEA management model](#fmea%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F)
-*   [General Business Terms](#%E9%80%9A%E7%94%A8%E4%B8%9A%E5%8A%A1%E6%9C%AF%E8%AF%AD)
-*   [Technical trends](#%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF)
-*   [Policies and regulations](#%E6%94%BF%E7%AD%96%E6%B3%95%E8%A7%84)
-    *   [legal](#%E6%B3%95%E5%BE%8B)
-        *   [Strictly abide by Article 253 of the Criminal Law](#%E4%B8%A5%E6%A0%BC%E9%81%B5%E5%AE%88%E5%88%91%E6%B3%95253%E6%B3%95%E6%9D%A1)
-*   [Architect quality](#%E6%9E%B6%E6%9E%84%E5%B8%88%E7%B4%A0%E8%B4%A8)
-*   [Team management](#%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86)
-    *   [Recruitment](#%E6%8B%9B%E8%81%98)
-*   [Information](#%E8%B5%84%E8%AE%AF)
-    *   [Industry information](#%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF)
-    *   [Public number list](#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%88%97%E8%A1%A8)
-    *   [Blog](#%E5%8D%9A%E5%AE%A2)
-        *   [Team blog](#%E5%9B%A2%E9%98%9F%E5%8D%9A%E5%AE%A2)
-        *   [personal blog](#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2)
-    *   [Integrated portal, community](#%E7%BB%BC%E5%90%88%E9%97%A8%E6%88%B7%E7%A4%BE%E5%8C%BA)
-    *   [Q&A, discussion community](#%E9%97%AE%E7%AD%94%E8%AE%A8%E8%AE%BA%E7%B1%BB%E7%A4%BE%E5%8C%BA)
-    *   [Industry data analysis](#%E8%A1%8C%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90)
-    *   [Special website](#%E4%B8%93%E9%A1%B9%E7%BD%91%E7%AB%99)
-    *   [other](#%E5%85%B6%E4%BB%96%E7%B1%BB)
-    *   [Recommended reference book](#%E6%8E%A8%E8%8D%90%E5%8F%82%E8%80%83%E4%B9%A6)
-        *   [Online eBooks](#%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6)
-        *   [Paper book](#%E7%BA%B8%E8%B4%A8%E4%B9%A6)
-            *   [Development aspects](#%E5%BC%80%E5%8F%91%E6%96%B9%E9%9D%A2)
-            *   [Architecture aspects](#%E6%9E%B6%E6%9E%84%E6%96%B9%E9%9D%A2)
-            *   [Technical management](#%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86%E6%96%B9%E9%9D%A2)
-            *   [Basic theory](#%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA-1)
-            *   [Tools](#%E5%B7%A5%E5%85%B7%E6%96%B9%E9%9D%A2)
-            *   [Big data](#%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%96%B9%E9%9D%A2)
-*   [Technical resources](#%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90)
-    *   [Open source resources](#%E5%BC%80%E6%BA%90%E8%B5%84%E6%BA%90)
-    *   [Manuals, Documents, Tutorials](#%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%A3%E6%95%99%E7%A8%8B)
-    *   [Online class](#%E5%9C%A8%E7%BA%BF%E8%AF%BE%E5%A0%82)
-    *   [conference](#%E4%BC%9A%E8%AE%AE%E6%B4%BB%E5%8A%A8)
-    *   [Common APP](#%E5%B8%B8%E7%94%A8app)
-    *   [find a job](#%E6%89%BE%E5%B7%A5%E4%BD%9C)
-    *   [tool](#%E5%B7%A5%E5%85%B7)
-    *   [Code hosting](#%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1)
-    *   [File service](#%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1)
-    *   [Comprehensive cloud service provider](#%E7%BB%BC%E5%90%88%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86)
-
 **(Toc generated by</font> </font>[simple-php-github-toc](https://github.com/xingshaocheng/simple-php-github-toc)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">)**
 
-# [](#数据结构)data structure
+# [] data structure
 
-## [](#队列)queue
+## [] queue
 
 *   ["java queue - detailed analysis of queue"](https://www.cnblogs.com/lemon-flm/p/7877898.html)
 
@@ -351,19 +16,19 @@
     *   Blocking queues: ArrayBlockingQueue (bounded), LinkedBlockingQueue (unbounded), DelayQueue, PriorityBlockingQueue, using lock mechanism; use ReentrantLock lock.
 *   ["LinkedList, ConcurrentLinkedQueue, LinkedBlockingQueue Comparative Analysis"](https://www.cnblogs.com/mantu/p/5802393.html)
 
-## [](#集合)set
+## [] set
 
 *   ["Details of Java Set Collection"](https://blog.csdn.net/qq_33642117/article/details/52040345)
 
-## [](#链表数组)Lists, arrays
+## [] Lists, arrays
 
 *   ["Java Collection Detailed - What is a List"](https://blog.csdn.net/wz249863091/article/details/52853360)
 
-## [](#字典关联数组)Dictionary, associative array
+## [] Dictionary, associative array
 
 *   ["Java map details - usage, traversal, sorting, common APIs, etc."](https://baike.xsoftlab.net/view/250.html)
 
-## [](#栈)Stack
+## [] Stack
 
 *   ["Stack design and implementation of java data structure and algorithm"](https://blog.csdn.net/javazejian/article/details/53362993)
 *   [Java Stack Class](http://www.runoob.com/java/java-stack-class.html)
@@ -371,39 +36,39 @@
     *   Stack is thread-safe.
     *   Internal use array to save data, double when not enough.
 
-## [](#树)tree
+## [] tree
 
-### [](#二叉树)Binary tree
+### [] Binary tree
 
 Each node has a maximum of two leaf nodes.
 
 *   [Binary Tree](https://blog.csdn.net/cai2016/article/details/52589952)
 
-### [](#完全二叉树)Complete Binary Tree
+### [] Complete Binary Tree
 
 *   [Complete Binary Tree](https://baike.baidu.com/item/%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/7773232?fr=aladdin)
     *   The leaf nodes can only appear at the bottom and sub-lower levels, and the nodes at the bottom level are all concentrating on the binary tree at the leftmost position of the layer.
 
-### [](#平衡二叉树)Balanced binary tree
+### [] Balanced binary tree
 
 The absolute value of the height difference between the left and right two subtrees does not exceed one, and both the left and right subtrees are balanced binary trees.
 
 *   ["On Data Structure - Balanced Binary Tree"](http://www.cnblogs.com/polly333/p/4798944.html)
 *   ["On the algorithm and data structure: eight balanced tree search 2-3 tree"](http://www.cnblogs.com/yangecnu/p/Introduce-2-3-Search-Tree.html)
 
-### [](#二叉查找树bst)Binary Search Tree (BST)
+### [] 
 
 Binary Search Trees, also called ordered binary trees, are sorted binary trees.
 
 *   ["On the algorithm and data structure: seven binary search tree"](http://www.cnblogs.com/yangecnu/p/Introduce-Binary-Search-Tree.html)
 
-### [](#红黑树)Red black tree
+### [] Red black tree
 
 *   ["Easiest to understand red and black trees"](https://blog.csdn.net/sun_tttt/article/details/65445754)
     *   After the addition phase, left-handed or right-handed to reach equilibrium again.
 *   ["On Algorithms and Data Structures: Nine Balanced Search Trees for Red and Black Trees"](http://www.cnblogs.com/yangecnu/p/Introduce-Red-Black-Tree.html)
 
-### [](#b-bb树)B-, B+, B* trees
+### [] B-, B+, B* trees
 
 MySQL is based on the B+ tree clustered index organization table
 
@@ -411,7 +76,7 @@ MySQL is based on the B+ tree clustered index organization table
 *   ["Comparison of the advantages and disadvantages of B-trees, B+ trees and B* trees"](https://blog.csdn.net/bigtree_3721/article/details/73632405)
     *   The tree structure of the leaf nodes of the B+ tree is more convenient than the B-tree for scanning and range retrieval.
 
-### [](#lsm-树)LSM tree
+### [] LSM tree
 
 Compared with B+ trees, LSM (Log-Structured Merge-Trees) sacrifices partial read performance in exchange for write performance (through batch writes) and achieves read and write.</font> <font style="vertical-align: inherit;">Hbase, LevelDB, Tair (Long DB), and nessDB use the structure of the LSM tree.</font> <font style="vertical-align: inherit;">LSM can quickly establish an index.
 
@@ -425,75 +90,75 @@ Compared with B+ trees, LSM (Log-Structured Merge-Trees) sacrifices partial read
     *   Optimization method: Bloom filter replaces binary search; compact decimal tree, improves query performance.
     *   In Hbase, when the memory reaches a certain threshold, the entire flush flushes to disk and forms a file (B+ number). HDFS does not support the update operation. Therefore, Hbase does an overall flush instead of a merge update.</font> <font style="vertical-align: inherit;">Flush to the small tree on the disk, periodically merged into a big tree.
 
-## [](#bitset)BitSet
+## [] BitSet
 
 It is often used for checking the weight of large-scale data.
 
 *   ["Java Bitset Class"](http://www.runoob.com/java/java-bitset-class.html)
 *   [Java BitSet (bit set)](https://blog.csdn.net/caiandyong/article/details/51581160)
 
-# [](#常用算法)Common algorithms
+# [] Common algorithms
 
 *   ["Common sorting algorithms and their corresponding time complexity and space complexity"](https://blog.csdn.net/gane_cheng/article/details/52652705)
 
-## [](#排序查找算法)Sorting, finding algorithm
+## [] Sorting, finding algorithm
 
 *   ["Common sorting algorithms and their corresponding time complexity and space complexity"](https://blog.csdn.net/gane_cheng/article/details/52652705)
 
-### [](#选择排序)Select sort
+### [] Select sort
 
 *   ["Selection Sort of Classic Algorithms in Java"](https://www.cnblogs.com/shen-hua/p/5424059.html)
     *   Each tick selects the smallest element from the records to be sorted, and the order is placed at the end of the sorted sequence until all records are sorted.
 
-### [](#冒泡排序)Bubble Sort
+### [] Bubble Sort
 
 *   ["Two kinds of writing bubble sorting"](https://blog.csdn.net/shuaizai88/article/details/73250615)
     *   Exchange adjacent elements before and after, the largest row to the end.
     *   Time complexity O(n2)
 
-### [](#插入排序)Insert sort
+### [] Insert sort
 
 *   ["Sorting algorithm summary insertion sort"](https://www.cnblogs.com/hapjin/p/5517667.html)
 
-### [](#快速排序)Quick sort
+### [] Quick sort
 
 *   [Sitting on the toilet looking algorithm: quick sort](http://developer.51cto.com/art/201403/430986.htm)
     *   One side is larger or smaller than the other.
 
-### [](#归并排序)Merge sort
+### [] Merge sort
 
 *   ["Image Sorting Algorithm (4) Merge and Sorting"](http://www.cnblogs.com/chengxiao/p/6194356.html)
     *   Divide and conquer, sort into small parts and merge (recreate a new space for copying).
 
-### [](#希尔排序)Hill Sort
+### [] Hill Sort
 
 TODO
 
-### [](#堆排序)Heap sort
+### [] Heap sort
 
 *   ["Graphical sorting algorithm (three) of the heap sort"](https://www.cnblogs.com/chengxiao/p/6129630.html)
     *   The sorting process is the process of building a maximum heap. The maximum heap: The value of each node is greater than or equal to the value of its child nodes, and the top element is the maximum value.
 
-### [](#计数排序)Counting sort
+### [] Counting sort
 
 *   [Counting and Bucket Sorting](https://www.cnblogs.com/suvllian/p/5495780.html)
     *   Compared to the bucket sorting process, the difference lies in the number of buckets.
 
-### [](#桶排序)Bucket sort
+### [] Bucket sort
 
 *   ["[Aha!</font> <font style="vertical-align: inherit;">Algorithms] The Fastest and Simplest Sorting - Bucket Sorting](http://blog.51cto.com/ahalei/1362789)
 *   ["Sort Algorithm (3): Counting and Bucket Sorting"](https://blog.csdn.net/sunjinshengli/article/details/70738527)
     *   Bucket sorting divides the [0,1) interval into n sub-intervals of the same size, which are called buckets.
     *   Each bucket is sorted individually and then it traverses each bucket.
 
-### [](#基数排序)Cardinal sort
+### [] Cardinal sort
 
 Sort by rank, ten, hundred, ...
 
 *   [Sort Algorithm Series: Cardinal Sorting](https://blog.csdn.net/lemon_tree12138/article/details/51695211)
 *   [Cardinal Sort](https://www.cnblogs.com/skywang12345/p/3603669.html)
 
-### [](#二分查找)Binary search
+### [] Binary search
 
 *   ["Two-point search (java implementation)"](https://www.cnblogs.com/coderising/p/5708632.html)
 
@@ -503,13 +168,13 @@ Sort by rank, ten, hundred, ...
 
     *   While + recursively.
 
-### [](#java-中的排序工具)Sorting tools in Java
+### [] Sorting tools in Java
 
 *   [Analysis of Arrays.sort and Collections.sort Implementation Principles](https://blog.csdn.net/u011410529/article/details/56668545?locationnum=6&fps=1)
     *   The Collections.sort algorithm calls the merge sort.
     *   Arrays.sort() uses two sorting algorithms -- basic sort data using quick sorting, and object arrays using merge sorting.
 
-## [](#布隆过滤器)Bloom filter
+## [] Bloom filter
 
 Commonly used for big data, such as email, url, etc.</font> <font style="vertical-align: inherit;">Core principle: Generate a fingerprint (a byte or bytes, but certainly a lot less than the original data) by calculating each piece of data, each of which is obtained by random calculation, mapping the fingerprint to a large The bitwise storage space.</font> <font style="vertical-align: inherit;">Note: There will be a certain error rate.</font> <font style="vertical-align: inherit;">Advantages: High space and time efficiency.</font> <font style="vertical-align: inherit;">Disadvantages: As the number of deposited elements increases, the miscalculation rate increases.
 
@@ -520,37 +185,37 @@ Commonly used for big data, such as email, url, etc.</font> <font style="vertica
 *   ["Web crawler: Use of Bloom filter for URL deduplication policy"](https://blog.csdn.net/lemon_tree12138/article/details/47973715)
     *   Use the BitSet class and weighted hashing algorithm in Java.
 
-## [](#字符串比较)String comparison
+## [] String comparison
 
-### [](#kmp-算法)KMP algorithm
+### [] KMP algorithm
 
 KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP) is to use a "partial match table" to skip over elements that have already been matched.
 
 *   [String Matching KMP Algorithm](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 
-## [](#深度优先广度优先)Depth first, breadth first
+## [] Depth first, breadth first
 
 *   [Breadth First Search BFS and Depth First Search DFS](https://www.cnblogs.com/0kk470/p/7555033.html)
 
-## [](#贪心算法)how are you
+## [] how are you
 
 *   ["Algorithm: Fundamentals of Greedy Algorithm"](https://www.cnblogs.com/MrSaver/p/8641971.html)
 *   ["Common Algorithms and Problem Scenarios - Greedy Algorithm"](https://blog.csdn.net/a345017062/article/details/52443781)
 
-## [](#回溯算法)Backtracking algorithm
+## [] Backtracking algorithm
 
 *   ["Five commonly used algorithms: Backtracking method"](https://blog.csdn.net/qfikh/article/details/51960331)
 
-## [](#剪枝算法)Pruning algorithm
+## [] Pruning algorithm
 
 *   ["α-β Pruning Algorithm"](https://blog.csdn.net/luningcsdn/article/details/50930276)
 
-## [](#动态规划)Dynamic planning
+## [] Dynamic planning
 
 *   ["Detailed Explanation of Dynamic Planning - Zou Bo Talks about Dynamic Planning"](https://www.cnblogs.com/little-YTMM/p/5372680.html)
 *   ["Personal Understanding of Dynamic Programming Algorithms"](https://blog.csdn.net/yao_zi_jie/article/details/54580283)
 
-## [](#朴素贝叶斯)Naive Bayes
+## [] Naive Bayes
 
 *   ["Take You Through the Naive Bayes Classification Algorithm"](https://blog.csdn.net/amds123/article/details/70173402)
 
@@ -559,20 +224,20 @@ KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP)
 
 *   [Bayesian Inference and Internet Applications 2](http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_two.html)
 
-## [](#推荐算法)Recommended algorithm
+## [] Recommended algorithm
 
 *   ["Recommendation algorithm review"](http://www.infoq.com/cn/articles/recommendation-algorithm-overview-part01)
 *   ["Introduction to TOP 10 Open Source Recommendation System"](https://www.oschina.net/news/51297/top-10-open-source-recommendation-systems)
 
-## [](#最小生成树算法)Minimum spanning tree algorithm
+## [] Minimum spanning tree algorithm
 
 *   ["Introduction to Algorithms - Minimum Spanning Tree (Kruskal and Prim Algorithms)"](https://blog.csdn.net/luoshixian099/article/details/51908175)
 
-## [](#最短路径算法)Shortest path algorithm
+## [] Shortest path algorithm
 
 *   ["Dijkstra Algorithm Detailed"](https://blog.csdn.net/qq_35644234/article/details/60870719)
 
-# [](#并发)Concurrent
+# [] Concurrent
 
 1.  **Basic knowledge**
 
@@ -704,21 +369,21 @@ KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP)
 
 [![JAVA concurrency knowledge map.png](https://github.com/CL0610/Java-concurrency/raw/master/Java%E5%B9%B6%E5%8F%91%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.png)](https://github.com/CL0610/Java-concurrency/blob/master/Java%E5%B9%B6%E5%8F%91%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.png)
 
-## [](#多线程)Multithreading
+## [] Multithreading
 
 *   ["Summary of 40 Java Multithreading Problems"](http://www.importnew.com/18459.html)
 
-## [](#线程安全)Thread safety
+## [] Thread safety
 
 *   ["Concurrent Java Programming - Introduction to Thread Safety and Solution Mechanisms"](https://www.cnblogs.com/zhanht/p/5450325.html)
 
-## [](#一致性事务)Consistency, transaction
+## [] Consistency, transaction
 
-### [](#事务-acid-特性)Transaction ACID features
+### [] Transaction ACID features
 
 *   ["Database ACID Features"](https://blog.csdn.net/u012440687/article/details/52116108)
 
-### [](#事务的隔离级别)Transaction isolation level
+### [] Transaction isolation level
 
 *   Uncommitted read: A transaction can read another uncommitted data and is prone to dirty reads.
 
@@ -740,7 +405,7 @@ KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP)
 
     *   Graphical dirty reading, non-repeatable reading, phantom reading problems.
 
-### [](#mvcc)MVCC
+### [] MVCC
 
 *   ["[mysql] some understanding of MVCC in innodb"](https://www.cnblogs.com/chenpingzhao/p/5065316.html)
 
@@ -751,9 +416,9 @@ KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP)
     *   MVCC control is achieved by hiding the version column, a record creation time, a record deletion time, and the time
     *   Only operate on lines that are smaller (or equal) than the current version.
 
-## [](#锁)lock
+## [] lock
 
-### [](#java中的锁和同步类)Locks and synchronization classes in Java
+### [] Locks and synchronization classes in Java
 
 *   ["Lock Classification in Java"](https://www.cnblogs.com/qifengshi/p/6831055.html)
 
@@ -768,14 +433,14 @@ KMP: The core principle of the Knuth-Morris-Pratt algorithm (abbreviated as KMP)
 
     *   Simply put, Mutex is exclusive. Only one resource can be obtained. Semaphore is also exclusive, but it can define multiple objects that can be accessed.
 
-### [](#公平锁--非公平锁)Fair lock & non-fair lock
+### [] Fair lock & non-fair lock
 
 The role of the fair lock is to execute in strict accordance with the order in which the threads are started, and no other thread is allowed to queue execution; non-fair locks are allowed to be queued.
 
 *   [Fair and Unfair Locks](https://blog.csdn.net/EthanWhite/article/details/55508357)
     *   ReentrantLock and synchronized are both non-fair locks by default.</font> <font style="vertical-align: inherit;">ReentrantLock can be set to fair lock.
 
-### [](#悲观锁)Pessimistic lock
+### [] Pessimistic lock
 
 Pessimistic locking, if used improperly (with too many locks), can cause large areas of service to wait.</font> <font style="vertical-align: inherit;">It is recommended to use optimistic locking + retries first.
 
@@ -789,12 +454,12 @@ Pessimistic locking, if used improperly (with too many locks), can cause large a
     *   Different index conditions that lock the same data can cause deadlocks.
 *   ["Mysql concurrent classic deadlock causes and solutions"](https://www.cnblogs.com/zejin2008/p/5262751.html)
 
-### [](#乐观锁--cas)Optimistic Lock & CAS
+### [] Optimistic Lock & CAS
 
 *   ["An Optimistic Lock Implementation - CAS"](http://www.importnew.com/20472.html)
     *   It is similar to the MySQL optimistic lock method, but it is compared with the original value.
 
-### [](#aba-问题)ABA issues
+### [] ABA issues
 
 Due to high concurrency, under CAS, this A may not be A after updating.</font> <font style="vertical-align: inherit;">It can be solved by the version number, similar to the optimistic lock mentioned in Mysql above.
 
@@ -802,7 +467,7 @@ Due to high concurrency, under CAS, this A may not be A after updating.</font> <
 *   ["ABA Problems and Avoidance in Java"](https://blog.csdn.net/li954644351/article/details/50511879)
     *   AtomicStampedReference and AtomicStampedReference.
 
-### [](#copyonwrite容器)CopyOnWrite container
+### [] CopyOnWrite container
 
 Concurrent reads can be made to the CopyOnWrite container without the need for locking.</font> <font style="vertical-align: inherit;">The CopyOnWrite concurrent container is used to read multiple writes and fewer concurrent scenes.</font> <font style="vertical-align: inherit;">For example, whitelists, blacklists, and visits and update scenarios for product categories are not suitable for scenarios that require strong data consistency.
 
@@ -812,11 +477,11 @@ Concurrent reads can be made to the CopyOnWrite container without the need for l
     *   Without locking, consistency is finally achieved through consistency.
 *   [Chat Concurrency - Copy-On-Write Container in Java](https://blog.csdn.net/a494303877/article/details/53404623)
 
-### [](#ringbuffer)RingBuffer
+### [] RingBuffer
 
 *   ["Thread-safe, lock-free RingBuffer implementation [a read thread, a write thread]"](http://www.cnblogs.com/l00l/p/4115001.html)
 
-### [](#可重入锁--不可重入锁)Reentrant Locks & Non-Reentrant Locks
+### [] Reentrant Locks & Non-Reentrant Locks
 
 *   [Reentrant and Non-Reentrant Locks](https://www.cnblogs.com/dj3839/p/6580765.html)
 
@@ -830,13 +495,13 @@ Concurrent reads can be made to the CopyOnWrite container without the need for l
     *   ReenTrantLock is flexible and lock fairness can be customized.
     *   In the same locked scenario, it is recommended to use synchronized.
 
-### [](#互斥锁--共享锁)Mutexes & shared locks
+### [] Mutexes & shared locks
 
 Mutexes: Only one thread can acquire a lock at the same time.</font> <font style="vertical-align: inherit;">For example, ReentrantLock is a mutex, and write locks in ReadWriteLock are mutexes.</font> <font style="vertical-align: inherit;">Shared locks: There can be multiple or simultaneous locks.</font> <font style="vertical-align: inherit;">For example, Semaphore, CountDownLatch are shared locks, and read locks in ReadWriteLock are shared locks.
 
 *   ["ReadWriteLock Scene Application"](https://www.cnblogs.com/liang1101/p/6475555.html)
 
-### [](#死锁)Deadlock
+### [] Deadlock
 
 *   ["Reasonable explanation of the four necessary conditions for "deadlock"](https://blog.csdn.net/yunfenglw/article/details/45950305)
 
@@ -848,42 +513,42 @@ Mutexes: Only one thread can acquire a lock at the same time.</font> <font style
 
     *   Jstack can display deadlocks.
 
-# [](#操作系统)operating system
+# [] operating system
 
-## [](#计算机原理)Principle of computer
+## [] Principle of computer
 
 *   ["Basic knowledge of operating system - principle, type and structure of operating system"](https://segmentfault.com/a/1190000003692840)
 
-## [](#cpu)CPU
+## [] CPU
 
-### [](#多级缓存)Multi-level cache
+### [] Multi-level cache
 
 A typical CPU has three levels of cache. The closer it is to the core, the faster and the smaller the space.</font> <font style="vertical-align: inherit;">L1 is generally 32k, L2 is generally 256k, and L3 is generally 12M.</font> <font style="vertical-align: inherit;">The memory speed requires 200 CPU cycles and the CPU cache requires 1 CPU cycle.
 
 *   ["Understanding CPU Cache and Pseudo Sharing from a Java Perspective"](https://blog.csdn.net/zero__007/article/details/54089730)
 
-## [](#进程)process
+## [] process
 
 TODO
 
-## [](#线程)Threads
+## [] Threads
 
 *   ["Thread life cycle and state transition details"](https://blog.csdn.net/asdf_1024/article/details/78978437)
 
-## [](#协程)Correspondence
+## [] Correspondence
 
 *   ["Terminating Python Coroutines--Implementation from Yield to actor Model"](https://www.thinksaas.cn/group/topic/839375/)
     *   Thread scheduling is the responsibility of the operating system. Coroutine scheduling is the responsibility of the program.
     *   Compared with threads, coroutines reduce unnecessary operating system switching.
     *   In fact, when switching to an IO operation is more meaningful, (because the IO operation does not occupy the CPU), if no IO operation is encountered, switch according to the time slice.
 
-## [](#linux)Linux
+## [] Linux
 
 *   [Linux Command Encyclopedia](http://www.runoob.com/linux/linux-command-manual.html)
 
-# [](#设计模式)Design Patterns
+# [] Design Patterns
 
-## [](#设计模式的六大原则)Six principles of design patterns
+## [] Six principles of design patterns
 
 *   [The Six Principles of Design Patterns](https://blog.csdn.net/q291611265/article/details/48465113)
     *   The principle of opening and closing: open to the extension, close to the modification, use more abstract classes and interfaces.
@@ -893,12 +558,12 @@ TODO
     *   Dimit's Law: A software entity should interact with other entities as little as possible and establish links through intermediate classes.
     *   Synthetic reuse principles: Use synthetic/aggregate as much as possible instead of using inheritance.
 
-## [](#23种常见设计模式)23 common design patterns
+## [] 23 common design patterns
 
 *   ["Design Patterns"](http://www.runoob.com/design-pattern/design-pattern-tutorial.html)
 *   ["23 kinds of design patterns full analysis"](https://www.cnblogs.com/susanws/p/5510229.html)
 
-## [](#应用场景)Application scenario
+## [] Application scenario
 
 *   ["Detailed Design Patterns in the JDK"](http://blog.jobbole.com/62314/)
 
@@ -931,22 +596,22 @@ TODO
 
 *   ["Design Patterns Used by Mybatis"](https://blog.csdn.net/u012387062/article/details/54719114)
 
-## [](#单例模式)Singleton mode
+## [] Singleton mode
 
 *   [Three Implementations of the Singleton Model and Their Advantages and Disadvantages](https://blog.csdn.net/YECrazy/article/details/79481964)
 *   [Singleton Pattern - Reflection - Preventing Serialization from Destroying Singleton Patterns](https://www.cnblogs.com/ttylinux/p/6498822.html)
     *   Use enumeration types.
 
-## [](#责任链模式)Chain of responsibility model
+## [] Chain of responsibility model
 
 TODO
 
-## [](#mvc)MVC
+## [] MVC
 
 *   ["MVC Mode"](http://www.runoob.com/design-pattern/mvc-pattern.html)
     *   Model - view - controller
 
-## [](#ioc)IOC
+## [] IOC
 
 *   [Understanding the IOC](https://www.zhihu.com/question/23277575)
 *   ["ICO Understanding and Interpretation"](https://www.cnblogs.com/NancyStartOnce/p/6813162.html)
@@ -954,7 +619,7 @@ TODO
     *   Role: For module decoupling.
     *   DI: Dependency Injection, that is, dependency injection, is only concerned with resource usage and does not care about the source of resources.
 
-## [](#aop)AOP
+## [] AOP
 
 *   [Easy to understand AOP (face-oriented programming)](https://my.oschina.net/yanquan345/blog/203415)
 *   ["Spring AOP Detailed"](https://www.cnblogs.com/hongwz/p/5764917.html)
@@ -963,16 +628,16 @@ TODO
 *   [Spring AOP Implementation Principles and CGLIB Applications](https://www.ibm.com/developerworks/cn/java/j-lo-springaopcglib/)
     *   The principle of handling the AOP proxy class in the Spring AOP framework is: If the target object's implementation class implements the interface, Spring AOP will use the JDK dynamic proxy to generate the AOP proxy class; if the target object's implementation class does not implement the interface, Spring AOP will Use CGLIB to generate AOP proxy classes
 
-## [](#uml)UML
+## [] UML
 
 *   ["UML Tutorial"](https://www.w3cschool.cn/uml_tutorial/)
 
-## [](#微服务思想)Microservice idea
+## [] Microservice idea
 
 *   ["Micro Service Architecture Design"](https://www.cnblogs.com/wintersun/p/6219259.html)
 *   ["Microservice Architecture Technology Stack Selection Manual"](http://www.infoq.com/cn/articles/micro-service-technology-stack)
 
-### [](#康威定律)Conway Law
+### [] Conway Law
 
 *   ["The Theoretical Basis of Microservice Architecture - Conway's Law"](https://yq.aliyun.com/articles/8611)
 
@@ -982,9 +647,9 @@ TODO
     *   Law 4: Large system organizations are always more decomposed than small systems.</font> <font style="vertical-align: inherit;">All the time will be divided, divide and rule.
 *   ["Microservice Architecture Core 20"](https://static.geekbang.org/PDF-%E4%BF%AE%E6%94%B9%E7%89%88-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-%E5%9B%BE%E7%89%87-%E6%9D%A8%E6%B3%A2-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.pdf)
 
-# [](#运维--统计--技术支持)Operation & Statistics & Technical Support
+# [] Operation & Statistics & Technical Support
 
-## [](#常规监控)General monitoring
+## [] General monitoring
 
 *   ["Tencent Business System Monitoring Practice Road"](https://blog.csdn.net/enweitech/article/details/77849205)
 
@@ -1006,7 +671,7 @@ TODO
 
 *   ["Detailed Usage of JVM Performance Tuning Monitoring Tools jps, jstack, jmap, jhat, jstat, hprof"](https://my.oschina.net/feichexia/blog/196575)
 
-## [](#apm)APM
+## [] APM
 
 APM — Application Performance Management
 
@@ -1025,7 +690,7 @@ APM — Application Performance Management
 
     *   Mainly based on Google's Dapper (large-scale distributed system tracking system) idea.
 
-## [](#统计分析)Statistical Analysis
+## [] Statistical Analysis
 
 *   ["The basis of traffic statistics: buried point"](https://zhuanlan.zhihu.com/p/25195217)
 
@@ -1037,45 +702,45 @@ APM — Application Performance Management
 
     *   The so-called no trace, that is, the acquisition node is configured through a visualization tool, and the front end automatically analyzes the configuration and reports buried data, instead of hard coding.
 
-## [](#持续集成cicd)Continuous Integration (CI/CD)
+## [] 
 
 *   [What is Continuous Integration?</font> <font style="vertical-align: inherit;">》](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
 *   [8 Popular Continuous Integration Tools](https://www.testwo.com/article/1170)
 
-### [](#jenkins)Jenkins
+### [] Jenkins
 
 *   ["Using Jenkins for Continuous Integration"](https://www.liaoxuefeng.com/article/001463233913442cdb2d1bd1b1b42e3b0b29eb1ba736c5e000)
 
-### [](#环境分离)Environmental separation
+### [] Environmental separation
 
 Development, testing, and production environment separation.
 
 *   ["Basic understanding and area of ​​development environment, production environment, and test environment"](https://my.oschina.net/sancuo/blog/214904)
 
-## [](#自动化运维)Automation operation and maintenance
+## [] Automation operation and maintenance
 
-### [](#ansible)Ansible
+### [] Ansible
 
 *   [Ansible Chinese Authoritative Guide](http://www.ansible.com.cn/)
 *   ["Ansible Basic Configuration and Enterprise Project Practical Cases"](https://www.cnblogs.com/heiye123/articles/7855890.html)
 
-### [](#puppet)Puppet
+### [] Puppet
 
 *   ["Automatic maintenance tools - detailed puppet"](https://www.cnblogs.com/keerya/p/8040071.html)
 
-### [](#chef)Chef
+### [] Chef
 
 *   ["Chef Installation and Use"](https://www.ibm.com/developerworks/cn/cloud/library/1407_caomd_chef/)
 
-## [](#测试)test
+## [] test
 
-### [](#tdd-理论)TDD theory
+### [] TDD theory
 
 *   [Deep Interpretation - TDD (Test Driven Development)](https://www.jianshu.com/p/62f16cd4fef3)
     *   Based on test case coding function code, XP (Extreme Programming) core practice.
     *   Benefits: Focus on one point at a time, reduce the burden of thinking; meet changes in demand or improve code design; clarify requirements in advance;
 
-### [](#单元测试)unit test
+### [] unit test
 
 *   ["Java Unit Testing JUnit"](https://www.cnblogs.com/happyzm/p/6482886.html)
 *   ["Compare JUnit 4 with TestNG"](https://blog.csdn.net/hotdust/article/details/53406086)
@@ -1083,7 +748,7 @@ Development, testing, and production environment separation.
 *   ["Unit test major test function point"](https://blog.csdn.net/wqetfg/article/details/50900512)
     *   Module interface testing, local data structure testing, path testing, error handling testing, and boundary condition testing.
 
-### [](#压力测试)pressure test
+### [] pressure test
 
 *   ["Apache ab test user guide"](https://blog.csdn.net/blueheart20/article/details/52170790)
 *   ["Large Website Stress Testing and Optimization Program"](https://www.cnblogs.com/binyue/p/6141088.html)
@@ -1091,14 +756,14 @@ Development, testing, and production environment separation.
 *   ["True traffic pressure measurement tool tcpcopy application analysis"](http://quentinxxz.iteye.com/blog/2249799)
 *   ["nGrinder Easy-to-use tutorial"](https://www.cnblogs.com/jwentest/p/7136727.html)
 
-### [](#全链路压测)Full-link pressure test
+### [] Full-link pressure test
 
 *   ["Jingdong 618: Upgrade full-link pressure test program to create ForceBot for military exercises"](http://www.infoq.com/cn/articles/jd-618-upgrade-full-link-voltage-test-program-forcebot)
 *   ["Hungry? Exploration and Practice of Full Link Pressure Measurement"](https://zhuanlan.zhihu.com/p/30306892)
 *   ["Four languages, eight frameworks | Drip drop full-link pressure measurement solution"](https://zhuanlan.zhihu.com/p/28355759)
 *   ["Full-Link Pressure Test Experience"](https://www.jianshu.com/p/27060fd61f72)
 
-### [](#ab-灰度蓝绿测试)A/B, grayscale, blue-green test
+### [] A/B, grayscale, blue-green test
 
 *   [Technical Dry Goods | AB Testing and Grayscale Distribution Exploration and Practice](https://testerhome.com/topics/11165)
 
@@ -1106,53 +771,53 @@ Development, testing, and production environment separation.
 
 *   [Blue Green Deployment, A/B Testing, and Grayscale Publishing](https://www.v2ex.com/t/344341)
 
-## [](#虚拟化)Virtualization
+## [] Virtualization
 
 *   ["Comparison of the advantages and disadvantages of three VPS virtualization technologies, OpenVZ, Xen and KVM"](https://blog.csdn.net/enweitech/article/details/52910082)
 
-### [](#kvm)KVM
+### [] KVM
 
 *   ["KVM Detailed, too detailed and in-depth, classic"](http://blog.chinaunix.net/uid-20201831-id-5775661.html)
 *   ["[text]KVM virtual machine installation explain"](https://www.coderxing.com/kvm-install.html)
 
-### [](#xen)Xen
+### [] Xen
 
 *   ["Xen Virtualization Fundamentals"](https://www.cnblogs.com/sddai/p/5931201.html)
 
-### [](#openvz)OpenVZ
+### [] OpenVZ
 
 *   [Open Source Linux OpenVZ Quick Start Guide](https://blog.csdn.net/longerzone/article/details/44829255)
 
-## [](#容器技术)Container technology
+## [] Container technology
 
-### [](#docker)Docker
+### [] Docker
 
 *   ["Several Diagrams Help You Understand Docker Fundamentals and Quick Start"](https://www.cnblogs.com/SzeCheng/p/6822905.html)
 *   [Docker Core Technology and Implementation Principles](https://draveness.me/docker)
 *   [Docker Tutorial](http://www.runoob.com/docker/docker-tutorial.html)
 
-## [](#云技术)Cloud technology
+## [] Cloud technology
 
-### [](#openstack)OpenStack
+### [] OpenStack
 
 *   ["OpenStack architecture knowledge combing"](https://www.cnblogs.com/klb561/p/8660264.html)
 
-## [](#devops)DevOps
+## [] DevOps
 
 *   ["What tells you exactly what DevOps is?</font> <font style="vertical-align: inherit;">》](https://www.cnblogs.com/jetzhang/p/6068773.html)
 *   [DevOps Explained](http://www.infoq.com/cn/articles/detail-analysis-of-devops)
 
-## [](#文档管理)Document management
+## [] Document management
 
 *   [Confluence - Charge Document Management System](http://www.confluence.cn/)
 *   GitLab?
 *   Wiki
 
-# [](#中间件)Middleware
+# [] Middleware
 
-## [](#web-server)Web Server
+## [] Web Server
 
-### [](#nginx)Nginx
+### [] Nginx
 
 *   ["Basic Learning of Ngnix - Comparison of Multiple Processes and Apache"](https://blog.csdn.net/qq_25797077/article/details/52200722)
 
@@ -1162,19 +827,19 @@ Development, testing, and production environment separation.
 
     *   Nginx is only suitable for static and reverse proxies and is not suitable for handling dynamic requests.
 
-### [](#openresty)OpenResty
+### [] OpenResty
 
 *   [Official website](http://openresty.org/cn/)
 *   ["On OpenResty"](http://www.linkedkeeper.com/detail/blog.action?bid=1034)
     *   The Lua module can be developed on Nginx.
 
-### [](#apache-httpd)Apache Httpd
+### [] Apache Httpd
 
 *   [Official website](http://httpd.apache.org/)
 
-### [](#tomcat)Tomcat
+### [] Tomcat
 
-#### [](#架构原理)Architecture principle
+#### [] Architecture principle
 
 *   ["Detailed TOMCAT Principles and Request Process"](https://www.cnblogs.com/hggen/p/6264475.html)
 
@@ -1189,7 +854,7 @@ Development, testing, and production environment separation.
     *   Tomcat is a lightweight Serverlet container that does not implement all JEE features (such as persistence and transaction processing) but can be replaced by other components such as Srping.
     *   Jboss implements all JEE features, free software open source, and documentation fees.
 
-#### [](#调优方案)Tuning plan
+#### [] Tuning plan
 
 *   [Tomcat Tuning Solution](https://www.cnblogs.com/sunfenqing/p/7339058.html)
 
@@ -1201,7 +866,7 @@ Development, testing, and production environment separation.
     *   The AJP protocol (port 8009) is used to reduce the number of connections (front-end) to the front-end Server (such as Apache, which also needs to support the AJP protocol), and to increase performance through long connections.
     *   When concurrency is high, the AJP protocol is better than the HTTP protocol.
 
-### [](#jetty)Jetty
+### [] Jetty
 
 *   ["How Jetty Works and Comparison with Tomcat"](https://www.ibm.com/developerworks/cn/java/j-lo-jetty/)
 *   ["Compared advantages of jetty and tomcat"](https://blog.csdn.net/doutao6677/article/details/51957288)
@@ -1209,11 +874,11 @@ Development, testing, and production environment separation.
     *   Performance comparison: Jetty and Tomcat have little difference in performance. Jetty uses NIO to end up with more advantages in handling I/O requests. Tomcat uses BIO to handle I/O requests by default. Tomcat is suitable for handling a few very busy links and handles static resources. Poor performance.
     *   Other aspects: The application of Jetty is faster, simpler to modify, and better supported by the new Servlet specification; Tomcat supports JEE and Servlet more comprehensively.
 
-## [](#缓存)Caching
+## [] Caching
 
 *   ["Cache invalidation strategy (the difference between FIFO, LRU, LFU algorithm)"](https://blog.csdn.net/clementad/article/details/48229243)
 
-### [](#本地缓存)Local cache
+### [] Local cache
 
 *   [HashMap Local Cache](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4211.html)
 
@@ -1229,22 +894,22 @@ Development, testing, and production environment separation.
 
 *   ["Pagespeed - lazy tool, server-side acceleration"](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/4222-pagespeed.html)
 
-## [](#客户端缓存)Client Cache
+## [] Client Cache
 
 *   [Browser Side Cache](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/423-ke-hu-duan-huan-cun.html)
 
     *   Mainly using the Cache-Control parameter.
 *   ["H5 and Mobile WebView Cache Mechanism Analysis and Combat"](https://mp.weixin.qq.com/s/qHm_dJBhVbv0pJs8Crp77w)
 
-## [](#服务端缓存)Server cache
+## [] Server cache
 
-### [](#web缓存)Web Cache
+### [] Web Cache
 
 *   [Nuster](https://github.com/jiangwenyuan/nuster)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">- nuster cache
 *   [Varnish](https://github.com/varnishcache/varnish-cache)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">- varnish cache
 *   [Squid](https://github.com/squid-cache/squid)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">- squid cache
 
-### [](#memcached)Memcached
+### [] Memcached
 
 *   [Memcached Tutorial](http://www.runoob.com/Memcached/Memcached-tutorial.html)
 
@@ -1261,7 +926,7 @@ Development, testing, and production environment separation.
     *   The difference is that when the key exists or does not exist, the return value is true and false.
 *   [**"Comprehensive Analysis of Memcached"**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
 
-### [](#redis)Redis
+### [] Redis
 
 *   [Redis Tutorial](http://www.runoob.com/redis/redis-tutorial.html)
 
@@ -1276,15 +941,15 @@ Development, testing, and production environment separation.
     *   It can also be used in combination.
 *   ["Distributed Cache - Sequence 3 - Atomic Operations and CAS Optimistic Locking"](https://blog.csdn.net/chunlongyu/article/details/53346436)
 
-#### [](#架构)Structure
+#### [] Structure
 
 *   [Redis Single-threaded Architecture](https://blog.csdn.net/sunhuiliang85/article/details/73656830)
 
-#### [](#回收策略)Recovery strategy
+#### [] Recovery strategy
 
 *   ["Redis Recovery Strategy"](https://blog.csdn.net/qq_29108585/article/details/63251491)
 
-### [](#tair)Tair
+### [] Tair
 
 *   [Official website](https://github.com/alibaba/tair)
 *   ["The Comparison of Tair and Redis"](http://blog.csdn.net/farphone/article/details/53522383)
@@ -1299,7 +964,7 @@ Several storage engines:
 *   LDB (LevelDB storage engine), persistent storage, LDB as a persistence of rdb, google implementation, more efficient, theoretical basis is the LSM (Log-Structured-Merge Tree) algorithm, now modify the data in memory, reach a certain amount (and Memory aggregated old data is written to disk together. Write to disk and storage is more efficient. The county compares the hash algorithm.
 *   Tair uses shared memory to store data. If the service goes down (not the server), the data is still available after the service is restarted.
 
-## [](#消息队列)message queue
+## [] message queue
 
 *   [Message Queue - Push/Pull Mode Learning & ActiveMQ and JMS Learning](https://www.cnblogs.com/charlesblc/p/6045238.html)
 
@@ -1309,17 +974,17 @@ Several storage engines:
     *   Pull: The advantage is that the consumer can pull it off according to its processing power. The disadvantage is that it will increase the message delay.
 *   ["Comparison of Kafka, RabbitMQ, RocketMQ and Other Message Middleware - Message Sending Performance and Difference"](https://blog.csdn.net/yunfeng482/article/details/72856762)
 
-### [](#消息总线)Message bus
+### [] Message bus
 
 The message bus is equivalent to a layer of encapsulation on the message queue, unified entrance, unified management and control, simplifying the access cost.
 
 *   [Message Bus VS Message Queue](https://blog.csdn.net/yanghua_kobe/article/details/43877281)
 
-### [](#消息的顺序)Order of messages
+### [] Order of messages
 
 *   [How to ensure the order of consumers to receive messages](https://www.cnblogs.com/cjsblog/p/8267892.html)
 
-### [](#rabbitmq)RabbitMQ
+### [] RabbitMQ
 
 Supports transactions, push and pull modes are all supported, and are suitable for scenarios requiring reliable message transmission.
 
@@ -1327,19 +992,19 @@ Supports transactions, push and pull modes are all supported, and are suitable f
 *   [Message Queue RabbitMQ](https://www.jianshu.com/p/79ca08116d57)
 *   ["RabbitMQ message confirmation mechanism (transaction + Confirm)"](https://blog.csdn.net/u013256816/article/details/55515234)
 
-### [](#rocketmq)RocketMQ
+### [] RocketMQ
 
 Java implementation, push and pull modes are all supported, and the throughput is lower than Kafka.</font> <font style="vertical-align: inherit;">The order of messages can be guaranteed.
 
 *   [RocketMQ Reality Quick Start](https://www.jianshu.com/p/824066d70da8)
 
-### [](#activemq)ActiveMQ
+### [] ActiveMQ
 
 Pure Java implementation, compatible with JMS, can be embedded in Java applications.
 
 *   ["Introduction to ActiveMQ Message Queue"](https://www.cnblogs.com/wintersun/p/3962302.html)
 
-### [](#kafka)Kafka
+### [] Kafka
 
 High throughput, pull mode.</font> <font style="vertical-align: inherit;">Suitable for high IO scenarios, such as log synchronization.
 
@@ -1347,19 +1012,19 @@ High throughput, pull mode.</font> <font style="vertical-align: inherit;">Suitab
 *   ["Compared with the message queues, Kafka's in-depth analysis, everyone's recommendation, wonderful good!</font> <font style="vertical-align: inherit;">》](https://blog.csdn.net/allthesametome/article/details/47362451)
 *   ["Introduction and Example of Kafka Partitioning Mechanism"](http://lxw1234.com/archives/2015/10/538.htm)
 
-### [](#redis-消息推送)Redis message push
+### [] Redis message push
 
 Producer and consumer patterns are completely client-side behaviors, list and pull modes are implemented, blocking waits for blpop instructions.
 
 *   ["Redis Study Notes 10: Redis Used as Message Queue"](https://blog.csdn.net/qq_34212276/article/details/78455004)
 
-### [](#zeromq)ZeroMQ
+### [] ZeroMQ
 
 TODO
 
-## [](#定时调度)Scheduled scheduling
+## [] Scheduled scheduling
 
-### [](#单机定时调度)Stand-alone scheduled scheduling
+### [] Stand-alone scheduled scheduling
 
 *   ["Linux regular task cron configuration"](https://www.cnblogs.com/shuaiqing/p/7742382.html)
 
@@ -1374,7 +1039,7 @@ TODO
 
     *   Scheduled scheduling In the QuartzSchedulerThread code, while() loops indefinitely, every time the loop retrieves the trigger that the time will reach, and the corresponding job is fired until the scheduler thread is closed.
 
-### [](#分布式定时调度)Distributed timing scheduling
+### [] Distributed timing scheduling
 
 *   ["These excellent domestic distributed task scheduling system, you used a few?</font> <font style="vertical-align: inherit;">》](https://blog.csdn.net/qq_16216221/article/details/70314337)
 
@@ -1383,48 +1048,48 @@ TODO
 
     *   Quartz cluster, independent Quartz node does not communicate with another node or management node, but through the same database table to another Quartz application
 
-## [](#rpc)RPC
+## [] RPC
 
 *   ["Implementing the RPC Framework from scratch - Principles and realization of RPC"](https://blog.csdn.net/top_code/article/details/54615853)
 
     *   Core roles: Server: The service provider exposing the service, Client: The service consumer calling the remote service, Registry: The registration center for service registration and discovery.
 *   ["Performance Comparison of Distributed RPC Framework Performance Competition dubbo, motan, rpcx, gRPC, thrift"](https://blog.csdn.net/testcs_dn/article/details/78050590)
 
-### [](#dubbo)Dubbo
+### [] Dubbo
 
 *   [Official website](http://dubbo.apache.org/)
 *   [The dubbo implementation principle is briefly introduced](https://www.cnblogs.com/steven520213/p/7606598.html)
 
 ** SPI ** TODO
 
-### [](#thrift)Thrift
+### [] Thrift
 
 *   [Official website](http://thrift.apache.org/)
 *   ["Thrift RPC Explained"](https://blog.csdn.net/kesonyk/article/details/50924489)
     *   Supports multiple languages, defining interfaces through intermediate languages.
 
-### [](#grpc)gRPC
+### [] gRPC
 
 The server can be authenticated and encrypted. In an external network environment, data security can be guaranteed.
 
 *   [Official website](https://grpc.io/)
 *   ["RPC Principles You Should Know"](https://www.cnblogs.com/LBSer/p/4853234.html)
 
-## [](#数据库中间件)Database middleware
+## [] Database middleware
 
-### [](#sharding-jdbc)Sharding Jdbc
+### [] Sharding Jdbc
 
 *   [Official website](http://shardingjdbc.io/)
 
-## [](#日志系统)Log system
+## [] Log system
 
-### [](#日志搜集)Log collection
+### [] Log collection
 
 *   ["Build an ELKB Log Collection System from scratch"](http://cjting.me/misc/build-log-system-with-elkb/)
 *   ["Establish a Simple Log Collection and Analysis System with ELK"](https://blog.csdn.net/lzw_2006/article/details/51280058)
 *   ["Log Collection System - Inquiry"](https://www.cnblogs.com/beginmind/p/6058194.html)
 
-## [](#配置中心)Configuration Center
+## [] Configuration Center
 
 *   [Apollo - Ctrip's Configuration Center Application](https://github.com/ctripcorp/apollo)
 
@@ -1439,7 +1104,7 @@ Servlet 3.0 Asynchronous Feature Available to Configuration Center Clients
 
 *   ["New Features in servlet 3.0 - Asynchronous Processing"](https://www.cnblogs.com/dogdogwang/p/7151866.html)
 
-## [](#api-网关)API Gateway
+## [] API Gateway
 
 Main responsibilities: request forwarding, security authentication, protocol conversion, disaster recovery.
 
@@ -1451,31 +1116,31 @@ Main responsibilities: request forwarding, security authentication, protocol con
 
 *   ["Kong Introduction to One of the HTTP API Gateway Selections"](https://mp.weixin.qq.com/s/LIq2CiXJQmmjBC0yvYLY5A)
 
-# [](#网络)The internet
+# [] The internet
 
-## [](#协议)protocol
+## [] protocol
 
-### [](#osi-七层协议)OSI Layer 7 Protocol
+### [] OSI Layer 7 Protocol
 
 *   ["OSI seven-layer protocol model, TCP/IP four-layer model study notes"](https://www.cnblogs.com/Robin-YB/p/6668762.html)
 
-### [](#tcpip)TCP/IP
+### [] TCP/IP
 
 *   ["Instantly explain TCP/IP protocol"](https://www.cnblogs.com/onepixel/p/7092302.html)
 *   ["Three-way handshake and four waves in TCP protocol"](https://blog.csdn.net/whuslei/article/details/6667471/)
 
-### [](#http)HTTP
+### [] HTTP
 
 *   ["Details of the http protocol (super detailed)"](https://www.cnblogs.com/wangning528/p/6388464.html)
 
-### [](#http20)HTTP2.0
+### [] HTTP2.0
 
 *   ["Detailed Analysis of HTTP 2.0 Principles"](https://blog.csdn.net/zhuyiquan/article/details/69257126)
 *   ["The basic unit of HTTP2.0 is binary frame"](https://blog.csdn.net/u012657197/article/details/77877840)
     *   Use binary frames for transmission.
     *   Multiplexing.
 
-### [](#https)HTTPS
+### [] HTTPS
 
 *   ["https Principles of Popular Understanding"](https://www.cnblogs.com/zhangshitong/p/6478721.html)
 
@@ -1484,7 +1149,7 @@ Main responsibilities: request forwarding, security authentication, protocol con
     *   Use a certificate issued by a third party to encrypt the public key for secure transmission of the public key and prevent it from being altered by an intermediary.
 *   [Eight Free SSL Certificates - Adding Https Security to Your Website for Free](https://blog.csdn.net/enweitech/article/details/53213862)
 
-## [](#网络模型)Network model
+## [] Network model
 
 *   ["The principles of web optimization must understand the five models of the I/O and the three working modes of the web."](http://blog.51cto.com/litaotao/1289790)
 
@@ -1506,41 +1171,41 @@ Main responsibilities: request forwarding, security authentication, protocol con
 
 *   ["Two Efficient Server Design Models: Reactor and Proactor Models"](https://blog.csdn.net/u013074465/article/details/46276967)
 
-### [](#epoll)Epoll
+### [] Epoll
 
 *   ["epoll use detailed (essential)"](https://www.cnblogs.com/fnlingnzb-learner/p/5835573.html)
 
-### [](#java-nio)Java NIO
+### [] Java NIO
 
 *   ["In-depth understanding of Java NIO"](https://www.cnblogs.com/geason/p/5774096.html)
 *   ["An example of a Java NIO writing Socket server"](https://blog.csdn.net/xidianliuy/article/details/51612676)
 
-### [](#kqueue)Kqueue
+### [] Kqueue
 
 *   [Kqueue usage introduction](http://www.cnblogs.com/luminocean/p/5631336.html)
 
-## [](#连接和短连接)Connections and short connections
+## [] Connections and short connections
 
 *   ["TCP/IP Series - Difference between Long and Short Connections"](https://www.cnblogs.com/pangguoping/p/5571422.html)
 
-## [](#框架)frame
+## [] frame
 
 *   ["Netty principle analysis"](https://blog.csdn.net/excellentyuxiao/article/details/53390408)
     *   Reactor mode introduction.
     *   Netty is an implementation of Reactor mode.
 
-## [](#零拷贝zero-copy)Zero-copy
+## [] Zero-copy
 
 *   [Understanding of Zero Copy for Netty ByteBuf](https://www.cnblogs.com/xys1228/p/6088805.html)
     *   Multiple physically separate buffers are logically merged into one, thus avoiding data copying between memory.
 
-## [](#序列化二进制协议)Serialization (binary protocol)
+## [] 
 
-### [](#hessian)Hessian
+### [] Hessian
 
 *   ["Hessian Principle Analysis"](https://www.cnblogs.com/happyday56/p/4268249.html)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">Binary-RPC; not just serialization
 
-### [](#protobuf)Protobuf
+### [] Protobuf
 
 *   ["Java application example of Protobuf protocol"](https://blog.csdn.net/antgan/article/details/52103966)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">Goolge produced, occupied space and efficiency outperformed other serialization libraries such as Hessian; need to write .proto file.
 
@@ -1551,20 +1216,20 @@ Main responsibilities: request forwarding, security authentication, protocol con
 
     *   The advantage of protostuff is that instead of writing .proto files, Java objects can be serialized directly.
 
-# [](#数据库)database
+# [] database
 
-## [](#基础理论)Basic theory
+## [] Basic theory
 
-### [](#数据库设计的三大范式)Three paradigms of database design
+### [] Three paradigms of database design
 
 *   ["Three Paradigms of Database and Five Constraints"](https://www.cnblogs.com/waj6511988/p/7027127.html)
     *   The first normal form: each column (each field) in the data table must be the smallest unit that cannot be split, that is, to ensure the atomicity of each column;
     *   Second Normal Form (2NF): After satisfying 1NF, all the columns in the table must be dependent on the primary key. No column can be related to the primary key. That is, a table describes only one thing.
     *   The third paradigm: must meet the second paradigm (2NF), requirements: each column in the table is only directly related to the primary key and not indirectly, (each column in the table can only rely on the primary key);
 
-## [](#mysql)MySQL
+## [] MySQL
 
-### [](#原理)principle
+### [] principle
 
 *   ["InnoDB indexing principle of MySQL"](http://www.admin10000.com/document/5372.html)
 
@@ -1573,11 +1238,11 @@ Main responsibilities: request forwarding, security authentication, protocol con
     *   The main difference between the two types is that Innodb supports transaction processing and foreign key and row-level locking
 *   ["The difference between myisam and innodb index implementation"](https://www.2cto.com/database/201211/172380.html)
 
-### [](#innodb)InnoDB
+### [] InnoDB
 
 *   ["An article with you read Mysql and InnoDB"](https://my.oschina.net/kailuncen/blog/1504217)
 
-### [](#优化)optimization
+### [] optimization
 
 *   [MySQL36 Rules](http://vdisk.weibo.com/s/muWOT)
 
@@ -1593,37 +1258,37 @@ Main responsibilities: request forwarding, security authentication, protocol con
 
     *   In principle, it is to narrow the scanning range.
 
-### [](#索引)index
+### [] index
 
-#### [](#聚集索引-非聚集索引)Clustered index, non-clustered index
+#### [] Clustered index, non-clustered index
 
 *   ["MySQL Clustered Index/Non-Clustered Indexes"](https://blog.csdn.net/no_endless/article/details/77073549)
 *   ["MyISAM and InnoDB Index Implementation"](https://www.cnblogs.com/zlcxbb/p/5757245.html)
 
 MyISAM is non-clustered, InnoDB is aggregated
 
-#### [](#复合索引)Composite index
+#### [] Composite index
 
 *   ["Comprehensive Index Advantages and Precautions"](https://www.cnblogs.com/summer0space/p/7247778.html)
 
-#### [](#自适应哈希索引ahi)Adaptive Hash Index (AHI)
+#### [] 
 
 *   [InnoDB Storage Engine - Adaptive Hash Index](https://blog.csdn.net/Linux_ever/article/details/62043708)
 
-### [](#explain)Explain
+### [] Explain
 
 *   ["MySQL Performance Optimizer Explain Use Analysis"](https://segmentfault.com/a/1190000008131735)
 
-## [](#nosql)NoSQL
+## [] NoSQL
 
-### [](#mongodb)MongoDB
+### [] MongoDB
 
 *   [MongoDB Tutorial](http://www.runoob.com/mongodb/mongodb-tutorial.html)
 *   ["The Advantages and Disadvantages of Mongodb vs. Relational Databases"](http://mxdxm.iteye.com/blog/2093603)
     *   Advantages: weak consistency (eventually consistent), better guarantee user access speed; built-in GridFS, support for large-capacity storage; Schema-less database, no pre-defined structure; built-in Sharding; compared to other NoSQL, third-party support is rich Superior performance;
     *   Disadvantages: mongodb does not support transaction operations; mongodb takes up too much space; MongoDB does not have mature maintenance tools such as MySQL, which is a noteworthy area for development and IT operations;
 
-### [](#hbase)Hbase
+### [] Hbase
 
 *   ["Concise HBase Primer (Opening)"](http://www.thebigdata.cn/HBase/35831.html)
 
@@ -1639,76 +1304,76 @@ MyISAM is non-clustered, InnoDB is aggregated
     *   Rowkey is arranged in lexicographic order for batch scanning.
     *   Hot spots can be avoided by hashing.
 
-# [](#搜索引擎)search engine
+# [] search engine
 
-## [](#搜索引擎原理)Search Engine Principle
+## [] Search Engine Principle
 
 *   ["Inverted Index - Search Engine Getting Started"](https://www.jianshu.com/p/0193dc44135b)
 
-## [](#lucene)Lucene
+## [] Lucene
 
 *   ["Introduction to Lucene"](https://www.cnblogs.com/rodge-run/p/6551152.html)
 
-## [](#elasticsearch)Elasticsearch
+## [] Elasticsearch
 
 *   ["Elasticsearch learning, please look at this one!</font> <font style="vertical-align: inherit;">》](https://blog.csdn.net/laoyang360/article/details/52244917)
 *   [Elasticsearch Index Theory](https://blog.csdn.net/cyony/article/details/65437708)
 
-## [](#solr)Solr
+## [] Solr
 
 *   ["Apache Solr Tutorial"](https://blog.csdn.net/u011936655/article/details/51960005)
 *   [Comparison between "elasticsearch and solr"](https://blog.csdn.net/convict_eva/article/details/53537837)
 
-## [](#sphinx)Sphinx
+## [] Sphinx
 
 *   ["Sphinx's Introduction and Theory Exploration"](http://blog.jobbole.com/101672/)
 
-# [](#性能)performance
+# [] performance
 
-## [](#性能优化方法论)Performance Optimization Methodology
+## [] Performance Optimization Methodology
 
 *   ["15-day performance optimization work, 5 aspects of tuning experience"](https://blog.csdn.net/huangwenyi1010/article/details/72673447?ref=myread)
 
     *   Code level, business level, database level, server level, front-end optimization.
 *   ["Several Aspects of System Performance Optimization"](https://blog.csdn.net/tenglizhe/article/details/44563135)
 
-## [](#容量评估)Capacity assessment
+## [] Capacity assessment
 
 *   ["Methodology and Typical Cases for Network Performance and Capacity Assessment"](https://blog.csdn.net/u012528360/article/details/70054156)
 *   ["Internet architecture, how to design capacity?</font> <font style="vertical-align: inherit;">》](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651959542&idx=1&sn=2494bbea9a855e0e1c3ccd6d2562a600&scene=21#wechat_redirect)
     *   Assess total visits, evaluate average visits QPS, evaluate peak QPS, evaluate systems, stand-alone limit QPS
 
-## [](#cdn-网络)CDN network
+## [] CDN network
 
 *   ["CDN Acceleration Principle"](https://www.cnblogs.com/wxiaona/p/5867685.html)
 *   [What are the better CDNs in China?</font> <font style="vertical-align: inherit;">》](https://www.zhihu.com/question/20536932)
 
-## [](#连接池)connection pool
+## [] connection pool
 
 *   ["Mainstream Java Database Connection Pool Comparison and Development Configuration Actual Battle"](https://blog.csdn.net/fysuccess/article/details/66972554)
 
-## [](#性能调优)Performance tuning
+## [] Performance tuning
 
 *   [Nine Java performance debugging tools, at least one](https://blog.csdn.net/yethyeth/article/details/73266455)
 
-# [](#大数据)Big Data
+# [] Big Data
 
-## [](#流式计算)Flow calculation
+## [] Flow calculation
 
-### [](#storm)Storm
+### [] Storm
 
 *   [Official website](http://storm.apache.org/)
 *   [The most detailed Storm tutorial](https://blog.csdn.net/uisoul/article/details/77989927)
 
-### [](#flink)Flink
+### [] Flink
 
 *   ["Flink One Flink Basic Principles Introduction"](https://blog.csdn.net/lisi1129/article/details/54844919)
 
-### [](#kafka-stream)Kafka Stream
+### [] Kafka Stream
 
 *   [Kafka Stream Research: A Lightweight Flow Computing Model](https://yq.aliyun.com/articles/58382)
 
-### [](#应用场景-1)Application scenario
+### [] Application scenario
 
 E.g:
 
@@ -1718,62 +1383,62 @@ E.g:
 *   Real-time rankings;
 *   Real-time statistics.
 
-## [](#hadoop)Hadoop
+## [] Hadoop
 
 *   ["What is Hadoop, what can I do in easy-to-understand words?"](https://blog.csdn.net/houbin0912/article/details/72967178)
 *   ["The most detailed Hadoop environment in history"](http://gitbook.cn/books/5954c9600326c7705af8a92a/index.html)
 
-### [](#hdfs)HDFS
+### [] HDFS
 
 *   ["[Hadoop Learning] HDFS Basic Principles"](https://segmentfault.com/a/1190000011575458)
 
-### [](#mapreduce)MapReduce
+### [] MapReduce
 
 *   ["Introducing Map/Reduce Principles in Plain English"](https://blog.csdn.net/oppo62258801/article/details/72884633)
 *   ["Simple map-reduce java example"](https://blog.csdn.net/foye12/article/details/78358292)
 
-### [](#yarn)Yarn
+### [] Yarn
 
 *   ["Preliminary Mastery of Yarn's Architecture and Principles"](http://www.cnblogs.com/codeOfLife/p/5492740.html)
 
-## [](#spark)Spark
+## [] Spark
 
 *   ["Spark (1): Basic Architecture and Principles"](http://www.cnblogs.com/tgzhu/p/5818374.html)
 
-# [](#安全)Safety
+# [] Safety
 
-## [](#web-安全)Web security
+## [] Web security
 
-### [](#xss)XSS
+### [] XSS
 
 *   ["xss Attack Principles and Solutions"](https://blog.csdn.net/qq_21956483/article/details/54377947)
 
-### [](#csrf)CSRF
+### [] CSRF
 
 *   ["CSRF Principles and Prevention"](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6412-csrf.html)
 
-### [](#sql-注入)SQL injection
+### [] SQL injection
 
 *   [SQL Injection](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6413-sql-zhu-ru.html)
 
-### [](#hash-dos)Hash Dos
+### [] Hash Dos
 
 *   ["Evil JAVA HASH DOS Attack"](http://www.freebuf.com/articles/web/14199.html)
     *   Using JsonObjet to upload large Json, JsonObject uses HashMap at the bottom; different data produces the same hash value, making the build Hash slower and running out of CPU.
 *   [An Advanced DoS Attack - Hash Collision Attack](https://yq.aliyun.com/articles/92194?t=t1)
 *   ["About Hash Collision DoS: Parsing and Solution"](http://www.iteye.com/news/23939/)
 
-### [](#脚本注入)Script injection
+### [] Script injection
 
 *   ["The principle and prevention of the vulnerability of uploading files"](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/641-web-an-quan-fang-fan/6414-shang-chuan-wen-jian-guo-lv.html)
 
-### [](#漏洞扫描工具)Vulnerability Scan Tool
+### [] Vulnerability Scan Tool
 
 *   ["DVWA"](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/6421-dvwa.html)
 *   [W3af](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/w3af.html)
 *   [Detailed OpenVAS](https://blog.csdn.net/xygg0801/article/details/53610640)
 
-### [](#验证码)Verification code
+### [] Verification code
 
 *   ["Verification Code Principle Analysis and Implementation"](https://blog.csdn.net/niaonao/article/details/51112686)
 
@@ -1782,12 +1447,12 @@ E.g:
     *   The sliding verification code evaluates the risk based on the response time, drag speed, time, position, trajectory, number of retries, etc. of the user in the sliding slider.
 *   [Taobao sliding verification code research](https://www.cnblogs.com/xcj26/p/5242758.html)
 
-## [](#ddos-防范)DDoS protection
+## [] DDoS protection
 
 *   ["Learning Guide: DDoS Attacks and Defenses"](http://netsecurity.51cto.com/art/201601/503799.htm)
 *   ["Free DDoS Attack Test Tool Collection"](http://netsecurity.51cto.com/art/201406/442756.htm)
 
-## [](#用户隐私信息保护)User privacy protection
+## [] User privacy protection
 
 1.  User password is not stored in plain text, plus dynamic slat.
 2.  ID number, mobile number If you want to display, replace some of the characters with "*".
@@ -1800,20 +1465,20 @@ E.g:
 
 *   ["User password save"](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6425-jia-mi-chang-jing-ff1a-yong-hu-mi-ma-bao-cun.html)
 
-## [](#序列化漏洞)Serialization vulnerability
+## [] Serialization vulnerability
 
 *   ["Lib's past?</font> <font style="vertical-align: inherit;">Java Universal Deserialization Vulnerability Analysis](https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/)
 
-## [](#加密解密)encrypt and decode
+## [] encrypt and decode
 
-### [](#对称加密)Symmetric encryption
+### [] Symmetric encryption
 
 *   [Common symmetric encryption algorithm](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6421-chang-jian-dui-cheng-jia-mi-suan-fa.html)
     *   DES, 3DES, Blowfish, AES
     *   DES uses a 56-bit key and Blowfish uses 1- to 448-bit variable keys, AES 128, 192, and 256-bit length keys.
     *   The DES key is too short (56-bit only) algorithm is currently replaced by AES, and AES has hardware acceleration and performs well.
 
-### [](#哈希算法)Hash algorithm
+### [] Hash algorithm
 
 *   [Commonly used hash algorithm](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6422-chang-jian-ha-xi-suan-fa-and-hmac.html)
 
@@ -1821,7 +1486,7 @@ E.g:
     *   Currently SHA-256 is relatively safe.
 *   [Public Internet URL Signature Verification Design Scheme Based on Hash Digest Signature](https://blog.csdn.net/zhangruhong168/article/details/78033202)
 
-### [](#非对称加密)Asymmetric encryption
+### [] Asymmetric encryption
 
 *   [Common Asymmetric Encryption Algorithm](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/642-shu-ju-jia-mi/6424-chang-yong-fei-dui-cheng-jia-mi-suan-fa.html)
     *   RSA, DSA, ECDSA (Helix Curve Encryption Algorithm)
@@ -1832,41 +1497,41 @@ E.g:
 
         [Blockchain encryption technology](http://baijiahao.baidu.com/s?id=1578348858092033763&wfr=spider&for=pc)
 
-## [](#服务器安全)Server security
+## [] Server security
 
 *   [Linux Enforcement: 15 Steps to Build a Secure Linux Server](http://www.freebuf.com/articles/system/121540.html)
 
-## [](#数据安全)Data Security
+## [] Data Security
 
-### [](#数据备份)data backup
-
-TODO
-
-## [](#网络隔离)Network isolation
-
-### [](#内外网分离)Internal and external network separation
+### [] data backup
 
 TODO
 
-### [](#登录跳板机)Login board
+## [] Network isolation
+
+### [] Internal and external network separation
+
+TODO
+
+### [] Login board
 
 In the internal and external environment, log in to the online host through the springboard.
 
 *   ["Build a simple bastion machine"](http://blog.51cto.com/zero01/2062618)
 
-## [](#授权认证)Authorization, certification
+## [] Authorization, certification
 
-### [](#rbac)RBAC
+### [] RBAC
 
 *   ["Permission Design Based on Role of Organization"](https://www.cnblogs.com/zq8024/p/5003050.html)
 *   ["Permission System and RBAC Model Overview"](https://www.cnblogs.com/shijiaqi1066/p/3793894.html)
 *   ["Spring integrates Shiro to do a detailed case analysis of permission control module"](https://blog.csdn.net/he90227/article/details/38663553)
 
-### [](#oauth20)OAuth2.0
+### [] OAuth2.0
 
 *   [Understanding OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
 
-### [](#双因素认证2fa)Two-factor authentication (2FA)
+### [] 
 
 2FA - Two-factor authentication for enhanced login authentication
 
@@ -1874,34 +1539,34 @@ Common practice is login password + phone verification code (or token key, simil
 
 *   ["Two-Factor Authentication (2FA) Tutorial"] (</font> </font>[http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html](http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">)
 
-### [](#单点登录sso)Single sign-on (SSO)
+### [] 
 
 *   [Single Sign-On Principle and Simple Implementation](https://www.cnblogs.com/ywlaker/p/6113927.html)
 
 *   [CAS single sign-on framework](https://github.com/apereo/cas)
 
-# [](#常用开源框架)Common open source framework
+# [] Common open source framework
 
-## [](#开源协议)Open Source Agreement
+## [] Open Source Agreement
 
 *   ["Open Source Agreement Selection"](https://coderxing.gitbooks.io/architecture-evolution/chapter1/di-yi-zhang-ff1a-zhun-bei-qi-cheng/12-guan-yu-kai-yuan/123-kai-yuan-xie-yi-de-xuan-ze.html)
 
 *   [How to choose an open source software agreement](http://choosealicense.online/)
 
-## [](#日志框架)Logging framework
+## [] Logging framework
 
-### [](#log4jlog4j2)Log4j, Log4j2
+### [] Log4j, Log4j2
 
 *   ["log4j explain in detail"](https://blog.csdn.net/u012422446/article/details/51199724)
 *   ["log4j2 practical use Detailed Explanation"](https://blog.csdn.net/vbirdbest/article/details/71751835)
 *   ["Log4j1, Logback and Log4j2 performance test comparison"](https://my.oschina.net/OutOfMemory/blog/789267)
     *   Log4J asynchronous log performance is excellent.
 
-### [](#logback)Logback
+### [] Logback
 
 *   ["The most comprehensive LogBack detailed, with java case and configuration instructions"](https://blog.csdn.net/rulon147/article/details/52620541)
 
-## [](#orm)ORM
+## [] ORM
 
 *   [ORM Framework Uses Advantages and Disadvantages](https://blog.csdn.net/sinat_34093604/article/details/53082000)
     *   The main purpose is to improve the development efficiency.
@@ -1914,13 +1579,13 @@ Common practice is login password + phone verification code (or token key, simil
     *   The second-level cache is the mapper-level cache, which is shared by the same namespace, so the SqlSession is shared; the cache is cleared using the LRU mechanism, and is enabled by the cacheEnabled parameter.
 *   ["MyBatis Learning Code Generator Generator"](https://blog.csdn.net/baidu_32877851/article/details/53959268)
 
-## [](#网络框架)Network framework
+## [] Network framework
 
 TODO
 
-## [](#web-框架)Web framework
+## [] Web framework
 
-### [](#spring-家族)Spring family
+### [] Spring family
 
 **Spring**
 
@@ -1937,14 +1602,14 @@ TODO
 *   [Spring Cloud Chinese Documentation](https://springcloud.cc/)
 *   [Spring Cloud Basic Tutorial](http://blog.didispace.com/Spring-Cloud%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/)
 
-## [](#工具框架)Tool frame
+## [] Tool frame
 
 *   ["Introduction and Simple Use of Apache Commons Tools"](https://www.cnblogs.com/crazylqy/p/4872236.html)
 *   [Google guava Chinese Course](http://ifeve.com/google-guava/)
 
-# [](#分布式设计)Distributed design
+# [] Distributed design
 
-## [](#扩展性设计)Scalable design
+## [] Scalable design
 
 *   [Ten Top Ten Scalable Architectures that Architects Must Know](https://blog.csdn.net/hemin1003/article/details/53633926)
 
@@ -1959,7 +1624,7 @@ TODO
     *   Distributed Services + Message Queuing.
 *   ["Large Web Site Technology Architecture (7)--Website Extensibility Framework"](https://blog.csdn.net/chaofanwei/article/details/29191073)
 
-## [](#稳定性--高可用)Stability & High Availability
+## [] Stability & High Availability
 
 *   ["System Design: Some Technical Solutions for High Availability Systems"](https://blog.csdn.net/hustspy1990/article/details/78008324)
 
@@ -1975,14 +1640,14 @@ TODO
 
     *   Design principles: data is not lost (persistent); service is highly available (copy of service); absolute 100% high availability is difficult, the goal is to do as much as 9, such as 99.999% (accrued for only 5 minutes throughout the year).
 
-### [](#硬件负载均衡)Hardware load balancing
+### [] Hardware load balancing
 
 *   ["turn!</font> <font style="vertical-align: inherit;">!</font> <font style="vertical-align: inherit;">Comparison of the advantages and disadvantages of the load balancer technology Nginx and F5](https://www.cnblogs.com/wuyun-blog/p/6186198.html)
 
     *   Mainly compared with F5.
 *   [How much do you know about software/hardware load balancing products?</font> <font style="vertical-align: inherit;">》](https://www.cnblogs.com/lcword/p/5773296.html)
 
-### [](#软件负载均衡)Software load balancing
+### [] Software load balancing
 
 *   ["Several load balancing algorithms"](https://www.cnblogs.com/tianzhiliang/articles/2317808.html)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">round robin, weight, load, least connection, QoS
 
@@ -2003,7 +1668,7 @@ TODO
     *   Mainly load balancing of user read requests.
 *   ["rabbitmq+haproxy+keepalived achieve high availability cluster construction"](https://www.cnblogs.com/lylife/p/5584019.html)
 
-### [](#限流)Limiting
+### [] Limiting
 
 *   ["Talk about the Current Limitations of High Concurrent Systems"](https://www.cnblogs.com/haoxinyue/p/6792309.html)
     *   Counter: Sliding the window counter to control the number of requests per unit time, simple and crude.
@@ -2011,7 +1676,7 @@ TODO
     *   Token bucket algorithm: a fixed-capacity token bucket. To add a token at a certain rate, the token needs to be obtained before the request is processed. If the token is not available, the request is discarded or the queue is dropped. The rate of adding the token can be controlled. To control the overall speed.</font> <font style="vertical-align: inherit;">The RateLimiter in Guava is an implementation of a token bucket.
     *   Nginx limiting: By</font> </font>`limit_req`limiting the number of concurrent connections module.
 
-### [](#应用层容灾)Application layer disaster recovery
+### [] Application layer disaster recovery
 
 *   ["Avalanche Fighters: Principles and Uses of Fused Hystrix"](https://segmentfault.com/a/1190000005988895)
 
@@ -2028,7 +1693,7 @@ TODO
     *   The main strategy: failure instant: stand-alone use of locks; use of distributed lock; not expire;
     *   Hotspot data: Hotspot data is stored separately; use local cache; divided into multiple subkeys;
 
-### [](#跨机房容灾)Cross-room disaster recovery
+### [] Cross-room disaster recovery
 
 *   ["Distribution Experience of Multi-Room and Multi-Rooms"](http://dc.idcquan.com/ywgl/71559.shtml)
 
@@ -2046,13 +1711,13 @@ TODO
     *   Consider using docker container virtualization technology to improve dynamic scheduling capabilities.
 *   [Disaster recovery technology and construction experience](https://blog.csdn.net/yoara/article/details/38013751)
 
-### [](#容灾演练流程)Disaster recovery drill process
+### [] Disaster recovery drill process
 
 *   ["Reliance Governance, Grayscale Distribution, Fault Exercises, Design and Practical Experience of Alibaba.com's Fault Exercise System"](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650996320&idx=1&sn=0ed3be190bbee4a9277886ef88cbb2e5)
     *   Common fault portrait
     *   Case: Preplan validity, plan validity, fault replication, architecture disaster recovery testing, parameter tuning, parameter tuning, fault raid, and joint drill.
 
-### [](#平滑启动)Smooth start
+### [] Smooth start
 
 *   Smooth restart application ideas 1\. End-point traffic (such as vip layer), 2\. Flush data (if any), 3, restart the application
 
@@ -2060,9 +1725,9 @@ TODO
 
 *   ["How Common Java Applications](http://ju.outofmemory.cn/entry/337235)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">Are</font> [<font style="vertical-align: inherit;">Gracefully Closed"</font>](http://ju.outofmemory.cn/entry/337235) <font style="vertical-align: inherit;">Java, Srping, Dubbo gracefully closes.
 
-## [](#数据库扩展)Database expansion
+## [] Database expansion
 
-### [](#读写分离模式)Read-write separation mode
+### [] Read-write separation mode
 
 *   ["Implementation of Mysql master-slave scheme"](https://www.cnblogs.com/houdj/p/6563771.html)
 
@@ -2075,7 +1740,7 @@ TODO
     *   DRDB performs disk copying to avoid single points of problems.
 *   ["MySQL Cluster Method"](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/62-ke-kuo-zhan-de-shu-ju-ku-jia-gou/621-gao-ke-yong-mysql-de-ji-zhong-fang-an/6214-mysql-cluster-fang-an.html)
 
-### [](#分片模式)Fragmentation mode
+### [] Fragmentation mode
 
 *   ["Sub-tables need to consider the issues and programs"](https://www.jianshu.com/p/32b3e91aa22c)
 
@@ -2089,9 +1754,9 @@ TODO
     *   Partitioning: It is an internal mechanism of MySQL. It is transparent to the client. Data is stored in different files. On the surface, it is the same table.
     *   Table: Physically create different tables, clients need to manage the sub-table routing.
 
-## [](#服务治理)Service governance
+## [] Service governance
 
-### [](#服务注册与发现)Service Registration and Discovery
+### [] Service Registration and Discovery
 
 *   ["Never lose contact!</font> <font style="vertical-align: inherit;">How to achieve service discovery in microservice architecture?</font> <font style="vertical-align: inherit;">》](https://blog.csdn.net/jiaolongdy/article/details/51188798)
 
@@ -2105,7 +1770,7 @@ TODO
 
     *   Advantages: API is simple, Pinterest, Airbnb in use, multi-language, through the watcher mechanism to achieve configuration PUSH, can quickly respond to configuration changes.
 
-### [](#服务路由控制)Service Routing Control
+### [] Service Routing Control
 
 *   [Distributed Services Framework Study Notes 4 Service Routing](https://blog.csdn.net/xundh/article/details/59492750)
     *   Principle: Transparent routing
@@ -2113,9 +1778,9 @@ TODO
     *   Local routing has a limited strategy: injvm (preferentially calling jvm internal services) and initial (priority using the same physical machine services), and in principle finding the nearest service.
     *   Configuration method: unified registry, local configuration, and dynamic delivery.
 
-## [](#分布式一致)Distributed consensus
+## [] Distributed consensus
 
-### [](#cap-与-base-理论)CAP and BASE theory
+### [] CAP and BASE theory
 
 *   ["Discussing CAP Theory, BASE Theory from Distributed Consistency"](http://www.cnblogs.com/szlbm/p/5588543.html)
     *   Consistency classification: strong agreement (immediately consistent); weakly consistent (achievable in units of time, such as seconds); eventually consistent (weakly consistent, eventually consistent within a certain period of time)
@@ -2123,7 +1788,7 @@ TODO
     *   BASE: Basically Available, Soft state, and Eventually consistent
     *   The core idea of ​​BASE theory is: Even if it can not achieve strong consistency, but each application can be based on their own business characteristics, using appropriate methods to achieve the final consistency of the system.
 
-### [](#分布式锁)Distributed lock
+### [] Distributed lock
 
 *   ["Several Implementations of Distributed Locks"](http://www.hollischuang.com/archives/1716)
 
@@ -2140,63 +1805,63 @@ TODO
 
     *   Use the add (as opposed to set) operation of memcached to return false when the key exists.
 
-### [](#分布式一致性算法)Distributed consensus algorithm
+### [] Distributed consensus algorithm
 
-#### [](#paxos)PAXOS
+#### [] PAXOS
 
 *   ["Distributed Series Articles - Principles and Derivation of Paxos Algorithm"](https://www.cnblogs.com/linbingdong/p/6253479.html)
 *   [Paxos-->Fast Paxos-->Zookeeper Analysis](https://blog.csdn.net/u010039929/article/details/70171672)
 *   ["Distributed" Zookeeper and Paxos](https://www.cnblogs.com/leesf456/p/6012777.html)
 
-#### [](#zab)Zab
+#### [] Zab
 
 *   ["Introduction to Distributed Coherence Protocols in Zab:Zookeeper"](https://www.jianshu.com/p/fb527a64deee)
 
-#### [](#raft)Raft
+#### [] Raft
 
 *   [Why is Raft More Easier to Understand Distributed Consistency Algorithms?](http://www.cnblogs.com/mindwind/p/5231986.html)
     *   Three roles: Leader, Follower, Candidate
     *   The ballot was sent out by way of random waiting, winning more votes.
 
-#### [](#gossip)Gossip
+#### [] Gossip
 
 *   [Gossip algorithm](http://blog.51cto.com/tianya23/530743)
 
-#### [](#两阶段提交多阶段提交)Two-phase commit, multi-phase commit
+#### [] Two-phase commit, multi-phase commit
 
 *   ["About Distributed Transactions, Two-Phase Commit Protocol, Third-Order Commit Protocol"](http://blog.jobbole.com/95632/)
 
-### [](#幂等)Idempotent
+### [] Idempotent
 
 *   ["Distributed Systems - Idempotency Design"](https://www.cnblogs.com/wxgblogs/p/6639272.html)
     *   The role of idempotency: The resource is idempotent and the requester doesn't need to worry about repeated calls that can generate errors.
     *   Common means to guarantee idempotency: MVCC (similar to optimistic locking), deduplication table (unique index), pessimistic locking, one-time token, serial number mode.
 
-### [](#分布式一致方案)Distributed consensus solution
+### [] Distributed consensus solution
 
 *   [Distributed System Transactional Conformance Solution](http://www.infoq.com/cn/articles/solution-of-distributed-system-transaction-consistency)
 *   ["Six Plans to Guarantee the Consistency of Distributed System Data"](https://weibo.com/ttarticle/p/show?id=2309403965965003062676)
 
-### [](#分布式-leader-节点选举)Distributed Leader node election
+### [] Distributed Leader node election
 
 *   ["Using zookeeper for distributed leader node elections"](https://blog.csdn.net/johnson_moon/article/details/78809995)
 
-### [](#tcctryconfirmcancel-柔性事务)TCC (Try/Confirm/Cancel) Flexible Transactions
+### []  Flexible Transactions
 
 *   ["Traditional and Flexible Affairs"](https://www.jianshu.com/p/ab1a1c6b08a1)
     *   Based on BASE theory: basic availability, flexibility, and eventual consistency.
     *   Solution: Record log + compensation (forward supplement or rollback), message retry (requires the program to be exponentiated, etc.); "no lock design", using optimistic locking mechanism.
 
-## [](#分布式文件系统)Distributed File System
+## [] Distributed File System
 
 *   [Talk about distributed file storage system - basic architecture](https://zhuanlan.zhihu.com/p/27666295)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">?
 *   ["Compare the distributed file system"](https://blog.csdn.net/gatieme/article/details/44982961)<font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">?
     *   HDFS: Read and write large amounts of data for high-throughput scenarios, not for small files.
     *   FastDFS: lightweight, suitable for small files.
 
-## [](#唯一id-生成)Unique ID generation
+## [] Unique ID generation
 
-### [](#全局唯一id)Globally unique ID
+### [] Globally unique ID
 
 *   [Generating Globally Unique Id Summary in Highly Concurrent Distributed Systems](https://www.cnblogs.com/baiwa/p/5318432.html)
 
@@ -2210,13 +1875,13 @@ TODO
     *   Each client host takes an id interval (such as 1000~2000) cached locally, and updates the id maximum record in the sequence table.
     *   Different id ranges are used between client hosts. After they are used up and fetched, optimistic locking is used to control concurrency.
 
-## [](#一致性hash算法)Consistent hashing algorithm
+## [] Consistent hashing algorithm
 
 *   [The consistent hash algorithm](https://coderxing.gitbooks.io/architecture-evolution/di-san-pian-ff1a-bu-luo/631-yi-zhi-xing-ha-xi.html)
 
-# [](#设计思想--开发模式)Design Ideas & Development Models
+# [] Design Ideas & Development Models
 
-## [](#ddddomain-driven-design---领域驱动设计)DDD (Domain-driven Design - Domain Driven Design)
+## [] 
 
 *   ["Talking about my understanding of DDD-driven design"](https://www.cnblogs.com/netfocus/p/5548025.html)
 
@@ -2243,7 +1908,7 @@ TODO
     *   Aggregation: For example, a Car contains components such as Engine, Wheel, and Tank.
 *   ["Field-Driven Design Series (2) Analysis of VO, DTO, DO, PO Concepts, Differences, and Uses"](http://www.hollischuang.com/archives/553)
 
-### [](#命令查询职责分离cqrs)Command Query Separation of Duties (CQRS)
+### [] 
 
 CQRS - Command Query Responsibility Seperation
 
@@ -2260,7 +1925,7 @@ CQRS - Command Query Responsibility Seperation
 
     *   CQRS Pattern Analysis + 12306 Ticket Picking Cases
 
-### [](#贫血充血模型)Anemia, congestive model
+### [] Anemia, congestive model
 
 *   ["Anemia, explanation of hyperemia model, and some experience"](https://kb.cnblogs.com/page/520743/)
     *   Blood loss model: Lao Tzu and son are defined separately, and they do not know each other. There is no business logic in the entity definition of the two, and they are related through external services.
@@ -2269,55 +1934,55 @@ CQRS - Command Query Responsibility Seperation
     *   Swollen mode: It is an extreme situation, cancel the service layer, all the business logic in DO; Advantages: in line with OO ideas, simplification of layering; Disadvantages: too much exposure information, many non-DO logic will be forced into DO.</font> <font style="vertical-align: inherit;">This pattern should be avoided.
     *   The authors advocate using the anemia model.
 
-## [](#actor-模式)Actor mode
+## [] Actor mode
 
 TODO
 
-## [](#响应式编程)Reactive programming
+## [] Reactive programming
 
-### [](#reactor)Reactor
-
-TODO
-
-### [](#rxjava)RxJava
+### [] Reactor
 
 TODO
 
-### [](#vertx)Vert.x
+### [] RxJava
 
 TODO
 
-## [](#dodaf20)DODAF2.0
+### [] Vert.x
+
+TODO
+
+## [] DODAF2.0
 
 *   ["DODAF2.0 Methodology"](http://www.360doc.com/content/16/0627/19/33945750_571201779.shtml)
 *   [How DodiF2.0's Capability Perspective Goes?](http://blog.51cto.com/xiaoyong/1553164)
 
-## [](#serverless)Serverless
+## [] Serverless
 
 TODO
 
-## [](#service-mesh)Service Mesh
+## [] Service Mesh
 
 TODO
 
 *   [What is Service Mesh?</font> <font style="vertical-align: inherit;">》](https://time.geekbang.org/article/2355)
 
-# [](#项目管理)Project management
+# [] Project management
 
-## [](#架构评审)Architecture review
+## [] Architecture review
 
 *   ["How architecture design reviews architecture design specifications"](http://developer.51cto.com/art/201506/478486.htm)
 *   ["Everyone is an architect: Non-functional requirements"](https://blog.csdn.net/wireless_com/article/details/45935591)
 
-## [](#重构)Reconstruction
+## [] Reconstruction
 
 *   ["Reconstruction of the 12 Military Rules"](http://www.infoq.com/cn/articles/architect-12-rules-complete/)
 
-## [](#代码规范)Code specification
+## [] Code specification
 
 TODO
 
-## [](#代码-review)Code Review
+## [] Code Review
 
 Institution or system! In addition, each company needs to develop its own check list based on its own needs and goals.
 
@@ -2332,15 +1997,15 @@ Institution or system! In addition, each company needs to develop its own check 
 
 *   ["How to use gitlab for code review"](https://blog.csdn.net/legend0011/article/details/45585575)
 
-## [](#rup)RUP
+## [] RUP
 
 *   ["Using RUP 4+1 View Method for Software Architecture Design"](https://blog.csdn.net/apanious/article/details/51011946)
 
-## [](#看板管理)Kanban Management
+## [] Kanban Management
 
 *   ["Talk about the Application of Kanban in Projects"](https://blog.csdn.net/tkchen/article/details/51637643)
 
-## [](#scrum)SCRUM
+## [] SCRUM
 
 SCRUM - Scrimmage
 
@@ -2354,11 +2019,11 @@ SCRUM - Scrimmage
 
 *   ["Agile is actually very simple 3 - scrum agile method"](https://blog.csdn.net/superkunkun/article/details/52951142)
 
-## [](#敏捷开发)Agile development
+## [] Agile development
 
 TODO
 
-## [](#极限编程xp)Extreme Programming (XP)
+## [] 
 
 XP - eXtreme Programming
 
@@ -2375,31 +2040,31 @@ XP - eXtreme Programming
 
     *   5 jobs: Staged sprints; sprint planning meetings; daily standing meetings; sprint review;
 
-## [](#结对编程)Pair programming
+## [] Pair programming
 
 Write code, edge review.</font> <font style="vertical-align: inherit;">Can enhance code quality and reduce bugs.
 
 *   [Pair Programming](http://www.baike.com/wiki/%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B)
 
-## [](#fmea管理模式)FMEA management model
+## [] FMEA management model
 
 TODO
 
-# [](#通用业务术语)General Business Terms
+# [] General Business Terms
 
 TODO
 
-# [](#技术趋势)Technical trends
+# [] Technical trends
 
 TODO
 
-# [](#政策法规)Policies and regulations
+# [] Policies and regulations
 
 TODO
 
-## [](#法律)legal
+## [] legal
 
-### [](#严格遵守刑法253法条)Strictly abide by Article 253 of the Criminal Law
+### [] Strictly abide by Article 253 of the Criminal Law
 
 Article 253 of the Chinese Criminal Law states:
 
@@ -2411,7 +2076,7 @@ The Supreme People's Court and the Supreme People's Procuratorate's Supplementar
 
 *   ["Illegal Acquisition of Personal Information of Citizens"](https://baike.baidu.com/item/%E9%9D%9E%E6%B3%95%E8%8E%B7%E5%8F%96%E5%85%AC%E6%B0%91%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E7%BD%AA)
 
-# [](#架构师素质)Architect quality
+# [] Architect quality
 
 *   [Architect Portrait](http://hellojava.info/?p=430)
 
@@ -2437,31 +2102,31 @@ The Supreme People's Court and the Supreme People's Procuratorate's Supplementar
     *   The second-tier architect not only saw his own product but also saw the overall solution
     *   Third-tier architects see business value
 
-# [](#团队管理)Team management
+# [] Team management
 
 TODO
 
-## [](#招聘)Recruitment
+## [] Recruitment
 
-# [](#资讯)Information
+# [] Information
 
-## [](#行业资讯)Industry information
+## [] Industry information
 
 *   [36kr](http://36kr.com/)
 *   [Techweb](http://www.techweb.com.cn/)
 
-## [](#公众号列表)Public number list
+## [] Public number list
 
 TODO
 
-## [](#博客)Blog
+## [] Blog
 
-### [](#团队博客)Team blog
+### [] Team blog
 
 *   [Ali Middleware Blog](http://jm.taobao.org/)
 *   [US Mission Review Technology Team Blog](https://tech.meituan.com)
 
-### [](#个人博客)personal blog
+### [] personal blog
 
 *   [Shan Yifeng's Weblog](http://www.ruanyifeng.com/)
 *   [Cool Shell - COOLSHELL-Chen Hao](https://coolshell.cn/)
@@ -2469,7 +2134,7 @@ TODO
 *   [Cm's Blog](http://cmsblogs.com/)
 *   [Program 猿 DD - Yongchao Chao - Author of Spring Cloud Microservices Act](http://blog.didispace.com/)
 
-## [](#综合门户社区)Integrated portal, community
+## [] Integrated portal, community
 
 **domestic:**
 
@@ -2509,14 +2174,14 @@ TODO
 *   [DZone](https://dzone.com)
 *   [Reddit](https://www.reddit.com)
 
-## [](#问答讨论类社区)Q&A, discussion community
+## [] Q&A, discussion community
 
 *   [Segmentfault](https://segmentfault.com)
     *   Q&A + Column
 *   [Know almost](https://www.zhihu.com/)
 *   [Stackoverflow](https://stackoverflow.com/)
 
-## [](#行业数据分析)Industry data analysis
+## [] Industry data analysis
 
 *   [Ereli Net](http://report.iresearch.cn/)
 
@@ -2524,7 +2189,7 @@ TODO
 
 *   [National data](http://data.stats.gov.cn/)
 
-## [](#专项网站)Special website
+## [] Special website
 
 *   test:
 
@@ -2555,13 +2220,13 @@ TODO
     *   [Linux Commune](https://www.linuxidc.com/)
         *   Linux Theme Community
 
-## [](#其他类)other
+## [] other
 
 *   [Programmer skills map](https://github.com/TeamStuQ/skill-map)
 
-## [](#推荐参考书)Recommended reference book
+## [] Recommended reference book
 
-### [](#在线电子书)Online eBooks
+### [] Online eBooks
 
 *   ["Understanding Spring Cloud and Microservice Construction"](https://github.com/forezp/SpringCloudLearning)
 
@@ -2575,13 +2240,13 @@ TODO
 
 *   [The Road to Architects](https://www.w3cschool.cn/architectroad/)
 
-### [](#纸质书)Paper book
+### [] Paper book
 
-#### [](#开发方面)Development aspects
+#### [] Development aspects
 
 *   "Alibaba Java Development Handbook"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=bVKwZQ)[Taobao](https://s.taobao.com/search?q=%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C)
 
-#### [](#架构方面)Architecture aspects
+#### [] Architecture aspects
 
 *   "Software Architect's 12 Practices: Technical Skills"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=gXvRd8)[Taobao](https://s.taobao.com/search?q=%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%8412%E9%A1%B9%E4%BF%AE%E7%82%BC%EF%BC%9A%E6%8A%80%E6%9C%AF%E6%8A%80%E8%83%BD%E7%AF%87)
 *   "The Beauty of Architecture"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=xJit5I)[Taobao](https://s.taobao.com/search?q=%E6%9E%B6%E6%9E%84%E4%B9%8B%E7%BE%8E)
@@ -2592,32 +2257,32 @@ TODO
 *   "This decade of Taobao technology"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=LwrDfD)[Taobao](https://s.taobao.com/search?q=%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%BF%99%E5%8D%81%E5%B9%B4)
 *   "Transformation of Enterprise IT Architecture - Strategic Thinking of China-Taiwan Strategy and Architecture Combat"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=89pAEm)[Taobao](https://s.taobao.com/search?q=%E4%BC%81%E4%B8%9AIT%E6%9E%B6%E6%9E%84%E8%BD%AC%E5%9E%8B%E4%B9%8B%E9%81%93)
 
-#### [](#技术管理方面)Technical management
+#### [] Technical management
 
 *   "CTO said"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=zhTZyr)[Taobao](https://s.taobao.com/search?q=CTO%E8%AF%B4)
 *   "Technology Management"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=LgRBUW)[Taobao](https://s.taobao.com/search?q=%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86%E4%B9%8B%E5%B7%85)
 *   "Netease Arabian Nights: The Reality of Internet Product Project Management"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=jcRz2r)[Taobao](https://s.taobao.com/search?q=%E7%BD%91%E6%98%93%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E5%A4%9C%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%AE%9E%E6%88%98)
 
-#### [](#基础理论-1)Basic theory
+#### [] Basic theory
 
 *   The beauty of mathematics</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=ghIES2)[Taobao](https://s.taobao.com/search?q=%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E)
 *   "Programming Beads"</font> </font>[Jingdong</font> </font>](https://union-click.jd.com/jdc?d=YmhdEu)[Taobao](https://s.taobao.com/search?q=%E7%BC%96%E7%A8%8B%E7%8F%A0%E7%8E%91)
 
-#### [](#工具方面)Tools
+#### [] Tools
 
 TODO
 
-#### [](#大数据方面)Big data
+#### [] Big data
 
-# [](#技术资源)Technical resources
+# [] Technical resources
 
-## [](#开源资源)Open source resources
+## [] Open source resources
 
 *   [Github](https://github.com)
 
 *   [Apache Software Foundation](https://www.apache.org/index.html)
 
-## [](#手册文档教程)Manuals, Documents, Tutorials
+## [] Manuals, Documents, Tutorials
 
 **domestic:**
 
@@ -2647,7 +2312,7 @@ TODO
 *   [Tutorialspoint](https://www.tutorialspoint.com/index.htm)
     *   Well-known tutorial website, providing high-quality introductory tutorials such as Java, Python, JS, SQL, big data.
 
-## [](#在线课堂)Online class
+## [] Online class
 
 *   [Apprentice worry-free](http://www.xuetuwuyou.com/)
 *   [Geek time](https://time.geekbang.org/)
@@ -2657,7 +2322,7 @@ TODO
 *   [Geek College](https://www.jikexueyuan.com/)
 *   [51CTO College](http://edu.51cto.com/)
 
-## [](#会议活动)conference
+## [] conference
 
 *   [QCon](http://www.infoq.com/cn/qcon/)
 *   [ArchSummit](https://archsummit.com)
@@ -2667,34 +2332,34 @@ TODO
 
 *   [Activity line](http://www.huodongxing.com/)
 
-## [](#常用app)Common APP
+## [] Common APP
 
 *   [Geek time](https://time.geekbang.org)
 *   [get](https://www.igetget.com)
 
-## [](#找工作)find a job
+## [] find a job
 
 *   [Boss Direct Employment](https://www.zhipin.com)
 *   [Pulling the net](https://www.lagou.com)
 *   [Hunting](https://www.liepin.com)
 *   [100Offer](https://cn.100offer.com/)
 
-## [](#工具)tool
+## [] tool
 
 *   [Geek Search](https://s.geekbang.org/)
     *   Technical article search engine.
 
-## [](#代码托管)Code hosting
+## [] Code hosting
 
 *   [Coding](https://coding.net)
 *   [Code cloud](https://gitee.com/)
 
-## [](#文件服务)File service
+## [] File service
 
 *   Seven cattle
 *   Shooting clouds again
 
-## [](#综合云服务商)Comprehensive cloud service provider
+## [] Comprehensive cloud service provider
 
 *   Ali Cloud
 *   Tencent Cloud
@@ -2705,6 +2370,6 @@ TODO
 *   [Google Cloud](https://cloud.google.com/?hl=zh-cn)
 *   [Microsoft Cloud](https://azure.microsoft.com/zh-cn/)
 
-### [](#vps)VPS
+### [] VPS
 
 *   [Linode](http://linode.com)
