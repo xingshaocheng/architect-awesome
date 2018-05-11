@@ -1266,6 +1266,7 @@ APM —  Application Performance Management
 ### RocketMQ
 Java实现，推拉模式都是支持，吞吐量逊于Kafka。可以保证消息顺序。
 * [《RocketMQ 实战之快速入门》](https://www.jianshu.com/p/824066d70da8)
+* [《RocketMQ 源码解析》](http://www.iocoder.cn/categories/RocketMQ/?vip&architect-awesome)
 
 ### ActiveMQ
 纯Java实现，兼容JMS，可以内嵌于Java应用中。
@@ -2530,3 +2531,5 @@ TODO
 
 ### VPS
 * [Linode](http://linode.com)
+
+
