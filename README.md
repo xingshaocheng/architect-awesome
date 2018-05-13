@@ -2115,6 +2115,12 @@ XP - eXtreme Programming
 
 * [《结对编程》](http://www.baike.com/wiki/%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B)
 
+## PDCA 循环质量管理
+
+P——PLAN 策划，D——DO 实施，C——CHECK 检查，A——ACT 改进
+
+* [《PDCA》](http://www.baike.com/wiki/PDCA)
+
 ## FMEA管理模式
 
 TODO
