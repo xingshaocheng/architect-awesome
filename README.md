@@ -1622,6 +1622,7 @@ TODO
 
 ### OAuth2.0
 * [《理解OAuth 2.0》](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
+* [《一张图搞定OAuth2.0》](https://www.cnblogs.com/flashsun/p/7424071.html)
 
 ### 双因素认证（2FA）
 
