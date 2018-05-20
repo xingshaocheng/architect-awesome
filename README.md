@@ -2416,7 +2416,7 @@ TODO
 
 ## 综合云服务商
 * 阿里云
-* 腾讯云
+* [腾讯云](https://cloud.tencent.com/redirect.php?redirect=1012&cps_key=c2665015d90871c0cb20fef91b7afc3c)
 * 百度云
 * 新浪云
 * 金山云
