@@ -2428,5 +2428,7 @@ TODO
 
 ### VPS
 * [Linode](http://linode.com)
+* [DigitalOcean](https://www.digitalocean.com)
+* [Vultr](https://www.vultr.com/)
 
 
