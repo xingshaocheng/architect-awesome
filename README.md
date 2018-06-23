@@ -789,7 +789,7 @@ TODO
 
 ## AOP
 
-* [《轻松理解AOP(面向切面编程)》](https://my.oschina.net/yanquan345/blog/203415)
+* [《轻松理解AOP(面向切面编程)》](https://blog.csdn.net/yanquan345/article/details/19760027)
 * [《Spring AOP详解》](https://www.cnblogs.com/hongwz/p/5764917.html)
 * [《Spring AOP的实现原理》](http://www.importnew.com/24305.html)
 	* Spring AOP使用的动态代理，主要有两种方式：JDK动态代理和CGLIB动态代理。
