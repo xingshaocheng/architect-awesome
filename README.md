@@ -1539,7 +1539,7 @@ MyISAM 是非聚集，InnoDB 是聚集
 
 * [《邪恶的JAVA HASH DOS攻击》](http://www.freebuf.com/articles/web/14199.html)
 	* 利用JsonObjet 上传大Json，JsonObject 底层使用HashMap；不同的数据产生相同的hash值，使得构建Hash速度变慢，耗尽CPU。
-* [《一种高级的DoS攻击-Hash碰撞攻击》](https://yq.aliyun.com/articles/92194?t=t1)
+* [《一种高级的DoS攻击-Hash碰撞攻击》](http://blog.it2048.cn/article_hash-collision.html )
 * [《关于Hash Collision DoS漏洞：解析与解决方案》](http://www.iteye.com/news/23939/)
 
 ### 脚本注入
