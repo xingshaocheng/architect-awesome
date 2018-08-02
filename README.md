@@ -2288,8 +2288,10 @@ TODO
 	* [中国大数据](http://www.thebigdata.cn/) 
 
 * 其他专题网站：
+	* [InfoQ](http://www.infoq.com/cn/)
+		* 偏重于基础架构、运维方向
 	* [DockerInfo](http://www.dockerinfo.net/)
-		* 专注于 Docker 应用及咨询、教程的网站。
+		* 专注于 Docker 应用及咨询、教程的网站
 	* [Linux公社](https://www.linuxidc.com/)
 		* Linux 主题社区
 
