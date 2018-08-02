@@ -2328,25 +2328,25 @@ TODO
 * 《阿里巴巴Java开发手册》[京东](https://union-click.jd.com/jdc?d=bVKwZQ) [淘宝](https://s.taobao.com/search?q=阿里巴巴Java开发手册)
 
 #### 架构方面
-* 《软件架构师的12项修炼：技术技能篇》[京东](https://union-click.jd.com/jdc?d=gXvRd8) [淘宝](https://s.taobao.com/search?q=软件架构师的12项修炼：技术技能篇)
-* 《架构之美》[京东](https://union-click.jd.com/jdc?d=xJit5I) [淘宝](https://s.taobao.com/search?q=架构之美)
-* 《分布式服务架构》[京东](https://union-click.jd.com/jdc?d=JS5Od9) [淘宝](https://s.taobao.com/search?q=分布式服务架构)
-* 《聊聊架构》 [京东](https://union-click.jd.com/jdc?d=FHooH4) [淘宝](https://s.taobao.com/search?q=聊聊架构)
-* 《云原生应用架构实践》[京东](https://union-click.jd.com/jdc?d=orkJSj) [淘宝](https://s.taobao.com/search?q=云原生应用架构实践)
-* 《亿级流量网站架构核心技术》[京东](https://union-click.jd.com/jdc?d=RnOSP5) [淘宝](https://s.taobao.com/search?q=亿级流量网站架构核心技术)
-* 《淘宝技术这十年》[京东](https://union-click.jd.com/jdc?d=LwrDfD) [淘宝](https://s.taobao.com/search?q=淘宝技术这十年)
-* 《企业IT架构转型之道-中台战略思想与架构实战》 [京东](https://union-click.jd.com/jdc?d=89pAEm) [淘宝](https://s.taobao.com/search?q=企业IT架构转型之道)
+* 《软件架构师的12项修炼：技术技能篇》[详情](https://union-click.jd.com/jdc?d=gXvRd8)
+* 《架构之美》[详情](https://union-click.jd.com/jdc?d=xJit5I) 
+* 《分布式服务架构》[详情](https://union-click.jd.com/jdc?d=JS5Od9) 
+* 《聊聊架构》 [详情](https://union-click.jd.com/jdc?d=FHooH4) 
+* 《云原生应用架构实践》[详情](https://union-click.jd.com/jdc?d=orkJSj) 
+* 《亿级流量网站架构核心技术》[详情](https://union-click.jd.com/jdc?d=RnOSP5)
+* 《淘宝技术这十年》[详情](https://union-click.jd.com/jdc?d=LwrDfD)
+* 《企业IT架构转型之道-中台战略思想与架构实战》 [详情](https://union-click.jd.com/jdc?d=89pAEm) 
 
-* 《高可用架构（第1卷）》[京东](https://item.jd.com/12195481.html) [淘宝](https://s.taobao.com/search?q=高可用架构)
+* 《高可用架构（第1卷）》[详情](https://item.jd.com/12195481.html) 
 
 #### 技术管理方面
-* 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
-* 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
-* 《网易一千零一夜：互联网产品项目管理实战》[京东](https://union-click.jd.com/jdc?d=jcRz2r) [淘宝](https://s.taobao.com/search?q=网易一千零一夜：互联网产品项目管理实战)
+* 《CTO说》[详情](https://union-click.jd.com/jdc?d=zhTZyr) 
+* 《技术管理之巅》[详情](https://union-click.jd.com/jdc?d=LgRBUW)
+* 《网易一千零一夜：互联网产品项目管理实战》[详情](https://union-click.jd.com/jdc?d=jcRz2r) 
 
 #### 基础理论
-* 《数学之美》[京东](https://union-click.jd.com/jdc?d=ghIES2) [淘宝](https://s.taobao.com/search?q=数学之美)
-* 《编程珠玑》[京东](https://union-click.jd.com/jdc?d=YmhdEu) [淘宝](https://s.taobao.com/search?q=编程珠玑)
+* 《数学之美》[详情](https://union-click.jd.com/jdc?d=ghIES2) 
+* 《编程珠玑》[详情](https://union-click.jd.com/jdc?d=YmhdEu) 
 
 #### 工具方面
 TODO
