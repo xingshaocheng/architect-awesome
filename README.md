@@ -2325,7 +2325,7 @@ TODO
 
 #### 开发方面
 
-* 《阿里巴巴Java开发手册》[京东](https://union-click.jd.com/jdc?d=bVKwZQ) [淘宝](https://s.taobao.com/search?q=阿里巴巴Java开发手册)
+* 《阿里巴巴Java开发手册》[详情](https://union-click.jd.com/jdc?d=bVKwZQ)
 
 #### 架构方面
 * 《软件架构师的12项修炼：技术技能篇》[详情](https://union-click.jd.com/jdc?d=gXvRd8)
