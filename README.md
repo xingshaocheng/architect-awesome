@@ -2325,28 +2325,28 @@ TODO
 
 #### 开发方面
 
-* 《阿里巴巴Java开发手册》[详情](https://union-click.jd.com/jdc?d=bVKwZQ)
+* 《阿里巴巴Java开发手册》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BfL5CR)
 
 #### 架构方面
-* 《软件架构师的12项修炼：技术技能篇》[详情](https://union-click.jd.com/jdc?d=gXvRd8)
-* 《架构之美》[详情](https://union-click.jd.com/jdc?d=xJit5I) 
-* 《分布式服务架构》[详情](https://union-click.jd.com/jdc?d=JS5Od9) 
-* 《聊聊架构》 [详情](https://union-click.jd.com/jdc?d=FHooH4) 
-* 《云原生应用架构实践》[详情](https://union-click.jd.com/jdc?d=orkJSj) 
-* 《亿级流量网站架构核心技术》[详情](https://union-click.jd.com/jdc?d=RnOSP5)
-* 《淘宝技术这十年》[详情](https://union-click.jd.com/jdc?d=LwrDfD)
-* 《企业IT架构转型之道-中台战略思想与架构实战》 [详情](https://union-click.jd.com/jdc?d=89pAEm) 
+* 《软件架构师的12项修炼：技术技能篇》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=rTlo0m)
+* 《架构之美》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=1KECBZ) 
+* 《分布式服务架构》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=hkzqtK) 
+* 《聊聊架构》 [详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=A8Nd6Z) 
+* 《云原生应用架构实践》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=D4WCpd) 
+* 《亿级流量网站架构核心技术》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=Rdmd21)
+* 《淘宝技术这十年》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=CoUdGG)
+* 《企业IT架构转型之道-中台战略思想与架构实战》 [详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BxS6eI) 
 
-* 《高可用架构（第1卷）》[详情](https://item.jd.com/12195481.html) 
+* 《高可用架构（第1卷）》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BcjUwS) 
 
 #### 技术管理方面
-* 《CTO说》[详情](https://union-click.jd.com/jdc?d=zhTZyr) 
-* 《技术管理之巅》[详情](https://union-click.jd.com/jdc?d=LgRBUW)
-* 《网易一千零一夜：互联网产品项目管理实战》[详情](https://union-click.jd.com/jdc?d=jcRz2r) 
+* 《CTO说》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=Gl3QAo) 
+* 《技术管理之巅》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=MeloLt)
+* 《网易一千零一夜：互联网产品项目管理实战》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=qPuqMg) 
 
 #### 基础理论
-* 《数学之美》[详情](https://union-click.jd.com/jdc?d=ghIES2) 
-* 《编程珠玑》[详情](https://union-click.jd.com/jdc?d=YmhdEu) 
+* 《数学之美》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=0seUpO) 
+* 《编程珠玑》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=I7jj9r) 
 
 #### 工具方面
 TODO
