@@ -3,6 +3,9 @@
 
 ![阿里巴巴集团长期内推，欢迎自荐，xingshaocheng@gmail.com](https://cdns.coderxing.com/HrUJ4G3E.png_700x700)
 
+阿里巴巴-大文娱事业部-2019年实习生招聘-欢迎转发:
+![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-大文娱2019实习生&2020应届生.png)
+
 [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 [![GitHub stars](https://img.shields.io/github/stars/xingshaocheng/architect-awesome.svg?style=flat&label=Star)](https://github.com/xingshaocheng/architect-awesome/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/xingshaocheng/architect-awesome.svg?style=flat&label=Fork)](https://github.com/xingshaocheng/architect-awesome/fork)
