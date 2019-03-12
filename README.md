@@ -2179,6 +2179,9 @@ TODO
   * [解读电子商务法（外传）电商挣钱的秘密](https://v.youku.com/v_show/id_XNDA4MTQ2Nzk4NA==.html)
   * [解读电子商务法（外传）电商模式](https://v.qq.com/x/page/j0844twjwr5.html)
 
+* [程序员需要知道的法律常识](https://blog.csdn.net/a331685690/article/details/79917772)
+* [白话法律42讲-为程序员打造的专属法律武器](https://time.geekbang.org/column/132)
+
 ### 严格遵守刑法253法条
 
 我国刑法第253条之一规定：
