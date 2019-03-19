@@ -3,6 +3,18 @@
 
 ![阿里巴巴集团长期内推，欢迎自荐，xingshaocheng@gmail.com](https://cdns.coderxing.com/HrUJ4G3E.png_700x700)
 
+<hr/>
+
+<h1>阿里巴巴-大文娱事业部-2019年实习生招聘-欢迎转发图片:</h1>
+
+![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-大文娱2019实习生&2020应届生.png)
+
+<h1>阿里巴巴-集团-2019年实习生招聘-欢迎转发图片（注意，和上面的不一样）:</h1>
+
+![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-集团2019实习生&2020应届生.png)
+
+<hr/>
+
 [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 [![GitHub stars](https://img.shields.io/github/stars/xingshaocheng/architect-awesome.svg?style=flat&label=Star)](https://github.com/xingshaocheng/architect-awesome/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/xingshaocheng/architect-awesome.svg?style=flat&label=Fork)](https://github.com/xingshaocheng/architect-awesome/fork)
@@ -2156,8 +2168,31 @@ TODO
 
 # 政策、法规
 
-TODO
 ## 法律
+
+* [《中华人民共和国网络安全法》](https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B3%95/16843044)
+  * 2016年11月7日发布，自2017年6月1日起施行
+
+* [《个人信息保护法》](https://baike.baidu.com/item/个人信息保护法/8343360)
+  * 个人信息保护法是一部保护个人信息的法律条款，现尚在制订中，2019全国两会信息安全相关提案中，有政协委员呼吁关注大数据时代隐私保护，加速立法。
+
+* [《最高人民法院、最高人民检察院关于办理侵犯公民个人信息刑事案件适用法律若干问题的解释》](https://baike.baidu.com/item/最高人民法院、最高人民检察院关于办理侵犯公民个人信息刑事案件适用法律若干问题的解释/20497481)
+  * 《解释》共十三条，自2017年6月1日起施行
+  > * 1、对于行踪轨迹信息、通信内容、征信信息、财产信息，非法获取、出售或者提供50条以上即算“情节严重”；
+  > * 2、对于住宿信息、通信记录、健康生理信息、交易信息等其他可能影响人身、财产安全的公民个人信息，标准则是 500条以上；
+  > * 3、对于其他公民个人信息，标准为 5000条以上。
+
+* [《中华人民共和国电子商务法》](https://baike.baidu.com/item/中华人民共和国电子商务法/16467544)
+  * 2018年8月31日，十三届全国人大常委会第五次会议表决通过《电子商务法》，自2019年1月1日起施行
+  * [解读电子商务法（一）什么是电商](https://v.youku.com/v_show/id_XNDAzNjAyNDM0MA==.html)
+  * [解读电子商务法（二）电商经营者](https://v.youku.com/v_show/id_XNDA1OTc0OTQ5Mg==.html)
+  * [解读电子商务法（三）电商行为规范](https://v.youku.com/v_show/id_XNDA4NzIyNjI4MA==.html)
+  * [解读电子商务法（四）电商的法律关系](https://v.qq.com/x/page/e08443fc1cr.html)
+  * [解读电子商务法（外传）电商挣钱的秘密](https://v.youku.com/v_show/id_XNDA4MTQ2Nzk4NA==.html)
+  * [解读电子商务法（外传）电商模式](https://v.qq.com/x/page/j0844twjwr5.html)
+
+* [程序员需要知道的法律常识](https://blog.csdn.net/a331685690/article/details/79917772)
+* [白话法律42讲-为程序员打造的专属法律武器](https://time.geekbang.org/column/132)
 
 ### 严格遵守刑法253法条
 
@@ -2449,5 +2484,3 @@ TODO
 * [Linode](http://linode.com)
 * [DigitalOcean](https://www.digitalocean.com)
 * [Vultr](https://www.vultr.com/)
-
-
