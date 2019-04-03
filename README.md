@@ -1,18 +1,6 @@
 
 <h1>《后端架构师技术图谱》</h1>
 
-![阿里巴巴集团长期内推，欢迎自荐，xingshaocheng@gmail.com](https://cdns.coderxing.com/HrUJ4G3E.png_700x700)
-
-<hr/>
-
-<h1>阿里巴巴-大文娱事业部-2019年实习生招聘-欢迎转发图片:</h1>
-
-![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-大文娱2019实习生&2020应届生.png)
-
-<h1>阿里巴巴-集团-2019年实习生招聘-欢迎转发图片（注意，和上面的不一样）:</h1>
-
-![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-集团2019实习生&2020应届生.png)
-
 <hr/>
 
 [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
