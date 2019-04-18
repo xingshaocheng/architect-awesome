@@ -3,7 +3,7 @@
 
 
 
-<font color="red">推荐:</font> [《Java技术书籍大全》 - awesome-java-books](https://github.com/sorenduan/awesome-java-books)
+<span style="color:red">推荐:</span> [《Java技术书籍大全》 - awesome-java-books](https://github.com/sorenduan/awesome-java-books)
 
 
 <hr/>
