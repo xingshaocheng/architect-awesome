@@ -3,7 +3,7 @@
 
 
 
-<b style="color:red">推荐:</b> <a href="https://github.com/sorenduan/awesome-java-books" target="_blank">《Java技术书籍大全》 - awesome-java-books]</a>
+<b style="color:red">推荐:</b> <a href="https://github.com/sorenduan/awesome-java-books" target="_blank">《Java技术书籍大全》 - awesome-java-books</a>
 
 
 <hr/>
