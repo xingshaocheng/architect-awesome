@@ -2354,6 +2354,8 @@ TODO
 
 ### 纸质书
 
+<b style="color:red">更多架构方面书籍参考:</b> [awesome-java-books](https://github.com/sorenduan/awesome-java-books/blob/master/README.md#%E6%9E%B6%E6%9E%84)
+
 #### 开发方面
 
 * 《阿里巴巴Java开发手册》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BfL5CR)
