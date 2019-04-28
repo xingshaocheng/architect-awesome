@@ -1534,7 +1534,7 @@ MyISAM 是非聚集，InnoDB 是聚集
 
 ## Spark
 * [《Spark(一): 基本架构及原理》](http://www.cnblogs.com/tgzhu/p/5818374.html)
-* [子雨大数据之Spark入门教程(Python版)](http://dblab.xmu.edu.cn/blog/1709-2/)
+* [《子雨大数据之Spark入门教程(Python版)》](http://dblab.xmu.edu.cn/blog/1709-2/)
 
 
 # 安全
