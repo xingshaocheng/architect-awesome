@@ -1,26 +1,17 @@
 
 <h1>《后端架构师技术图谱》</h1>
 
-![阿里巴巴集团长期内推，欢迎自荐，xingshaocheng@gmail.com](https://cdns.coderxing.com/HrUJ4G3E.png_700x700)
 
-<hr/>
 
-<h1>阿里巴巴-大文娱事业部-2019年实习生招聘-欢迎转发图片:</h1>
-
-![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-大文娱2019实习生&2020应届生.png)
-
-<h1>阿里巴巴-集团-2019年实习生招聘-欢迎转发图片（注意，和上面的不一样）:</h1>
-
-![阿里巴巴2019年实习生招聘欢迎转发](2019校园招聘海报-集团2019实习生&2020应届生.png)
-
+<b style="color:red">推荐:</b> [《Java技术书籍大全》 - awesome-java-books](https://github.com/sorenduan/awesome-java-books)
+<p>从初级开发者到资深架构师，看这些书就够了</p>
 <hr/>
 
 [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 [![GitHub stars](https://img.shields.io/github/stars/xingshaocheng/architect-awesome.svg?style=flat&label=Star)](https://github.com/xingshaocheng/architect-awesome/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/xingshaocheng/architect-awesome.svg?style=flat&label=Fork)](https://github.com/xingshaocheng/architect-awesome/fork)
 [![GitHub watchers](https://img.shields.io/github/watchers/xingshaocheng/architect-awesome.svg?style=flat&label=Watch)](https://github.com/xingshaocheng/architect-awesome/watchers)
-
-
+[![GitHub followers](https://img.shields.io/github/followers/xingshaocheng.svg?label=%E5%85%B3%E6%B3%A8)](https://github.com/xingshaocheng)
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据结构)
@@ -1548,6 +1539,7 @@ MyISAM 是非聚集，InnoDB 是聚集
 
 ## Spark
 * [《Spark(一): 基本架构及原理》](http://www.cnblogs.com/tgzhu/p/5818374.html)
+* [《子雨大数据之Spark入门教程(Python版)》](http://dblab.xmu.edu.cn/blog/1709-2/)
 
 
 # 安全
@@ -1893,7 +1885,7 @@ Java、Spring、Dubbo 优雅关闭方式。
 * [《分布式服务框架学习笔记4 服务路由》](https://blog.csdn.net/xundh/article/details/59492750)
 	* 原则：透明化路由
 	* 负载均衡策略：随机、轮询、服务调用延迟、一致性哈希、粘滞连接
-	* 本地路由有限策略：injvm(优先调用jvm内部的服务)，innative(优先使用相同物理机的服务),原则上找距离最近的服务。
+	* 本地路由优先策略：injvm(优先调用jvm内部的服务)，innative(优先使用相同物理机的服务),原则上找距离最近的服务。
 	* 配置方式：统一注册表；本地配置；动态下发。
 
 ## 分布式一致
@@ -2367,6 +2359,8 @@ TODO
 * [《架构师之路》](https://www.w3cschool.cn/architectroad/)
 
 ### 纸质书
+
+<b style="color:red">更多架构方面书籍参考:</b> [awesome-java-books](https://github.com/sorenduan/awesome-java-books/blob/master/README.md#%E6%9E%B6%E6%9E%84)
 
 #### 开发方面
 
