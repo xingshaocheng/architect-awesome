@@ -981,7 +981,7 @@ APM —  Application Performance Management
 
 ### Kubernetes
 * [学习 Kubernetes 基础知识](https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/)
-* [《从 Docker 到 Kubernetes 进阶》](https://www.qikqiak.com/k8s-book/)
+* [《从 Docker 到 Kubernetes 进阶》](https://github.com/cnych/kubernetes-learning)
 
 ## 云技术
 
