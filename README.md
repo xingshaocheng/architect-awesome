@@ -182,7 +182,7 @@
 		* [Protobuf](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#protobuf)
 * [数据库](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库)
 	* [基础理论](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#基础理论)
-		* [数据库设计的三大范式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据库设计的三大范式)
+		* [关系数据库设计的三大范式](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#关系数据库设计的三大范式)
 	* [MySQL](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#mysql)
 		* [原理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#原理)
 		* [InnoDB](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#innodb)
@@ -1363,7 +1363,7 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 
 # 数据库
 ## 基础理论
-### 数据库设计的三大范式
+### 关系数据库设计的三大范式
 * [《数据库的三大范式以及五大约束》](https://www.cnblogs.com/waj6511988/p/7027127.html)
 	* 第一范式：数据表中的每一列（每个字段）必须是不可拆分的最小单元，也就是确保每一列的原子性；
 	* 第二范式（2NF）：满足1NF后，要求表中的所有列，都必须依赖于主键，而不能有任何一列与主键没有关系，也就是说一个表只描述一件事情；
