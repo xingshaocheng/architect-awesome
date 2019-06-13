@@ -2268,9 +2268,10 @@ TODO
 * [ITeye](http://www.iteye.com/)
 	* 偏 Java 方向 
 * [博客园](https://www.cnblogs.com)
-* [ChinaUnix](http://www.tom.net/)
+* [ChinaUnix](http://www.chinaunix.net/)
 	* 偏 Linux 方向 
 * [开源中国社区](https://www.oschina.net/)
+* [InfoQ](https://www.infoq.cn/)
 * [深度开源](http://www.open-open.com/)
 * [伯乐在线](http://www.jobbole.com/)
 	* 涵盖 IT职场、Web前端、后端、移动端、数据库等方面内容，偏技术端。
