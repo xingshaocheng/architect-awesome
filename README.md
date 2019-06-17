@@ -417,11 +417,11 @@ MySQL是基于B+树聚集索引组织表
 	* B+树的叶子节点链表结构相比于 B-树便于扫库，和范围检索。
 ### LSM 树
 
-LSM（Log-Structured Merge-Trees）和 B+ 树相比，是牺牲了部分读的性能来换取写的性能(通过批量写入)，实现读写之间的。
+LSM（Log-Structured Merge-Trees）和 B+ 树相比，是牺牲了部分读的性能来换取写的性能(通过批量写入)，实现读写之间的平衡。
 Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以快速建立索引。
 
 * [《LSM树 VS B+树》](https://blog.csdn.net/dbanote/article/details/8897599)
-	* B+ 树读性能好，但由于需要有序结构，当key比较分散时，磁盘寻道频繁，造成写性能。
+	* B+ 树读性能好，但由于需要有序结构，当key比较分散时，磁盘寻道频繁，造成写性能较差。
 	* LSM 是将一个大树拆分成N棵小树，先写到内存（无寻道问题，性能高），在内存中构建一颗有序小树（有序树），随着小树越来越大，内存的小树会flush到磁盘上。当读时，由于不知道数据在哪棵小树上，因此必须遍历（二分查找）所有的小树，但在每颗小树内部数据是有序的。
 	
 * [《LSM树（Log-Structured Merge Tree）存储引擎》](https://blog.csdn.net/u014774781/article/details/52105708)
@@ -458,7 +458,7 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 
 ### 快速排序
 * [《坐在马桶上看算法：快速排序》](http://developer.51cto.com/art/201403/430986.htm)
-	* 一侧比另外一次都大或小。 
+	* 一侧比另外一侧都大或小。 
 ### 归并排序
 * [《图解排序算法(四)之归并排序》](http://www.cnblogs.com/chengxiao/p/6194356.html)
 	* 分而治之，分成小份排序，在合并(重建一个新空间进行复制)。 
