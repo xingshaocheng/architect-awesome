@@ -567,7 +567,7 @@ KMP：Knuth-Morris-Pratt算法（简称KMP）
 
 ## 多线程
 
-* [《40个Java多线程问题总结》](http://www.importnew.com/18459.html)
+* [《40个Java多线程问题总结》](https://www.cnblogs.com/xrq730/p/5060921.html)
 
 ## 线程安全
 
