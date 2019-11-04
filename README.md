@@ -1391,7 +1391,7 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 * [《SQL优化之道》](https://blog.csdn.net/when_less_is_more/article/details/70187459)
 * [《mysql数据库死锁的产生原因及解决办法》](https://www.cnblogs.com/sivkun/p/7518540.html)
 * [《导致索引失效的可能情况》](https://blog.csdn.net/monkey_d_feilong/article/details/52291556)
-* [《 MYSQL分页limit速度太慢优化方法》](https://blog.csdn.net/zy_281870667/article/details/51604540)
+* [《 MYSQL分页limit速度太慢优化方法》](https://www.jianshu.com/p/0a7e3055a01f)
 	* 原则上就是缩小扫描范围。
 
 
