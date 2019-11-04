@@ -649,7 +649,7 @@ KMP：Knuth-Morris-Pratt算法（简称KMP）
 
 ### 乐观锁 & CAS
 
-* [《乐观锁的一种实现方式——CAS》](http://www.importnew.com/20472.html)
+* [《乐观锁的一种实现方式——CAS》](https://blog.csdn.net/u011514810/article/details/76895723/)
 	* 和MySQL乐观锁方式相似，只不过是通过和原值进行比较。	 
 
 ### ABA 问题
