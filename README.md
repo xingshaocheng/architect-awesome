@@ -765,7 +765,7 @@ TODO
 	* 创建模式:
 		* 抽象工厂模式：抽象工厂模式提供了一个协议来生成一系列的相关或者独立的对象，而不用指定具体对象的类型，如 java.util.Calendar#getInstance()。
 		* 建造模式(Builder)：定义了一个新的类来构建另一个类的实例，以简化复杂对象的创建，如：java.lang.StringBuilder#append()。
-		* 工厂方法：就是 **一个返*** 回具体对象的方法，而不是多个，如 java.lang.Object#toString()、java.lang.Class#newInstance()。
+		* 工厂方法：就是 **一个返回**具体对象的方法，而不是多个，如 java.lang.Object#toString()、java.lang.Class#newInstance()。
 		* 原型模式：使得类的实例能够生成自身的拷贝、如：java.lang.Object#clone()。
 		* 单例模式：全局只有一个实例，如 java.lang.Runtime#getRuntime()。
 	* 行为模式：
