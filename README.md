@@ -243,6 +243,8 @@
 	* [授权、认证](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#授权认证)
 		* [RBAC](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#rbac)
 		* [OAuth2.0](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#oauth20)
+		* [OIDC](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#oidc)
+		* [SAML](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#saml)
 		* [双因素认证（2FA）](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#双因素认证2fa)
 		* [单点登录(SSO)](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#单点登录sso)
 * [常用开源框架](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#常用开源框架)
@@ -1640,6 +1642,9 @@ TODO
 * [《搭建简易堡垒机》](http://blog.51cto.com/zero01/2062618)
 
 ## 授权、认证
+
+* [授权认证知识库](https://docs.authing.cn/authing/)
+
 ### RBAC 
 * [《基于组织角色的权限设计》](https://www.cnblogs.com/zq8024/p/5003050.html)
 * [《权限系统与RBAC模型概述》](https://www.cnblogs.com/shijiaqi1066/p/3793894.html)
@@ -1648,6 +1653,12 @@ TODO
 ### OAuth2.0
 * [《理解OAuth 2.0》](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
 * [《一张图搞定OAuth2.0》](https://www.cnblogs.com/flashsun/p/7424071.html)
+
+### OIDC
+* [理解 OIDC](https://docs.authing.cn/authing/advanced/oidc/li-jie-oidc-liu-cheng)
+
+### SAML
+* [理解 SAML](https://docs.authing.cn/authing/advanced/use-saml/li-jie-saml-liu-cheng)
 
 ### 双因素认证（2FA）
 
@@ -1660,8 +1671,8 @@ TODO
 ### 单点登录(SSO)
 
 * [《单点登录原理与简单实现》](https://www.cnblogs.com/ywlaker/p/6113927.html)
-
 * [CAS单点登录框架](https://github.com/apereo/cas)
+* [使用 Authing 实现单点登录](https://docs.authing.cn/authing/quickstart/implement-sso-with-authing)
 
 # 常用开源框架
 
