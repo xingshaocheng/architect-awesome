@@ -890,7 +890,7 @@ APM —  Application Performance Management
 ## 持续集成(CI/CD)
 
 * [《持续集成是什么？》](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)
-* [《8个流行的持续集成工具》](https://www.testwo.com/article/1170)
+* [《8个流行的持续集成工具》](http://www.51testing.com/html/74/n-3723774.html)
 
 ### Jenkins
 
