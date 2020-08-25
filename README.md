@@ -756,7 +756,7 @@ TODO
 * [《设计模式类图与示例》](https://github.com/ToryZhou/design-pattern)
 
 ## 应用场景
-* [《细数JDK里的设计模式》](http://blog.jobbole.com/62314/)
+* [《细数JDK里的设计模式》](https://www.cnblogs.com/winkey4986/p/5148953.html)
 	* 结构型模式：
 		* 适配器：用来把一个接口转化成另一个接口，如 java.util.Arrays#asList()。
 		* 桥接模式：这个模式将抽象和抽象操作的实现进行了解耦，这样使得抽象和实现可以独立地变化，如JDBC；
@@ -1377,7 +1377,7 @@ Goolge出品、占用空间和效率完胜其他序列化类库，如Hessian；�
 ## MySQL
 
 ### 原理
-* [《MySQL的InnoDB索引原理详解》](http://www.admin10000.com/document/5372.html)
+* [《MySQL的InnoDB索引原理详解》](https://blog.csdn.net/voidccc/article/details/40077329)
 
 * [《MySQL存储引擎－－MyISAM与InnoDB区别》](https://blog.csdn.net/xifeijian/article/details/20316775)
 	* 两种类型最主要的差别就是Innodb 支持事务处理与外键和行级锁
