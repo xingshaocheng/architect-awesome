@@ -462,7 +462,7 @@ Hbase、LevelDB、Tair（Long DB）、nessDB 采用 LSM 树的结构。LSM可以
 * [《排序算法总结之插入排序》](https://www.cnblogs.com/hapjin/p/5517667.html)
 
 ### 快速排序
-* [《坐在马桶上看算法：快速排序》](https://blog.csdn.net/afjaklsdflka/article/details/52829030)
+* [漫画：什么是快速排序？（完整版）](https://www.cxyxiaowu.com/5262.html)
 	* 一侧比另外一侧都大或小。 
 ### 归并排序
 * [《图解排序算法(四)之归并排序》](http://www.cnblogs.com/chengxiao/p/6194356.html)
