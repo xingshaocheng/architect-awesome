@@ -1942,7 +1942,7 @@ Java、Spring、Dubbo 优雅关闭方式。
 
 #### 两阶段提交、多阶段提交
 
-* [《关于分布式事务、两阶段提交协议、三阶提交协议》](http://blog.jobbole.com/95632/)
+* [《关于分布式事务、两阶段提交协议、三阶提交协议》](https://cloud.tencent.com/developer/article/1334942)
 
 ### 幂等
 
