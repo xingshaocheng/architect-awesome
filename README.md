@@ -1146,6 +1146,7 @@ APM —  Application Performance Management
 * [《消息总线VS消息队列》](https://blog.csdn.net/yanghua_kobe/article/details/43877281)
 
 ### 消息的顺序
+* [《如何解决MQ消息消费顺序问题》](https://segmentfault.com/a/1190000014512075)
 * [《如何保证消费者接收消息的顺序》](https://www.cnblogs.com/cjsblog/p/8267892.html)
 
 ### RabbitMQ
