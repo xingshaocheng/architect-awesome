@@ -2066,7 +2066,7 @@ TODO
 无需过多关系服务器的服务架构理念。
 
 * [《什么是Serverless无服务器架构？》](http://www.jdon.com/soa/serverless.html)
-	* Serverless 不代表出去服务器，而是去除对服务器运行状态的关心。
+	* Serverless 不代表除去服务器，而是去除对服务器运行状态的关心。
 	* Serverless 代表一思维方式的转变，从“构建一套服务在一台服务器上，对对个事件进行响应转变为构建一个为服务器，来响应一个事件”。
 	* Serverless 不代表某个具体的框架。
 
