@@ -121,6 +121,7 @@
 		* [OpenVZ](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openvz)
 	* [容器技术](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#容器技术)
 		* [Docker](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#docker)
+		* [Kubernetes](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#kubernetes)
 	* [云技术](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#云技术)
 		* [OpenStack](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openstack)
 	* [DevOps](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#devops)
@@ -974,6 +975,10 @@ APM —  Application Performance Management
 * [《几张图帮你理解 docker 基本原理及快速入门》](https://www.cnblogs.com/SzeCheng/p/6822905.html)
 * [《Docker 核心技术与实现原理》](https://draveness.me/docker)
 * [《Docker 教程》](http://www.runoob.com/docker/docker-tutorial.html)
+
+### Kubernetes
+* [学习 Kubernetes 基础知识](https://kubernetes.io/zh/docs/tutorials/kubernetes-basics/)
+* [《从 Docker 到 Kubernetes 进阶》](https://github.com/cnych/kubernetes-learning)
 
 ## 云技术
 
