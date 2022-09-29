@@ -82,6 +82,7 @@
 	* [计算机原理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#计算机原理)
 	* [CPU](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#cpu)
 		* [多级缓存](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#多级缓存)
+		* [NUMA架构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#NUMA架构)
 	* [进程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#进程)
 	* [线程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#线程)
 	* [协程](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#协程)
@@ -720,6 +721,9 @@ KMP：Knuth-Morris-Pratt算法（简称KMP）
 典型的 CPU 有三级缓存，距离核心越近，速度越快，空间越小。L1 一般 32k，L2 一般 256k，L3 一般12M。内存速度需要200个 CPU 周期，CPU 缓存需要1个CPU周期。
 
 * [《从Java视角理解CPU缓存和伪共享》](https://blog.csdn.net/zero__007/article/details/54089730)
+
+### NUMA架构
+* [《理解NUMA》](https://ikenchina.github.io/posts/numa-cpu.html)
 
 ## 进程
 
