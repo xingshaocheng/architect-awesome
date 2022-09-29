@@ -839,7 +839,7 @@ TODO
 	* 监控的方式：主动、被动、旁路(比如舆情监控)
 	* 监控类型： 基础监控、服务端监控、客户端监控、
 	监控、用户端监控
-	* 监控的目标：全、块、准
+	* 监控的目标：全、快、准
 	* 核心指标：请求量、成功率、耗时
 
 * [《开源还是商用？十大云运维监控工具横评》](https://www.oschina.net/news/67525/monitoring-tools)
@@ -901,7 +901,7 @@ APM —  Application Performance Management
 
 开发、测试、生成环境分离。
 
-* [《开发环境、生产环境、测试环境的基本理解和区》](https://my.oschina.net/sancuo/blog/214904)
+* [《开发环境、生产环境、测试环境的基本理解和区别》](https://my.oschina.net/sancuo/blog/214904)
 
 ## 自动化运维
 
