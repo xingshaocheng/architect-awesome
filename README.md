@@ -852,7 +852,7 @@ TODO
 * [《常用命令行监控工具》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
 	* top、sar、tsar、nload
 
-* [《20个命令行工具监控 Linux 系统性能》](http://blog.jobbole.com/96846/)
+* [《20个命令行工具监控 Linux 系统性能》](https://www.cnblogs.com/yangjig/p/6084625.html)
 
 * [《JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解》](https://my.oschina.net/feichexia/blog/196575)
 
