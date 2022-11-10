@@ -1263,7 +1263,7 @@ TODO
 
 servlet 3.0 异步特性可用于配置中心的客户端
 * [《servlet3.0 新特性——异步处理》](https://www.cnblogs.com/dogdogwang/p/7151866.html)
-* [如何做好一个配置中心](https://blog.csdn.net/csdnYF/article/details/127746602)
+* [《如何做好一个配置中心》](https://blog.csdn.net/csdnYF/article/details/127746602)
 
 ## API 网关
 
