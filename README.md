@@ -1,5 +1,3 @@
-![互联网大厂内推](互联网大厂内推.jpeg)
-
 <h1>《后端架构师技术图谱》</h1>
 
 :thumbsup: :thumbsup: :thumbsup:  推荐一个在线搜课程的神器，“[课程搜](https://www.kcsou.com)”：[https://www.kcsou.com/s_架构师/](https://www.kcsou.com/s_%E6%9E%B6%E6%9E%84%E5%B8%88/)
@@ -1947,7 +1945,8 @@ Java、Spring、Dubbo 优雅关闭方式。
 
 ### 幂等
 
-* [《分布式系统---幂等性设计》](https://www.cnblogs.com/wxgblogs/p/6639272.html)
+* [《高并发下如何保证接幂等性》](https://www.cnblogs.com/12lisu/p/14639651.html)
+* [《深入架构原理与实践-幂等性设计》](https://https://www.thebyte.com.cn/distributed-system/idempotent.html)
 	* 幂等特性的作用：该资源具备幂等性，请求方无需担心重复调用会产生错误。
 	* 常见保证幂等的手段：MVCC（类似于乐观锁）、去重表(唯一索引)、悲观锁、一次性token、序列号方式。 
 
